@@ -8,12 +8,6 @@
   }
 }
 
-@media (max-width: 568px) {
-  .reveal {
-    font-size: 14px;
-  }
-}
-
 .reveal .slides section,
 .reveal .slides section > section {
   height: 85%;
