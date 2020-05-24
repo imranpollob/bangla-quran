@@ -47,15 +47,34 @@
   padding: 0 15px;
 }
 
-.slide-menu-wrapper .slide-menu-toolbar > li.toolbar-panel-button span.slide-menu-toolbar-label {
-	visibility: visible !important;
+.slide-menu-wrapper
+  .slide-menu-toolbar
+  > li.toolbar-panel-button
+  span.slide-menu-toolbar-label {
+  visibility: visible !important;
 }
 
 section {
-  background: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .fas.fa-bars,
 .controls-arrow {
+  color: black;
+}
+
+.reveal .slide-menu-button {
+  bottom: 22px !important;
+}
+
+.home-url {
+  position: fixed;
+  left: 65px;
+  bottom: 23px;
+  z-index: 30;
+  font-size: 24px;
+}
+
+.home-url a {
   color: black;
 }
