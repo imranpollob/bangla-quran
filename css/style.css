@@ -44,4 +44,18 @@
 
 .reveal p {
   line-height: 1.8;
+  padding: 0 15px;
+}
+
+.slide-menu-wrapper .slide-menu-toolbar > li.toolbar-panel-button span.slide-menu-toolbar-label {
+	visibility: visible !important;
+}
+
+section {
+  background: rgba(255, 255, 255, .8);
+}
+
+.fas.fa-bars,
+.controls-arrow {
+  color: black;
 }
