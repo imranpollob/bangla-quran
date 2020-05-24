@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/reveal.css" />
+    <link rel="stylesheet" href="/css/theme/solarized.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+    <style>
+      .ascrollable-slide {
+        height: 100%;
+        overflow-y: auto !important;
+      }
+    </style>
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-audio-src="audio/bt/1-1.mp3">
+          <h2>আল ফাতিহা</h2>
+          <p>
+            1-1 : সকল প্রশংসা জগতসমূহের প্রতিপালক আল্লাহ্‌রই,
+          </p>
+        </section>
+        <section data-audio-src="audio/bt/1-2.mp3">
+          <h2>আল ফাতিহা</h2>
+          <p>
+            1-2 : যিনি দয়াময়, পরম দয়ালু,
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        width: "100%",
+        height: "100%",
+        margin: 0.1,
+        minScale: 1,
+        maxScale: 1,
+        // mouseWheel: true,
+        touch: false,
+        hash: true,
+        transition: "fade", // none/fade/slide/convex/concave/zoom
+        backgroundTransition: "none", // none/fade/slide/convex/concave/zoom
+        audio: {
+          prefix: "audio/", // audio files are stored in the "audio" folder
+          suffix: ".mp3", // audio files have the ".ogg" ending
+          advance: 500,
+          autoplay: false,
+          defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
+          playerOpacity: 0.5,
+        },
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          {
+            src: "plugin/audio-slideshow/audio-slideshow.js",
+            condition: function () {
+              return !!document.body.classList;
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
