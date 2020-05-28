@@ -72,3 +72,17 @@ section {
 .home-url a {
   color: black;
 }
+
+@font-face {
+  font-family: "noorehuda";
+  src: url("./../lib/font/noorehuda.ttf");
+}
+
+#arabic {
+  font-family: noorehuda, sans-serif;
+  font-size: 35px;
+}
+
+#arabic.big-text {
+  font-size: 45px;
+}
