@@ -90,7 +90,7 @@ li.slide-menu-item a {
   font-style: normal;
 }
 
-#arabic {
+.arabic {
   direction: rtl;
   margin: 0px 0px 0px 0px;
   padding: 0cm 0cm;
@@ -101,6 +101,6 @@ li.slide-menu-item a {
   font-size: 35px;
 }
 
-#arabic.big-text {
+.arabic.big-text {
   font-size: 45px;
 }
