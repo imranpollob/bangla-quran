@@ -73,6 +73,10 @@ section {
   color: black;
 }
 
+li.slide-menu-item a {
+  display: block;
+}
+
 @font-face {
   font-family: "PDMSSaleemQuranFont";
   src: url("./../lib/font/pdms/PDMSSALEEMQURANFONTQESHIP0.eot"); /* IE9 Compat Modes */
