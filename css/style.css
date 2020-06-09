@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "SiyamRupali";
+  src: url("./../lib/font/siyam-rupali/Siyamrupali.eot");
+  src: url("./../lib/font/siyam-rupali/Siyamrupali.eot?#iefix") format("embedded-opentype"),
+    url("./../lib/font/siyam-rupali/Siyamrupali.otf") format("opentype"),
+    url("./../lib/font/siyam-rupali/Siyamrupali.svg") format("svg"),
+    url("./../lib/font/siyam-rupali/Siyamrupali.ttf") format("truetype"),
+    url("./../lib/font/siyam-rupali/Siyamrupali.woff") format("woff"),
+    url("./../lib/font/siyam-rupali/Siyamrupali.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+section p {
+  font-family: "SiyamRupali", sans-serif;
+}
+
 .reveal {
   font-size: 18px;
 }
