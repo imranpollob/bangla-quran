@@ -17,12 +17,12 @@ section p {
 }
 
 .reveal {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 @media (max-width: 767px) {
   .reveal {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -121,4 +121,8 @@ li.slide-menu-item a {
 
 .arabic.big-text {
   font-size: 45px;
+}
+
+body div.slides section {
+  top: -1px !important;
 }
