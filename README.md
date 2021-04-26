@@ -1,7 +1,5 @@
-## Bangla Quran with audio
-
-সমগ্র সূরাসমুহের আরবি ও বাংলা অনুবাদ অডিওসহ
+## Quran with audio
 
 Arabic and bangla translation of whole Quran with audio
 
-[https://www.quran.imranpollob.com](https://www.quran.imranpollob.com)
+[quran.imranpollob.com](https://www.quran.imranpollob.com)
