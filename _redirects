@@ -1,3 +1,5 @@
 # http and https need separate rules if you don’t force_ssl!
 http://quran.imranpollob.com/* https://www.quran.imranpollob.com/:splat 301!
 https://quran.imranpollob.com/* https://www.quran.imranpollob.com/:splat 301!
+http://banglaquran.netlify.app/* https://www.quran.imranpollob.com/:splat 301!
+https://banglaquran.netlify.app/* https://www.quran.imranpollob.com/:splat 301!
