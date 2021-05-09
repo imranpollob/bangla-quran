@@ -2036,7 +2036,7 @@ b = '''
 
 '''
 
-directory = 'arabic'
+directory = 'bangla'
 
 for filename in os.listdir(directory):
     if filename.endswith(".html") and filename != 'list.html':
@@ -2045,7 +2045,7 @@ for filename in os.listdir(directory):
         sura_no = int(filename.split('.')[0]) - 1
         print(filename, sura_no, a[sura_no])
 
-        os.rename(os.path.join(directory, filename), os.path.join(directory, f'{a[sura_no]}-arabic.html'))
+        os.rename(os.path.join(directory, filename), os.path.join(directory, f'{a[sura_no]}-bangla.html'))
 
 # c = ""
 
