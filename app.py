@@ -1,10 +1,10 @@
 import os
 from bs4 import BeautifulSoup
 
-directory = 'bangla'
+directory = 'arabic'
 
 for filename in os.listdir(directory):
-    if filename.endswith(".html"):
+    if filename.endswith(".html") and filename != 'list.html':
         print(os.path.join(directory, filename))
         data = None
         with open(os.path.join(directory, filename)) as f:
