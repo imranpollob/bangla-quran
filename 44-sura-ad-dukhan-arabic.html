@@ -10,8 +10,7 @@
 <link href="/css/reveal.css" rel="stylesheet"/>
 <link href="/css/theme/white.css" rel="stylesheet"/>
 <link href="/css/style.css" rel="stylesheet"/>
-<!-- Theme used for syntax highlighting of code -->
-<link href="/lib/css/monokai.css" rel="stylesheet"/>
+
 <style>
       .ascrollable-slide {
         height: 100%;
@@ -422,7 +421,6 @@
           autoplay: false,
           defaultAudios: true, // try to play audios with names such as audio/1.2.ogg
           playerOpacity: 1,
-          autoplay: true,
         },
         menu: {
           custom: [
@@ -434,10 +432,6 @@
           ],
         },
         dependencies: [
-          { src: "/plugin/markdown/marked.js" },
-          { src: "/plugin/markdown/markdown.js" },
-          { src: "/plugin/highlight/highlight.js" },
-          { src: "/plugin/notes/notes.js", async: true },
           {
             src: "/plugin/audio-slideshow/audio-slideshow.js",
             condition: function () {
