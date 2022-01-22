@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.quran.imranpollob.com/sitemap.xml
+Sitemap: https://banglaquran.app/sitemap.xml
