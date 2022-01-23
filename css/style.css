@@ -60,6 +60,10 @@ section p {
   padding: 0 15px;
 }
 
+.card-sura-name {
+  margin: 0;
+}
+
 .slide-menu-wrapper
   .slide-menu-toolbar
   > li.toolbar-panel-button
