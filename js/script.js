@@ -30,13 +30,13 @@ plus.addEventListener("click", function () {
   for (var i = 0; i < ayats.length; i++) {
     var fsize = parseInt(window.getComputedStyle(ayats[i]).fontSize);
     console.log(fsize);
-    ayats[i].style.fontSize = fsize + 2 + "px";
+    ayats[i].style.fontSize = fsize + 4 + "px";
   }
 });
 minus.addEventListener("click", function () {
   for (var i = 0; i < ayats.length; i++) {
     var fsize = parseInt(window.getComputedStyle(ayats[i]).fontSize);
     console.log(fsize);
-    ayats[i].style.fontSize = fsize - 2 + "px";
+    ayats[i].style.fontSize = fsize - 4 + "px";
   }
 });

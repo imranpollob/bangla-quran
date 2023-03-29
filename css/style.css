@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "SiyamRupali";
   src: url("./../lib/font/siyam-rupali/Siyamrupali.eot");
   src: url("./../lib/font/siyam-rupali/Siyamrupali.eot?#iefix")
@@ -10,20 +10,29 @@
     url("./../lib/font/siyam-rupali/Siyamrupali.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+} */
+
+@font-face {
+  font-family: 'LiAdorNoirrit';
+  src: url('./../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff2') format('woff2'),
+    url('./../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body,
 section p {
-  font-family: "SiyamRupali", sans-serif;
+  font-family: "LiAdorNoirrit", sans-serif;
 }
 
 .reveal {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
   .reveal {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 
