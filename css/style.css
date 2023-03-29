@@ -26,12 +26,6 @@ section p {
   font-family: "LiAdorNoirrit", sans-serif;
 }
 
-section p {
-  position: relative;
-  top: 38%;
-  transform: translateY(-50%);
-}
-
 .reveal {
   font-size: 26px;
 }
@@ -146,7 +140,7 @@ li.slide-menu-item a {
 }
 
 @media (max-width: 767px) {
-  .reveal {
+  .arabic {
     font-size: 32px;
   }
 }
