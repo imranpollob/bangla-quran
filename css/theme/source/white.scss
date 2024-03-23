@@ -12,8 +12,14 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-
+@font-face {
+  font-family: 'LiAdorNoirrit';
+  src: url('./../../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff2') format('woff2'),
+    url('./../../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
@@ -22,8 +28,8 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'LiAdorNoirrit', Helvetica, sans-serif;
+$headingFont: 'LiAdorNoirrit', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -37,11 +43,11 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
-section.has-dark-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-	}
-}
+$overlayElementBgColor: 0, 0, 0;
+$overlayElementFgColor: 240, 240, 240;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
 
 
 // Theme template ------------------------------

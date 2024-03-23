@@ -1,50 +1,35 @@
 {
-  "_from": "reveal.js-menu",
-  "_id": "reveal.js-menu@1.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-jOuMjakDx90GO01Z29Vq6MS3qogjML/qTA14werk/PDj9zpV5Pl0GRLwWq91b20vS1JgYi4sD1POd33deDQAQg==",
-  "_location": "/reveal.js-menu",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "reveal.js-menu",
-    "name": "reveal.js-menu",
-    "escapedName": "reveal.js-menu",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/reveal.js-menu/-/reveal.js-menu-1.2.0.tgz",
-  "_shasum": "b8d8f060a25b933fad253ffb51012662e31b8c0d",
-  "_spec": "reveal.js-menu",
-  "_where": "/Users/imran/Desktop/reveal.js",
-  "author": {
-    "name": "Greg Denehy"
-  },
-  "bugs": {
-    "url": "https://github.com/denehyg/reveal.js-menu/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "A slideout menu for navigating reveal.js presentations",
-  "homepage": "https://github.com/denehyg/reveal.js-menu#readme",
-  "keywords": [
-    "reveal",
-    "menu"
-  ],
-  "license": "MIT, Copyright (C) 2016 Greg Denehy",
   "name": "reveal.js-menu",
+  "version": "2.1.0",
+  "description": "A slideout menu for navigating reveal.js presentations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/denehyg/reveal.js-menu.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "keywords": [
+    "reveal",
+    "menu"
+  ],
+  "author": "Greg Denehy",
+  "license": "MIT, Copyright (C) 2020 Greg Denehy",
+  "bugs": {
+    "url": "https://github.com/denehyg/reveal.js-menu/issues"
   },
-  "version": "1.2.0"
+  "homepage": "https://github.com/denehyg/reveal.js-menu#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@rollup/plugin-babel": "^5.0.4",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.1.0",
+    "babel-plugin-transform-html-import-to-string": "0.0.1",
+    "core-js": "^3.6.5",
+    "gulp": "^4.0.2",
+    "rollup": "^2.21.0",
+    "rollup-plugin-terser": "^6.1.0"
+  }
 }

@@ -1,0 +1,108 @@
+ol {
+  margin-top: 50px;
+  padding: 0;
+}
+
+li {
+  text-align: center;
+  list-style-position: inside;
+  padding-bottom: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+  color: rgba(28, 131, 24, 1);
+}
+
+header h2 {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+body {
+  background-image: url("/background.png");
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 15px;
+  background: rgba(255, 255, 255, 1);
+  max-width: 1000px;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 30px;
+}
+
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  border: 1px solid rgba(28, 131, 24, .4);
+  color: black;
+  padding: 1rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-sura-info {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid rgba(128, 128, 128, 1); */
+}
+
+.card-sura-name {
+  /* padding-left: 10px; */
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(28, 131, 24, 1);
+}
+
+.card-sura-info div {
+  /* flex-grow: 1; */
+}
+
+.card-sura-links {
+  display: flex;
+  padding-top: 10px;
+}
+
+.card-sura-links div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.card-sura-links div a {
+  color: rgba(28, 131, 24, 0.8);
+  text-decoration: none;
+}
+
+.card-sura-links div a:hover {
+  color: rgba(28, 131, 24, 1);
+}
+
+.card-sura-links-arabic,
+.card-sura-links-bangla {
+  border-left: 1px solid rgba(128, 128, 128, 0.4);
+}
