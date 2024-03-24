@@ -10,17 +10,6 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-
-// Include theme-specific fonts
-@font-face {
-  font-family: 'LiAdorNoirrit';
-  src: url('./../../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff2') format('woff2'),
-    url('./../../lib/font/LiAdorNoirrit/LiAdorNoirrit.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #fff;
 

@@ -664,7 +664,7 @@ const Plugin = () => {
         return button;
       }
 
-      addToolbarButton('Slides', 'Slides', 'fa-images', 'fas', openPanel, true);
+      addToolbarButton('আয়াতসমূহ', 'আয়াতসমূহ', 'fa-images', 'fas', openPanel, true);
 
       if (options.custom) {
         options.custom.forEach(function (element, index, array) {

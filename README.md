@@ -18,6 +18,7 @@ Build the app `npm run build`
 
 ## Next milestones
 - ~~Fix mobile version's layout issue~~
+- ~~Change text 'Slides' in menu~~
 - Add logo
 - Add user login feature to track last read location
 - Store guest user tracking to local storage
