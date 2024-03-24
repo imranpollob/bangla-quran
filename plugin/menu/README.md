@@ -45,7 +45,7 @@ Copy this repository into the plugins folder of your reveal.js presentation, ie 
 Add the plugin to the dependencies in your presentation, as below.
 
 ```javascript
-<script src="plugin/menu/menu.js"></script>
+<script src="/plugin/menu/menu.js"></script>
 <script>
   Reveal.initialize({
     plugins: [ RevealMenu ]
