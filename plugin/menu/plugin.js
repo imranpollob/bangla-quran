@@ -821,14 +821,14 @@ const Plugin = () => {
             'section[data-markdown]:not([data-markdown-parsed])'
           )
         ) {
-          var panel = create('div', {
-            'data-panel': 'Slides',
-            class: 'slide-menu-panel active-menu-panel'
+          var panel = create("div", {
+            "data-panel": "আয়াতসমূহ",
+            class: "slide-menu-panel active-menu-panel",
           });
           panel.appendChild(create('ul', { class: 'slide-menu-items' }));
           panels.appendChild(panel);
           var items = select(
-            '.slide-menu-panel[data-panel="Slides"] > .slide-menu-items'
+            '.slide-menu-panel[data-panel="আয়াতসমূহ"] > .slide-menu-items'
           );
           var slideCount = 0;
           selectAll('.slides > section').forEach(function (section, h) {

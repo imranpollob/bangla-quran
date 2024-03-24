@@ -147,7 +147,7 @@ body div.slides section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .logo {
@@ -159,4 +159,32 @@ body div.slides section {
   .logo {
     width: 150px;
   }
+}
+
+/* Collapsible list menu */
+/* Hide nested options by default */
+.nested-options {
+  display: none;
+}
+
+/* Show nested options when parent item is active */
+.nested-options.active {
+  display: block;
+}
+
+/* Add arrow icon */
+.slide-menu-item-toggle::after {
+  content: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 19 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 2L3 17L17 32' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+  display: inline-block;
+  margin-left: 5px; /* Adjust spacing */
+  transition: transform 0.3s; /* Add transition for animation */
+}
+
+/* Rotate arrow when nested options are active */
+.slide-menu-item-toggle.active::after {
+  transform: rotate(-90deg);
+}
+
+a.slide-menu-item.slide-menu-item-toggle {
+  text-decoration: none !important;
 }

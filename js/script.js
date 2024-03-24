@@ -40,3 +40,11 @@ minus.addEventListener("click", function () {
     ayats[i].style.fontSize = fsize - 4 + "px";
   }
 });
+
+// Menu list toggle function
+function toggleOptions(element) {
+  element.classList.toggle("active");
+  const parentListItem = element.parentNode;
+  const nestedOptions = parentListItem.querySelector(".nested-options");
+  nestedOptions.classList.toggle("active");
+}
