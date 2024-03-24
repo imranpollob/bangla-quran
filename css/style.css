@@ -141,3 +141,22 @@ body div.slides section {
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
+
+/* LOGO */
+.logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .logo {
+    width: 150px;
+  }
+}
