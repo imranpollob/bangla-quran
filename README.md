@@ -17,7 +17,7 @@ Build the app `npm run build`
 
 
 ## Next milestones
-- Fix mobile version's layout issue
+- ~~Fix mobile version's layout issue~~
 - Add logo
 - Add user login feature to track last read location
 - Store guest user tracking to local storage

@@ -28,10 +28,10 @@ section.has-dark-background h6 {
   --r-main-font-size: 42px;
   --r-main-color: #222;
   --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
+  --r-heading-margin: 20px 0 20px 0;
   --r-heading-font: LiAdorNoirrit, Helvetica, sans-serif;
   --r-heading-color: #222;
-  --r-heading-line-height: 1.2;
+  --r-heading-line-height: 1.8;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
   --r-heading-text-shadow: none;
