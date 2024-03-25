@@ -151,13 +151,13 @@ body div.slides section {
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
   height: auto;
 }
 
 @media only screen and (min-width: 601px) {
   .logo {
-    width: 150px;
+    width: 200px;
   }
 }
 

@@ -21,7 +21,7 @@ Build the app `npm run build`
 - ~~Change text 'Slides' in menu~~
 - ~~Add logo~~
 - Change menu theme to white
-- Fix google analytics
+- ~~Fix google analytics~~
 - Add user login feature to track last read location
 - Store guest user tracking to local storage
 - Store zoom settings
