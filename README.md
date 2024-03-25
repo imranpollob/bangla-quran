@@ -20,8 +20,8 @@ Build the app `npm run build`
 - ~~Fix mobile version's layout issue~~
 - ~~Change text 'Slides' in menu~~
 - ~~Add logo~~
-- Change menu theme to white
 - ~~Fix google analytics~~
+- Change menu theme to white
 - Add user login feature to track last read location
 - Store guest user tracking to local storage
 - Store zoom settings
