@@ -185,10 +185,18 @@ body div.slides section {
   transform: rotate(-90deg);
 }
 
-a.slide-menu-item.slide-menu-item-toggle {
-  text-decoration: none !important;
+.slide-menu-item.slide-menu-item-toggle:hover {
+  color: white;
 }
 
 .reveal .progress {
-  height: 8px;
+  height: 6px;
+}
+
+.slide-menu-wrapper .slide-menu-toolbar > li.active-toolbar-button {
+  text-decoration: none !important;
+}
+
+.nested-options .slide-menu-item {
+  padding-left: 40px !important;
 }
