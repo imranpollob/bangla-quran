@@ -351,7 +351,7 @@ const initAudioSlideshow = function(Reveal){
 		audioElement.id = "audioplayer-" + indices;
 		audioElement.style.display = "none";
 		audioElement.setAttribute( 'controls', '' );
-		audioElement.setAttribute( 'preload', 'auto' );
+		audioElement.setAttribute( 'preload', 'none' );
 
 		audioElement.playbackRate = defaultPlaybackRate;
 
