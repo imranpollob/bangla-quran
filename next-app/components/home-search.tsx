@@ -24,38 +24,32 @@ export default function HomeSearch({ suras }: Props) {
   }, [query, suras]);
 
   return (
-    <>
-      <div className="header">
+    <section id="sura-list" className="home-sura-section">
+      <div className="home-section-head">
         <div>
-          <h1 style={{ margin: 0 }}>কোরআন</h1>
-          <p style={{ color: 'var(--muted)', margin: '6px 0 0' }}>
-            Next.js সংস্করণ · বর্তমানে {suras.length}/114 সূরা উদাহরণ হিসেবে যুক্ত
+          <h2 className="home-section-title">সব সূরা এক জায়গায়</h2>
+          <p className="home-section-subtitle">
+            নাম বা ইংরেজি উচ্চারণ লিখে সূরা খুঁজুন।
           </p>
         </div>
-        <div className="grid-actions">
-          <div className="pill">
-            <span role="img" aria-label="offline">
-              📱
-            </span>
-            Offline-ready PWA
-          </div>
-          <div className="pill">
-            <span role="img" aria-label="progress">
-              🔖
-            </span>
-            Bookmarks & progress
-          </div>
+        <div className="home-section-badge">
+          ফলাফল {toBnDigits(filtered.length)}
         </div>
       </div>
-      <input
-        className="search-box"
-        placeholder="যেমনঃ ইয়াসিন / yasin"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-      />
-      <div className="sura-grid" style={{ marginTop: 20 }}>
+      <div className="home-search-wrap">
+        <input
+          className="home-search-input"
+          placeholder="যেমনঃ ইয়াসিন / yasin"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <div className="home-search-hint">
+          দ্রুত নেভিগেশনের জন্য আরবি+বাংলা, আরবি অথবা বাংলা মোডে পড়ুন।
+        </div>
+      </div>
+      <div className="sura-grid home-grid">
         {filtered.map((sura) => (
-          <div className="card" key={sura.id}>
+          <div className="card home-sura-card" key={sura.id}>
             <h3>
               {toBnDigits(sura.id)}. {sura.nameBn}
             </h3>
@@ -74,18 +68,18 @@ export default function HomeSearch({ suras }: Props) {
                 className="mode-link"
                 href={`/sura/${sura.id}/${sura.slug}/arabic`}
               >
-                শুধু আরবি
+                আরবি
               </a>
               <a
                 className="mode-link"
                 href={`/sura/${sura.id}/${sura.slug}/bangla`}
               >
-                শুধু বাংলা
+                বাংলা
               </a>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </section>
   );
 }

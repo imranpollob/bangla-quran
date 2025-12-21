@@ -14,8 +14,8 @@ interface Props {
 
 const modeLabels: Record<Mode, string> = {
   both: 'আরবি + বাংলা',
-  arabic: 'শুধু আরবি',
-  bangla: 'শুধু বাংলা'
+  arabic: 'আরবি',
+  bangla: 'বাংলা'
 };
 
 export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
@@ -53,13 +53,13 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             className={`toggle ${mode === 'arabic' ? 'active' : ''}`}
             href={`/sura/${sura.id}/${slug}/arabic`}
           >
-            শুধু আরবি
+            আরবি
           </a>
           <a
             className={`toggle ${mode === 'bangla' ? 'active' : ''}`}
             href={`/sura/${sura.id}/${slug}/bangla`}
           >
-            শুধু বাংলা
+            বাংলা
           </a>
           <ThemeToggle />
           <AyahTextSizeControls />

@@ -15,31 +15,77 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Siyam Rupali";
+  src: url("/font/siyam-rupali/Siyamrupali.woff2") format("woff2"),
+    url("/font/siyam-rupali/Siyamrupali.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/font/source-sans-pro/source-sans-pro-regular.woff") format("woff"),
+    url("/font/source-sans-pro/source-sans-pro-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
-  --bg: #f8fafc;
+  --bg: #f7f2e8;
   --card: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --border: #e2e8f0;
-  --accent: #0ea5e9;
-  --accent-strong: #0284c7;
-  --shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+  --text: #0f2f2b;
+  --muted: #526a64;
+  --border: #dfd6c8;
+  --accent: #0f7a5c;
+  --accent-strong: #0b5f49;
+  --gold: #c59b3b;
+  --shadow: 0 16px 40px rgba(15, 47, 43, 0.12);
   --ayah-scale: 1;
   --arabic-size: 36px;
   --bangla-size: 22px;
+  --home-hero-bg: linear-gradient(
+      130deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(247, 242, 232, 0.85)
+    );
+  --home-hero-border: rgba(197, 155, 59, 0.28);
+  --home-pattern: rgba(15, 122, 92, 0.08);
+  --home-pattern-strong: rgba(197, 155, 59, 0.16);
+  --home-surface: rgba(255, 255, 255, 0.85);
+  --home-surface-strong: rgba(255, 255, 255, 0.92);
+  --home-surface-soft: rgba(255, 255, 255, 0.7);
+  --home-border: rgba(15, 122, 92, 0.18);
+  --home-ghost-bg: rgba(255, 255, 255, 0.6);
 }
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --bg: #0b1220;
-  --card: #0f172a;
-  --text: #e2e8f0;
-  --muted: #94a3b8;
-  --border: #1e293b;
-  --accent: #38bdf8;
-  --accent-strong: #0ea5e9;
-  --shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --bg: #0b1b18;
+  --card: #12201d;
+  --text: #e7f2ed;
+  --muted: #9bb2ab;
+  --border: #1f332d;
+  --accent: #42c2a0;
+  --accent-strong: #1f9b7c;
+  --gold: #e0c372;
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+  --home-hero-bg: linear-gradient(
+      130deg,
+      rgba(18, 32, 29, 0.95),
+      rgba(11, 27, 24, 0.85)
+    );
+  --home-hero-border: rgba(224, 195, 114, 0.25);
+  --home-pattern: rgba(66, 194, 160, 0.16);
+  --home-pattern-strong: rgba(224, 195, 114, 0.2);
+  --home-surface: rgba(13, 28, 25, 0.92);
+  --home-surface-strong: rgba(17, 35, 31, 0.95);
+  --home-surface-soft: rgba(18, 32, 29, 0.88);
+  --home-border: rgba(66, 194, 160, 0.22);
+  --home-ghost-bg: rgba(18, 32, 29, 0.7);
 }
 
 * {
@@ -68,7 +114,7 @@ button {
 }
 
 .page-shell {
-  max-width: 1100px;
+  max-width: 1160px;
   margin: 0 auto;
   padding: 32px 16px 64px;
 }
@@ -111,8 +157,8 @@ button {
 .card {
   border: 1px solid var(--border);
   background: var(--card);
-  border-radius: 16px;
-  padding: 16px;
+  border-radius: 20px;
+  padding: 18px;
   box-shadow: var(--shadow);
 }
 
@@ -275,6 +321,271 @@ button {
   flex-wrap: wrap;
 }
 
+.home {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.home-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.home-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.home-emblem {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 26px rgba(15, 47, 43, 0.2);
+}
+
+.home-emblem img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+}
+
+.home-brand-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 26px;
+  margin: 0;
+}
+
+.home-brand-sub {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 28px;
+  padding: 32px;
+  border-radius: 28px;
+  background: var(--home-hero-bg);
+  border: 1px solid var(--home-hero-border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 40%;
+  background: radial-gradient(
+    circle,
+    rgba(197, 155, 59, 0.22),
+    transparent 70%
+  );
+}
+
+.home-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(197, 155, 59, 0.14);
+  color: var(--accent-strong);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.home-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 42px;
+  margin: 16px 0 12px;
+}
+
+.home-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 20px;
+  max-width: 520px;
+}
+
+.home-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.ghost-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  color: #0b1b18;
+  box-shadow: 0 10px 20px rgba(15, 47, 43, 0.2);
+}
+
+.ghost-button {
+  border-color: var(--border);
+  color: var(--text);
+  background: var(--home-ghost-bg);
+}
+
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.stat-card {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+}
+
+.stat-number {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.home-hero-card {
+  background: var(--home-surface);
+  border-radius: 24px 24px 36px 36px;
+  padding: 24px;
+  border: 1px solid var(--home-border);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.home-hero-card h3 {
+  margin: 0 0 10px;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+}
+
+.home-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.home-hero-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--home-border);
+  color: var(--text);
+  background: var(--home-surface-soft);
+}
+
+.home-sura-section {
+  margin-top: 38px;
+}
+
+.home-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.home-section-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.home-section-subtitle {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.home-section-badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(15, 122, 92, 0.1);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.home-search-wrap {
+  margin-bottom: 20px;
+}
+
+.home-search-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 122, 92, 0.2);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  color: var(--text);
+}
+
+.home-search-hint {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.home-sura-card {
+  background: linear-gradient(160deg, var(--home-surface-strong), var(--card));
+  border: 1px solid var(--home-hero-border);
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero::after {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .header {
     flex-direction: column;
@@ -289,5 +600,17 @@ button {
   .sura-toolbar {
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  .home-title {
+    font-size: 34px;
+  }
+
+  .home-hero {
+    padding: 24px;
+  }
+
+  .home-section-head {
+    align-items: flex-start;
   }
 }

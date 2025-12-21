@@ -43,7 +43,7 @@ export async function generateMetadata({
   if (!sura) return buildMetadata(params.id, params.slug, params.mode, 'Sura not found');
 
   const title = `${sura.id}. ${sura.nameBn} | ${
-    mode === 'arabic' ? 'শুধু আরবি' : 'শুধু বাংলা'
+    mode === 'arabic' ? 'আরবি' : 'বাংলা'
   }`;
   return buildMetadata(params.id, params.slug, mode, title);
 }
