@@ -50,32 +50,47 @@ export default function HomeSearch({ suras }: Props) {
       <div className="sura-grid home-grid">
         {filtered.map((sura) => (
           <div className="card home-sura-card" key={sura.id}>
-            <h3>
-              {toBnDigits(sura.id)}. {sura.nameBn}
-            </h3>
-            <div className="meta">
-              {sura.nameAr ? `${sura.nameAr} · ` : ''}
-              {sura.revelationPlace
-                ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
-                : ''}
-              {toBnDigits(sura.ayahCount)} আয়াত
+            <div className="sura-card-top">
+              <div className="sura-caligraphy">
+                <div className="sura-icon sura-icon-base">{`surah-icon`}</div>
+                <div className="sura-icon sura-icon-number">
+                  {`surah${String(sura.id).padStart(3, '0')}`}
+                </div>
+              </div>
+              <div className='sura-info'>
+                <h3 className="sura-name">
+                  {toBnDigits(sura.id)}. {sura.nameBn}
+                </h3>
+                <div className="sura-meta">
+                  {sura.nameAr ? `${sura.nameAr} · ` : ''}
+                  {sura.revelationPlace
+                    ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
+                    : ''}
+                  {toBnDigits(sura.ayahCount)} আয়াত
+                </div>
+              </div>
             </div>
-            <div className="mode-links">
-              <a className="mode-link" href={`/sura/${sura.id}/${sura.slug}`}>
-                আরবি + বাংলা
-              </a>
-              <a
-                className="mode-link"
-                href={`/sura/${sura.id}/${sura.slug}/arabic`}
-              >
-                আরবি
-              </a>
-              <a
-                className="mode-link"
-                href={`/sura/${sura.id}/${sura.slug}/bangla`}
-              >
-                বাংলা
-              </a>
+            <div className="sura-actions">
+              <div className="sura-modes">
+                <a
+                  className="sura-mode-chip"
+                  href={`/sura/${sura.id}/${sura.slug}`}
+                >
+                  আরবি + বাংলা
+                </a>
+                <a
+                  className="sura-mode-chip"
+                  href={`/sura/${sura.id}/${sura.slug}/arabic`}
+                >
+                  আরবি
+                </a>
+                <a
+                  className="sura-mode-chip"
+                  href={`/sura/${sura.id}/${sura.slug}/bangla`}
+                >
+                  বাংলা
+                </a>
+              </div>
             </div>
           </div>
         ))}

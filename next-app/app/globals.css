@@ -33,6 +33,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "surah-name-v4-icon";
+  src: url("/font/surah-name-v4.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --bg: #f7f2e8;
@@ -574,6 +582,102 @@ button {
 .home-sura-card {
   background: linear-gradient(160deg, var(--home-surface-strong), var(--card));
   border: 1px solid var(--home-hero-border);
+}
+
+.sura-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.sura-caligraphy {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  border-radius: 26px;
+  border: 1px solid var(--home-border);
+  background: radial-gradient(
+      circle at top left,
+      rgba(197, 155, 59, 0.2),
+      transparent 55%
+    ),
+    var(--home-surface-soft);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.sura-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: "surah-name-v4-icon", "Siyam Rupali", sans-serif;
+  line-height: 1;
+}
+
+.sura-icon-base {
+  font-size: 72px;
+  color: var(--gold);
+  opacity: 0.25;
+}
+
+.sura-icon-number {
+  font-size: 40px;
+  color: var(--accent-strong);
+}
+
+.sura-info {
+  text-align: center;
+}
+
+.sura-name {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+}
+
+.sura-meta {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sura-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.sura-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  color: #0b1b18;
+}
+
+.sura-modes {
+  display: inline-flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sura-mode-chip {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
 }
 
 @media (max-width: 900px) {

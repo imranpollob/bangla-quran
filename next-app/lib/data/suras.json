@@ -3,6 +3,7 @@
     "id": 1,
     "slug": "al-fatihah",
     "nameBn": "আল ফাতিহা",
+    "revelationPlace": "makki",
     "nameAr": "",
     "ayahCount": 7,
     "keywords": [
@@ -18,7 +19,8 @@
     "keywords": [
       "bakara",
       "baqara"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
     "ayahCount": 200,
     "keywords": [
       "imran"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 4,
@@ -38,7 +41,8 @@
     "ayahCount": 176,
     "keywords": [
       "nisa"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 5,
@@ -49,7 +53,8 @@
     "keywords": [
       "mayedah",
       "maidah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 6,
@@ -60,7 +65,8 @@
     "keywords": [
       "anam",
       "anaam"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 7,
@@ -71,7 +77,8 @@
     "keywords": [
       "araf",
       "araaf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 8,
@@ -81,7 +88,8 @@
     "ayahCount": 75,
     "keywords": [
       "anfal"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 9,
@@ -93,7 +101,8 @@
       "taoba",
       "taubah",
       "tawbah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 10,
@@ -104,7 +113,8 @@
     "keywords": [
       "yunus",
       "unus"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 11,
@@ -115,7 +125,8 @@
     "keywords": [
       "hud",
       "hod"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 12,
@@ -125,7 +136,8 @@
     "ayahCount": 111,
     "keywords": [
       "yusuf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 13,
@@ -136,7 +148,8 @@
     "keywords": [
       "rad",
       "raad"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 14,
@@ -146,7 +159,8 @@
     "ayahCount": 52,
     "keywords": [
       "ibrahim"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 15,
@@ -157,7 +171,8 @@
     "keywords": [
       "hijor",
       "hijr"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 16,
@@ -168,7 +183,8 @@
     "keywords": [
       "nahol",
       "nahl"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 17,
@@ -180,7 +196,8 @@
       "bani",
       "israel",
       "bani israel"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 18,
@@ -191,7 +208,8 @@
     "keywords": [
       "kahaf",
       "kahf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 19,
@@ -205,7 +223,8 @@
       "mariyom",
       "mariyam",
       "maryam"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
       "taha",
       "towaha",
       "toyaha"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "keywords": [
       "ambia",
       "ambiya"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 22,
@@ -238,7 +259,8 @@
     "ayahCount": 78,
     "keywords": [
       "hajj"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 23,
@@ -251,7 +273,8 @@
       "muminon",
       "mominon",
       "mominun"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 24,
@@ -263,7 +286,8 @@
       "nor",
       "noor",
       "nur"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 25,
@@ -275,7 +299,8 @@
       "furkan",
       "forkan",
       "furqan"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 26,
@@ -289,7 +314,8 @@
       "soara",
       "shuara",
       "shoara"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 27,
@@ -300,7 +326,8 @@
     "keywords": [
       "namol",
       "naml"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 28,
@@ -311,7 +338,8 @@
     "keywords": [
       "kasas",
       "qasas"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 29,
@@ -322,7 +350,8 @@
     "keywords": [
       "ankabot",
       "ankabut"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 30,
@@ -334,7 +363,8 @@
       "rum",
       "rom",
       "room"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 31,
@@ -345,7 +375,8 @@
     "keywords": [
       "lukman",
       "lokman"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 32,
@@ -358,7 +389,8 @@
       "shazda",
       "sajda",
       "sazda"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 33,
@@ -369,7 +401,8 @@
     "keywords": [
       "ajhab",
       "azhab"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 34,
@@ -380,7 +413,8 @@
     "keywords": [
       "saba",
       "saaba"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 35,
@@ -391,7 +425,8 @@
     "keywords": [
       "fatir",
       "fater"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 36,
@@ -403,7 +438,8 @@
       "yasin",
       "yaasin",
       "yasen"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 37,
@@ -413,7 +449,8 @@
     "ayahCount": 182,
     "keywords": [
       "saffat"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 38,
@@ -425,7 +462,8 @@
       "soad",
       "saad",
       "sad"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 39,
@@ -438,7 +476,8 @@
       "zumar",
       "jomar",
       "zomar"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 40,
@@ -450,7 +489,8 @@
       "momin",
       "mumin",
       "muminoon"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 41,
@@ -461,7 +501,8 @@
     "keywords": [
       "sajdah",
       "sazdah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 42,
@@ -474,7 +515,8 @@
       "shura",
       "sora",
       "shora"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 43,
@@ -488,7 +530,8 @@
       "jukhrof",
       "jokhrof",
       "zukhruf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 44,
@@ -499,7 +542,8 @@
     "keywords": [
       "dukhan",
       "dokhan"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 45,
@@ -511,7 +555,8 @@
       "jasiya",
       "zasiya",
       "jasia"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 46,
@@ -522,7 +567,8 @@
     "keywords": [
       "ahkaf",
       "ahqaf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 47,
@@ -533,7 +579,8 @@
     "keywords": [
       "muhammad",
       "mohammad"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 48,
@@ -544,7 +591,8 @@
     "keywords": [
       "fatoh",
       "fatah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 49,
@@ -557,7 +605,8 @@
       "hujorat",
       "hojorat",
       "hojurat"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 50,
@@ -569,7 +618,8 @@
       "kaf",
       "kaaf",
       "kahf"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 51,
@@ -580,7 +630,8 @@
     "keywords": [
       "jariyat",
       "zariyat"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 52,
@@ -591,7 +642,8 @@
     "keywords": [
       "tor",
       "tur"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 53,
@@ -605,7 +657,8 @@
       "najam",
       "nazam",
       "najm"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 54,
@@ -616,7 +669,8 @@
     "keywords": [
       "kamar",
       "qamar"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 55,
@@ -626,7 +680,8 @@
     "ayahCount": 78,
     "keywords": [
       "rahman"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 56,
@@ -638,7 +693,8 @@
       "wakia",
       "waqia",
       "waqiah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 57,
@@ -648,7 +704,8 @@
     "ayahCount": 29,
     "keywords": [
       "hadid"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 58,
@@ -662,7 +719,8 @@
       "muzadala",
       "mozadala",
       "mujadilah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 59,
@@ -673,7 +731,8 @@
     "keywords": [
       "hasor",
       "hashr"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 60,
@@ -685,7 +744,8 @@
       "mumtahana",
       "momtahana",
       "mumtahina"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 61,
@@ -696,7 +756,8 @@
     "keywords": [
       "sof",
       "saff"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 62,
@@ -711,7 +772,8 @@
       "jomuya",
       "jumuwa",
       "jumuah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 63,
@@ -722,7 +784,8 @@
     "keywords": [
       "munafiqun",
       "monafiqon"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 64,
@@ -734,7 +797,8 @@
       "tagabun",
       "tagabon",
       "taghabun"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 65,
@@ -745,7 +809,8 @@
     "keywords": [
       "talak",
       "talaq"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 66,
@@ -756,7 +821,8 @@
     "keywords": [
       "tahrim",
       "tahrem"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 67,
@@ -767,7 +833,8 @@
     "keywords": [
       "mulk",
       "molk"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 68,
@@ -779,7 +846,8 @@
       "kolom",
       "kalam",
       "qalam"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 69,
@@ -791,7 +859,8 @@
       "hakkah",
       "hokkah",
       "haqqah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 70,
@@ -803,7 +872,8 @@
       "mayarij",
       "marij",
       "maarij"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 71,
@@ -814,7 +884,8 @@
     "keywords": [
       "nuh",
       "noh"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 72,
@@ -826,7 +897,8 @@
       "jin",
       "jen",
       "gin"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 73,
@@ -841,7 +913,8 @@
       "mozammil",
       "muzzammil",
       "mozzammil"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 74,
@@ -853,7 +926,8 @@
       "mudassir",
       "muddassir",
       "moddassir"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 75,
@@ -865,7 +939,8 @@
       "kiyama",
       "qiwama",
       "qiyamah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 76,
@@ -876,7 +951,8 @@
     "keywords": [
       "insan",
       "ensan"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 77,
@@ -887,7 +963,8 @@
     "keywords": [
       "mursalat",
       "morsalat"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 78,
@@ -897,7 +974,8 @@
     "ayahCount": 40,
     "keywords": [
       "naba"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 79,
@@ -910,7 +988,8 @@
       "naziyat",
       "naziat",
       "najiat"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 80,
@@ -920,7 +999,8 @@
     "ayahCount": 42,
     "keywords": [
       "abasa"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 81,
@@ -932,7 +1012,8 @@
       "takvir",
       "taqvir",
       "takwir"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 82,
@@ -943,7 +1024,8 @@
     "keywords": [
       "infitar",
       "enfitar"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 83,
@@ -954,7 +1036,8 @@
     "keywords": [
       "mutaffifin",
       "motaffifin"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 84,
@@ -967,7 +1050,8 @@
       "insikak",
       "insiqak",
       "inshiqak"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 85,
@@ -980,7 +1064,8 @@
       "buruj",
       "buruz",
       "boroz"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 86,
@@ -991,7 +1076,8 @@
     "keywords": [
       "tarik",
       "tariq"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 87,
@@ -1002,7 +1088,8 @@
     "keywords": [
       "ala",
       "aala"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 88,
@@ -1014,7 +1101,8 @@
       "gashiya",
       "goshiya",
       "ghashiyah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 89,
@@ -1028,7 +1116,8 @@
       "fozor",
       "fajor",
       "fojor"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 90,
@@ -1038,7 +1127,8 @@
     "ayahCount": 20,
     "keywords": [
       "balad"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 91,
@@ -1049,7 +1139,8 @@
     "keywords": [
       "shams",
       "sams"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 92,
@@ -1060,7 +1151,8 @@
     "keywords": [
       "lail",
       "lael"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 93,
@@ -1070,7 +1162,8 @@
     "ayahCount": 11,
     "keywords": [
       "doha"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 94,
@@ -1080,7 +1173,8 @@
     "ayahCount": 8,
     "keywords": [
       "inshirah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 95,
@@ -1092,7 +1186,8 @@
       "ten",
       "tin",
       "teen"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 96,
@@ -1103,7 +1198,8 @@
     "keywords": [
       "alak",
       "alaq"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 97,
@@ -1114,7 +1210,8 @@
     "keywords": [
       "kadar",
       "kador"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 98,
@@ -1125,7 +1222,8 @@
     "keywords": [
       "baiyenah",
       "baienah"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 99,
@@ -1136,7 +1234,8 @@
     "keywords": [
       "zilzal",
       "jiljal"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 100,
@@ -1146,7 +1245,8 @@
     "ayahCount": 11,
     "keywords": [
       "adiyat"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 101,
@@ -1158,7 +1258,8 @@
       "qariah",
       "kariyah",
       "qariyah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 102,
@@ -1168,7 +1269,8 @@
     "ayahCount": 8,
     "keywords": [
       "takasur"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 103,
@@ -1178,7 +1280,8 @@
     "ayahCount": 3,
     "keywords": [
       "asor"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 104,
@@ -1189,7 +1292,8 @@
     "keywords": [
       "humazah",
       "humajah"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 105,
@@ -1199,7 +1303,8 @@
     "ayahCount": 5,
     "keywords": [
       "fil"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 106,
@@ -1209,7 +1314,8 @@
     "ayahCount": 4,
     "keywords": [
       "quraish"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 107,
@@ -1219,7 +1325,8 @@
     "ayahCount": 7,
     "keywords": [
       "maun"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 108,
@@ -1230,7 +1337,8 @@
     "keywords": [
       "kausar",
       "kaosar"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 109,
@@ -1240,7 +1348,8 @@
     "ayahCount": 6,
     "keywords": [
       "kafirun"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 110,
@@ -1251,7 +1360,8 @@
     "keywords": [
       "nasor",
       "nasr"
-    ]
+    ],
+    "revelationPlace": "madani"
   },
   {
     "id": 111,
@@ -1261,7 +1371,8 @@
     "ayahCount": 5,
     "keywords": [
       "lahab"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 112,
@@ -1271,7 +1382,8 @@
     "ayahCount": 4,
     "keywords": [
       "ikhlas"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 113,
@@ -1282,7 +1394,8 @@
     "keywords": [
       "falak",
       "falaq"
-    ]
+    ],
+    "revelationPlace": "makki"
   },
   {
     "id": 114,
@@ -1292,6 +1405,7 @@
     "ayahCount": 6,
     "keywords": [
       "nas"
-    ]
+    ],
+    "revelationPlace": "makki"
   }
 ]
