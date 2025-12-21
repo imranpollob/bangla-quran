@@ -1,0 +1,289 @@
+@font-face {
+  font-family: "LiAdorNoirrit";
+  src: url("/font/LiAdorNoirrit/LiAdorNoirrit.woff2") format("woff2"),
+    url("/font/LiAdorNoirrit/LiAdorNoirrit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noorehuda";
+  src: url("/font/noorehuda.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --accent: #0ea5e9;
+  --accent-strong: #0284c7;
+  --shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b1220;
+  --card: #0f172a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #1e293b;
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "LiAdorNoirrit", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 16px;
+}
+
+.sura-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card .meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.mode-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mode-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.mode-link:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.sura-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.sura-title {
+  margin: 0;
+}
+
+.sura-meta {
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+
+.sura-toolbar {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.toggle.active {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.ayah-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ayah-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+
+.ayah-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.ayah-number {
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.ayah-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.bookmark-button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.bookmark-button.active {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.audio-block {
+  margin-top: 10px;
+}
+
+.arabic-text {
+  direction: rtl;
+  font-size: 28px;
+  line-height: 1.8;
+  margin: 8px 0;
+  font-family: "noorehuda", sans-serif;
+}
+
+.bangla-text {
+  font-size: 18px;
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.info-banner {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+  background: var(--bg);
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.grid-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sura-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sura-toolbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
