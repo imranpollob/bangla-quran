@@ -1,0 +1,1297 @@
+[
+  {
+    "id": 1,
+    "slug": "al-fatihah",
+    "nameBn": "আল ফাতিহা",
+    "nameAr": "",
+    "ayahCount": 7,
+    "keywords": [
+      "fatiha"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "al-baqarah",
+    "nameBn": "আল বাকারা",
+    "nameAr": "",
+    "ayahCount": 286,
+    "keywords": [
+      "bakara",
+      "baqara"
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "ali-imran",
+    "nameBn": "আলে ইমরান",
+    "nameAr": "",
+    "ayahCount": 200,
+    "keywords": [
+      "imran"
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "an-nisa",
+    "nameBn": "আন নিসা",
+    "nameAr": "",
+    "ayahCount": 176,
+    "keywords": [
+      "nisa"
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "al-maidah",
+    "nameBn": "আল মায়েদা",
+    "nameAr": "",
+    "ayahCount": 120,
+    "keywords": [
+      "mayedah",
+      "maidah"
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "al-anam",
+    "nameBn": "আল আনআম",
+    "nameAr": "",
+    "ayahCount": 165,
+    "keywords": [
+      "anam",
+      "anaam"
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "al-araf",
+    "nameBn": "আল আরাফ",
+    "nameAr": "",
+    "ayahCount": 206,
+    "keywords": [
+      "araf",
+      "araaf"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "al-anfal",
+    "nameBn": "আল আনফাল",
+    "nameAr": "",
+    "ayahCount": 75,
+    "keywords": [
+      "anfal"
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "at-tawbah",
+    "nameBn": "আত তাওবা",
+    "nameAr": "",
+    "ayahCount": 129,
+    "keywords": [
+      "taoba",
+      "taubah",
+      "tawbah"
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "yunus",
+    "nameBn": "ইউনুস",
+    "nameAr": "",
+    "ayahCount": 109,
+    "keywords": [
+      "yunus",
+      "unus"
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "hud",
+    "nameBn": "হূদ",
+    "nameAr": "",
+    "ayahCount": 123,
+    "keywords": [
+      "hud",
+      "hod"
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "yusuf",
+    "nameBn": "ইউসুফ",
+    "nameAr": "",
+    "ayahCount": 111,
+    "keywords": [
+      "yusuf"
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "ar-rad",
+    "nameBn": "আর্ রাদ",
+    "nameAr": "",
+    "ayahCount": 43,
+    "keywords": [
+      "rad",
+      "raad"
+    ]
+  },
+  {
+    "id": 14,
+    "slug": "ibrahim",
+    "nameBn": "ইবরাহিম",
+    "nameAr": "",
+    "ayahCount": 52,
+    "keywords": [
+      "ibrahim"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "al-hijr",
+    "nameBn": "আল হিজর",
+    "nameAr": "",
+    "ayahCount": 99,
+    "keywords": [
+      "hijor",
+      "hijr"
+    ]
+  },
+  {
+    "id": 16,
+    "slug": "an-nahl",
+    "nameBn": "আন্ নাহল",
+    "nameAr": "",
+    "ayahCount": 128,
+    "keywords": [
+      "nahol",
+      "nahl"
+    ]
+  },
+  {
+    "id": 17,
+    "slug": "al-isra",
+    "nameBn": "বনি ইসরাঈল",
+    "nameAr": "",
+    "ayahCount": 111,
+    "keywords": [
+      "bani",
+      "israel",
+      "bani israel"
+    ]
+  },
+  {
+    "id": 18,
+    "slug": "al-kahf",
+    "nameBn": "আল কাহফ",
+    "nameAr": "",
+    "ayahCount": 110,
+    "keywords": [
+      "kahaf",
+      "kahf"
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "maryam",
+    "nameBn": "মরিয়ম",
+    "nameAr": "",
+    "ayahCount": 98,
+    "keywords": [
+      "moriyom",
+      "moriyam",
+      "mariyom",
+      "mariyam",
+      "maryam"
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "taha",
+    "nameBn": "তোয়াহা",
+    "nameAr": "",
+    "ayahCount": 135,
+    "keywords": [
+      "taha",
+      "towaha",
+      "toyaha"
+    ]
+  },
+  {
+    "id": 21,
+    "slug": "al-anbya",
+    "nameBn": "আল আম্বিয়া",
+    "nameAr": "",
+    "ayahCount": 112,
+    "keywords": [
+      "ambia",
+      "ambiya"
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "al-haj",
+    "nameBn": "আল হজ্জ",
+    "nameAr": "",
+    "ayahCount": 78,
+    "keywords": [
+      "hajj"
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "al-muminun",
+    "nameBn": "আল মুমিনুন",
+    "nameAr": "",
+    "ayahCount": 118,
+    "keywords": [
+      "muminun",
+      "muminon",
+      "mominon",
+      "mominun"
+    ]
+  },
+  {
+    "id": 24,
+    "slug": "an-nur",
+    "nameBn": "আন্ নূর",
+    "nameAr": "",
+    "ayahCount": 64,
+    "keywords": [
+      "nor",
+      "noor",
+      "nur"
+    ]
+  },
+  {
+    "id": 25,
+    "slug": "al-furqan",
+    "nameBn": "আল ফুরকান",
+    "nameAr": "",
+    "ayahCount": 77,
+    "keywords": [
+      "furkan",
+      "forkan",
+      "furqan"
+    ]
+  },
+  {
+    "id": 26,
+    "slug": "ash-shuara",
+    "nameBn": "আশ্ শোয়ারা",
+    "nameAr": "",
+    "ayahCount": 227,
+    "keywords": [
+      "shura",
+      "suara",
+      "soara",
+      "shuara",
+      "shoara"
+    ]
+  },
+  {
+    "id": 27,
+    "slug": "an-naml",
+    "nameBn": "আন্ নামল",
+    "nameAr": "",
+    "ayahCount": 93,
+    "keywords": [
+      "namol",
+      "naml"
+    ]
+  },
+  {
+    "id": 28,
+    "slug": "al-qasas",
+    "nameBn": "আল কাসাস",
+    "nameAr": "",
+    "ayahCount": 88,
+    "keywords": [
+      "kasas",
+      "qasas"
+    ]
+  },
+  {
+    "id": 29,
+    "slug": "al-ankabut",
+    "nameBn": "আল আনকাবুত",
+    "nameAr": "",
+    "ayahCount": 69,
+    "keywords": [
+      "ankabot",
+      "ankabut"
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "ar-rum",
+    "nameBn": "আর্ রূম",
+    "nameAr": "",
+    "ayahCount": 60,
+    "keywords": [
+      "rum",
+      "rom",
+      "room"
+    ]
+  },
+  {
+    "id": 31,
+    "slug": "luqman",
+    "nameBn": "লুকমান",
+    "nameAr": "",
+    "ayahCount": 34,
+    "keywords": [
+      "lukman",
+      "lokman"
+    ]
+  },
+  {
+    "id": 32,
+    "slug": "as-sajdah",
+    "nameBn": "আস্ সাজদা",
+    "nameAr": "",
+    "ayahCount": 30,
+    "keywords": [
+      "shajda",
+      "shazda",
+      "sajda",
+      "sazda"
+    ]
+  },
+  {
+    "id": 33,
+    "slug": "al-ahzab",
+    "nameBn": "আল আহযাব",
+    "nameAr": "",
+    "ayahCount": 73,
+    "keywords": [
+      "ajhab",
+      "azhab"
+    ]
+  },
+  {
+    "id": 34,
+    "slug": "saba",
+    "nameBn": "আস্ সাবা",
+    "nameAr": "",
+    "ayahCount": 54,
+    "keywords": [
+      "saba",
+      "saaba"
+    ]
+  },
+  {
+    "id": 35,
+    "slug": "fatir",
+    "nameBn": "আল ফাতির",
+    "nameAr": "",
+    "ayahCount": 45,
+    "keywords": [
+      "fatir",
+      "fater"
+    ]
+  },
+  {
+    "id": 36,
+    "slug": "ya-sin",
+    "nameBn": "ইয়াসিন",
+    "nameAr": "",
+    "ayahCount": 83,
+    "keywords": [
+      "yasin",
+      "yaasin",
+      "yasen"
+    ]
+  },
+  {
+    "id": 37,
+    "slug": "as-saffat",
+    "nameBn": "আস্ সফফাত",
+    "nameAr": "",
+    "ayahCount": 182,
+    "keywords": [
+      "saffat"
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "sad",
+    "nameBn": "সোয়াদ",
+    "nameAr": "",
+    "ayahCount": 88,
+    "keywords": [
+      "soad",
+      "saad",
+      "sad"
+    ]
+  },
+  {
+    "id": 39,
+    "slug": "az-zumar",
+    "nameBn": "আয্ যুমার",
+    "nameAr": "",
+    "ayahCount": 75,
+    "keywords": [
+      "jumar",
+      "zumar",
+      "jomar",
+      "zomar"
+    ]
+  },
+  {
+    "id": 40,
+    "slug": "ghafir",
+    "nameBn": "আল মুমিন",
+    "nameAr": "",
+    "ayahCount": 85,
+    "keywords": [
+      "momin",
+      "mumin",
+      "muminoon"
+    ]
+  },
+  {
+    "id": 41,
+    "slug": "fussilat",
+    "nameBn": "হামিম আস সাজদা",
+    "nameAr": "",
+    "ayahCount": 54,
+    "keywords": [
+      "sajdah",
+      "sazdah"
+    ]
+  },
+  {
+    "id": 42,
+    "slug": "ash-shuraa",
+    "nameBn": "আশ্ শূরা",
+    "nameAr": "",
+    "ayahCount": 53,
+    "keywords": [
+      "sura",
+      "shura",
+      "sora",
+      "shora"
+    ]
+  },
+  {
+    "id": 43,
+    "slug": "az-zukhruf",
+    "nameBn": "আয্ যুখরুফ",
+    "nameAr": "",
+    "ayahCount": 89,
+    "keywords": [
+      "jukhruf",
+      "jokhruf",
+      "jukhrof",
+      "jokhrof",
+      "zukhruf"
+    ]
+  },
+  {
+    "id": 44,
+    "slug": "ad-dukhan",
+    "nameBn": "আদ্ দুখান",
+    "nameAr": "",
+    "ayahCount": 59,
+    "keywords": [
+      "dukhan",
+      "dokhan"
+    ]
+  },
+  {
+    "id": 45,
+    "slug": "al-jathiyah",
+    "nameBn": "আল জাসিয়া",
+    "nameAr": "",
+    "ayahCount": 37,
+    "keywords": [
+      "jasiya",
+      "zasiya",
+      "jasia"
+    ]
+  },
+  {
+    "id": 46,
+    "slug": "al-ahqaf",
+    "nameBn": "আল আহকাফ",
+    "nameAr": "",
+    "ayahCount": 35,
+    "keywords": [
+      "ahkaf",
+      "ahqaf"
+    ]
+  },
+  {
+    "id": 47,
+    "slug": "muhammad",
+    "nameBn": "মুহাম্মদ",
+    "nameAr": "",
+    "ayahCount": 38,
+    "keywords": [
+      "muhammad",
+      "mohammad"
+    ]
+  },
+  {
+    "id": 48,
+    "slug": "al-fath",
+    "nameBn": "আল ফাত্হ",
+    "nameAr": "",
+    "ayahCount": 29,
+    "keywords": [
+      "fatoh",
+      "fatah"
+    ]
+  },
+  {
+    "id": 49,
+    "slug": "al-hujurat",
+    "nameBn": "আল হুজুরাত",
+    "nameAr": "",
+    "ayahCount": 18,
+    "keywords": [
+      "hujurat",
+      "hujorat",
+      "hojorat",
+      "hojurat"
+    ]
+  },
+  {
+    "id": 50,
+    "slug": "qaf",
+    "nameBn": "কাফ",
+    "nameAr": "",
+    "ayahCount": 45,
+    "keywords": [
+      "kaf",
+      "kaaf",
+      "kahf"
+    ]
+  },
+  {
+    "id": 51,
+    "slug": "adh-dhariyat",
+    "nameBn": "আয্ যারিয়াত",
+    "nameAr": "",
+    "ayahCount": 60,
+    "keywords": [
+      "jariyat",
+      "zariyat"
+    ]
+  },
+  {
+    "id": 52,
+    "slug": "at-tur",
+    "nameBn": "আত্ তূর",
+    "nameAr": "",
+    "ayahCount": 49,
+    "keywords": [
+      "tor",
+      "tur"
+    ]
+  },
+  {
+    "id": 53,
+    "slug": "an-najm",
+    "nameBn": "আন্ নাজম",
+    "nameAr": "",
+    "ayahCount": 62,
+    "keywords": [
+      "najom",
+      "nazom",
+      "najam",
+      "nazam",
+      "najm"
+    ]
+  },
+  {
+    "id": 54,
+    "slug": "al-qamar",
+    "nameBn": "আল কামার",
+    "nameAr": "",
+    "ayahCount": 55,
+    "keywords": [
+      "kamar",
+      "qamar"
+    ]
+  },
+  {
+    "id": 55,
+    "slug": "ar-rahman",
+    "nameBn": "আর রহমান",
+    "nameAr": "",
+    "ayahCount": 78,
+    "keywords": [
+      "rahman"
+    ]
+  },
+  {
+    "id": 56,
+    "slug": "al-waqiah",
+    "nameBn": "আল ওয়াকিয়া",
+    "nameAr": "",
+    "ayahCount": 96,
+    "keywords": [
+      "wakia",
+      "waqia",
+      "waqiah"
+    ]
+  },
+  {
+    "id": 57,
+    "slug": "al-hadid",
+    "nameBn": "আল হাদিদ",
+    "nameAr": "",
+    "ayahCount": 29,
+    "keywords": [
+      "hadid"
+    ]
+  },
+  {
+    "id": 58,
+    "slug": "al-mujadila",
+    "nameBn": "আল মুজাদালা",
+    "nameAr": "",
+    "ayahCount": 22,
+    "keywords": [
+      "mujadala",
+      "mojadala",
+      "muzadala",
+      "mozadala",
+      "mujadilah"
+    ]
+  },
+  {
+    "id": 59,
+    "slug": "al-hashr",
+    "nameBn": "আল হাশর",
+    "nameAr": "",
+    "ayahCount": 24,
+    "keywords": [
+      "hasor",
+      "hashr"
+    ]
+  },
+  {
+    "id": 60,
+    "slug": "al-mumtahanah",
+    "nameBn": "আল মুমতাহানা",
+    "nameAr": "",
+    "ayahCount": 13,
+    "keywords": [
+      "mumtahana",
+      "momtahana",
+      "mumtahina"
+    ]
+  },
+  {
+    "id": 61,
+    "slug": "as-saf",
+    "nameBn": "আস্ সফ",
+    "nameAr": "",
+    "ayahCount": 14,
+    "keywords": [
+      "sof",
+      "saff"
+    ]
+  },
+  {
+    "id": 62,
+    "slug": "al-jumuah",
+    "nameBn": "আল জুমুয়া",
+    "nameAr": "",
+    "ayahCount": 11,
+    "keywords": [
+      "jumuya",
+      "jomoya",
+      "jumoya",
+      "jomuya",
+      "jumuwa",
+      "jumuah"
+    ]
+  },
+  {
+    "id": 63,
+    "slug": "al-munafiqun",
+    "nameBn": "আল মুনাফিকুন",
+    "nameAr": "",
+    "ayahCount": 11,
+    "keywords": [
+      "munafiqun",
+      "monafiqon"
+    ]
+  },
+  {
+    "id": 64,
+    "slug": "at-taghabun",
+    "nameBn": "আত্ তাগাবুন",
+    "nameAr": "",
+    "ayahCount": 18,
+    "keywords": [
+      "tagabun",
+      "tagabon",
+      "taghabun"
+    ]
+  },
+  {
+    "id": 65,
+    "slug": "at-talaq",
+    "nameBn": "আত্ তালাক",
+    "nameAr": "",
+    "ayahCount": 12,
+    "keywords": [
+      "talak",
+      "talaq"
+    ]
+  },
+  {
+    "id": 66,
+    "slug": "at-tahrim",
+    "nameBn": "আত্ তাহরিম",
+    "nameAr": "",
+    "ayahCount": 12,
+    "keywords": [
+      "tahrim",
+      "tahrem"
+    ]
+  },
+  {
+    "id": 67,
+    "slug": "al-mulk",
+    "nameBn": "আল মুলক",
+    "nameAr": "",
+    "ayahCount": 30,
+    "keywords": [
+      "mulk",
+      "molk"
+    ]
+  },
+  {
+    "id": 68,
+    "slug": "al-qalam",
+    "nameBn": "আল কলম",
+    "nameAr": "",
+    "ayahCount": 52,
+    "keywords": [
+      "kolom",
+      "kalam",
+      "qalam"
+    ]
+  },
+  {
+    "id": 69,
+    "slug": "al-haqqah",
+    "nameBn": "আল হাককাহ",
+    "nameAr": "",
+    "ayahCount": 52,
+    "keywords": [
+      "hakkah",
+      "hokkah",
+      "haqqah"
+    ]
+  },
+  {
+    "id": 70,
+    "slug": "al-maarij",
+    "nameBn": "আল মাআরিজ",
+    "nameAr": "",
+    "ayahCount": 44,
+    "keywords": [
+      "mayarij",
+      "marij",
+      "maarij"
+    ]
+  },
+  {
+    "id": 71,
+    "slug": "nuh",
+    "nameBn": "নূহ",
+    "nameAr": "",
+    "ayahCount": 28,
+    "keywords": [
+      "nuh",
+      "noh"
+    ]
+  },
+  {
+    "id": 72,
+    "slug": "al-jinn",
+    "nameBn": "আল জিন",
+    "nameAr": "",
+    "ayahCount": 28,
+    "keywords": [
+      "jin",
+      "jen",
+      "gin"
+    ]
+  },
+  {
+    "id": 73,
+    "slug": "al-muzzammil",
+    "nameBn": "আল মুযযাম্মিল",
+    "nameAr": "",
+    "ayahCount": 20,
+    "keywords": [
+      "mujammil",
+      "mojammil",
+      "muzammil",
+      "mozammil",
+      "muzzammil",
+      "mozzammil"
+    ]
+  },
+  {
+    "id": 74,
+    "slug": "al-muddaththir",
+    "nameBn": "আল মুদ্দাসসির",
+    "nameAr": "",
+    "ayahCount": 56,
+    "keywords": [
+      "mudassir",
+      "muddassir",
+      "moddassir"
+    ]
+  },
+  {
+    "id": 75,
+    "slug": "al-qiyamah",
+    "nameBn": "আল কিয়ামা",
+    "nameAr": "",
+    "ayahCount": 40,
+    "keywords": [
+      "kiyama",
+      "qiwama",
+      "qiyamah"
+    ]
+  },
+  {
+    "id": 76,
+    "slug": "al-insan",
+    "nameBn": "আল ইনসান",
+    "nameAr": "",
+    "ayahCount": 31,
+    "keywords": [
+      "insan",
+      "ensan"
+    ]
+  },
+  {
+    "id": 77,
+    "slug": "al-mursalat",
+    "nameBn": "আল মুরসালাত",
+    "nameAr": "",
+    "ayahCount": 50,
+    "keywords": [
+      "mursalat",
+      "morsalat"
+    ]
+  },
+  {
+    "id": 78,
+    "slug": "an-naba",
+    "nameBn": "আন্ নাবা",
+    "nameAr": "",
+    "ayahCount": 40,
+    "keywords": [
+      "naba"
+    ]
+  },
+  {
+    "id": 79,
+    "slug": "an-naziat",
+    "nameBn": "আন্ নাযিয়াত",
+    "nameAr": "",
+    "ayahCount": 46,
+    "keywords": [
+      "najiyat",
+      "naziyat",
+      "naziat",
+      "najiat"
+    ]
+  },
+  {
+    "id": 80,
+    "slug": "abasa",
+    "nameBn": "আবাসা",
+    "nameAr": "",
+    "ayahCount": 42,
+    "keywords": [
+      "abasa"
+    ]
+  },
+  {
+    "id": 81,
+    "slug": "at-takwir",
+    "nameBn": "আত্ তাকভীর",
+    "nameAr": "",
+    "ayahCount": 29,
+    "keywords": [
+      "takvir",
+      "taqvir",
+      "takwir"
+    ]
+  },
+  {
+    "id": 82,
+    "slug": "al-infitar",
+    "nameBn": "আল ইনফিতার",
+    "nameAr": "",
+    "ayahCount": 19,
+    "keywords": [
+      "infitar",
+      "enfitar"
+    ]
+  },
+  {
+    "id": 83,
+    "slug": "al-mutaffifin",
+    "nameBn": "আল মুতাফ্ফিফীন",
+    "nameAr": "",
+    "ayahCount": 36,
+    "keywords": [
+      "mutaffifin",
+      "motaffifin"
+    ]
+  },
+  {
+    "id": 84,
+    "slug": "al-inshiqaq",
+    "nameBn": "আল ইনশিকাক",
+    "nameAr": "",
+    "ayahCount": 25,
+    "keywords": [
+      "inshikak",
+      "insikak",
+      "insiqak",
+      "inshiqak"
+    ]
+  },
+  {
+    "id": 85,
+    "slug": "al-buruj",
+    "nameBn": "আল বুরূজ",
+    "nameAr": "",
+    "ayahCount": 22,
+    "keywords": [
+      "boroj",
+      "buruj",
+      "buruz",
+      "boroz"
+    ]
+  },
+  {
+    "id": 86,
+    "slug": "at-tariq",
+    "nameBn": "আত তারিক",
+    "nameAr": "",
+    "ayahCount": 17,
+    "keywords": [
+      "tarik",
+      "tariq"
+    ]
+  },
+  {
+    "id": 87,
+    "slug": "al-ala",
+    "nameBn": "আল আলা",
+    "nameAr": "",
+    "ayahCount": 19,
+    "keywords": [
+      "ala",
+      "aala"
+    ]
+  },
+  {
+    "id": 88,
+    "slug": "al-ghashiyah",
+    "nameBn": "আল গাশিয়া",
+    "nameAr": "",
+    "ayahCount": 26,
+    "keywords": [
+      "gashiya",
+      "goshiya",
+      "ghashiyah"
+    ]
+  },
+  {
+    "id": 89,
+    "slug": "al-fajr",
+    "nameBn": "আল ফাজর",
+    "nameAr": "",
+    "ayahCount": 30,
+    "keywords": [
+      "fajr",
+      "fazor",
+      "fozor",
+      "fajor",
+      "fojor"
+    ]
+  },
+  {
+    "id": 90,
+    "slug": "al-balad",
+    "nameBn": "আল বালাদ",
+    "nameAr": "",
+    "ayahCount": 20,
+    "keywords": [
+      "balad"
+    ]
+  },
+  {
+    "id": 91,
+    "slug": "ash-shams",
+    "nameBn": "আশ্ শামস",
+    "nameAr": "",
+    "ayahCount": 15,
+    "keywords": [
+      "shams",
+      "sams"
+    ]
+  },
+  {
+    "id": 92,
+    "slug": "al-layl",
+    "nameBn": "আল লাইল",
+    "nameAr": "",
+    "ayahCount": 21,
+    "keywords": [
+      "lail",
+      "lael"
+    ]
+  },
+  {
+    "id": 93,
+    "slug": "ad-duhaa",
+    "nameBn": "আদ্ দোহা",
+    "nameAr": "",
+    "ayahCount": 11,
+    "keywords": [
+      "doha"
+    ]
+  },
+  {
+    "id": 94,
+    "slug": "ash-sharh",
+    "nameBn": "আল ইনশিরাহ",
+    "nameAr": "",
+    "ayahCount": 8,
+    "keywords": [
+      "inshirah"
+    ]
+  },
+  {
+    "id": 95,
+    "slug": "at-tin",
+    "nameBn": "আত্ তীন",
+    "nameAr": "",
+    "ayahCount": 8,
+    "keywords": [
+      "ten",
+      "tin",
+      "teen"
+    ]
+  },
+  {
+    "id": 96,
+    "slug": "al-alaq",
+    "nameBn": "আল আলাক",
+    "nameAr": "",
+    "ayahCount": 19,
+    "keywords": [
+      "alak",
+      "alaq"
+    ]
+  },
+  {
+    "id": 97,
+    "slug": "al-qadr",
+    "nameBn": "আল কাদর",
+    "nameAr": "",
+    "ayahCount": 5,
+    "keywords": [
+      "kadar",
+      "kador"
+    ]
+  },
+  {
+    "id": 98,
+    "slug": "al-bayyinah",
+    "nameBn": "আল বাইয়্যেনা",
+    "nameAr": "",
+    "ayahCount": 8,
+    "keywords": [
+      "baiyenah",
+      "baienah"
+    ]
+  },
+  {
+    "id": 99,
+    "slug": "az-zalzalah",
+    "nameBn": "যিলযাল",
+    "nameAr": "",
+    "ayahCount": 8,
+    "keywords": [
+      "zilzal",
+      "jiljal"
+    ]
+  },
+  {
+    "id": 100,
+    "slug": "al-adiyat",
+    "nameBn": "আল আদিয়াত",
+    "nameAr": "",
+    "ayahCount": 11,
+    "keywords": [
+      "adiyat"
+    ]
+  },
+  {
+    "id": 101,
+    "slug": "al-qariah",
+    "nameBn": "আল কারিয়া",
+    "nameAr": "",
+    "ayahCount": 11,
+    "keywords": [
+      "qariah",
+      "kariyah",
+      "qariyah"
+    ]
+  },
+  {
+    "id": 102,
+    "slug": "at-takathur",
+    "nameBn": "আত্ তাকাসুর",
+    "nameAr": "",
+    "ayahCount": 8,
+    "keywords": [
+      "takasur"
+    ]
+  },
+  {
+    "id": 103,
+    "slug": "al-asr",
+    "nameBn": "আল আসর",
+    "nameAr": "",
+    "ayahCount": 3,
+    "keywords": [
+      "asor"
+    ]
+  },
+  {
+    "id": 104,
+    "slug": "al-humazah",
+    "nameBn": "আল হুমাযা",
+    "nameAr": "",
+    "ayahCount": 9,
+    "keywords": [
+      "humazah",
+      "humajah"
+    ]
+  },
+  {
+    "id": 105,
+    "slug": "al-fil",
+    "nameBn": "আল ফীল",
+    "nameAr": "",
+    "ayahCount": 5,
+    "keywords": [
+      "fil"
+    ]
+  },
+  {
+    "id": 106,
+    "slug": "quraysh",
+    "nameBn": "আল কুরাইশ",
+    "nameAr": "",
+    "ayahCount": 4,
+    "keywords": [
+      "quraish"
+    ]
+  },
+  {
+    "id": 107,
+    "slug": "al-maun",
+    "nameBn": "আল মাউন",
+    "nameAr": "",
+    "ayahCount": 7,
+    "keywords": [
+      "maun"
+    ]
+  },
+  {
+    "id": 108,
+    "slug": "al-kawthar",
+    "nameBn": "আল কাওসার",
+    "nameAr": "",
+    "ayahCount": 3,
+    "keywords": [
+      "kausar",
+      "kaosar"
+    ]
+  },
+  {
+    "id": 109,
+    "slug": "al-kafirun",
+    "nameBn": "আল কাফিরূন",
+    "nameAr": "",
+    "ayahCount": 6,
+    "keywords": [
+      "kafirun"
+    ]
+  },
+  {
+    "id": 110,
+    "slug": "an-nasr",
+    "nameBn": "আন্ নসর",
+    "nameAr": "",
+    "ayahCount": 3,
+    "keywords": [
+      "nasor",
+      "nasr"
+    ]
+  },
+  {
+    "id": 111,
+    "slug": "al-masad",
+    "nameBn": "আল লাহাব",
+    "nameAr": "",
+    "ayahCount": 5,
+    "keywords": [
+      "lahab"
+    ]
+  },
+  {
+    "id": 112,
+    "slug": "al-ikhlas",
+    "nameBn": "আল ইখলাস",
+    "nameAr": "",
+    "ayahCount": 4,
+    "keywords": [
+      "ikhlas"
+    ]
+  },
+  {
+    "id": 113,
+    "slug": "al-falaq",
+    "nameBn": "আল ফালাক",
+    "nameAr": "",
+    "ayahCount": 5,
+    "keywords": [
+      "falak",
+      "falaq"
+    ]
+  },
+  {
+    "id": 114,
+    "slug": "an-nas",
+    "nameBn": "আন্ নাস",
+    "nameAr": "",
+    "ayahCount": 6,
+    "keywords": [
+      "nas"
+    ]
+  }
+]

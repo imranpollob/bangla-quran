@@ -1,3 +1,5 @@
+import suraData from './suras.json';
+
 export type Mode = 'both' | 'arabic' | 'bangla';
 
 export interface SuraMeta {
@@ -5,23 +7,12 @@ export interface SuraMeta {
   slug: string;
   nameBn: string;
   nameAr: string;
-  revelationPlace: 'makki' | 'madani';
   ayahCount: number;
   keywords: string[];
+  revelationPlace?: 'makki' | 'madani';
 }
 
-export const suraList: SuraMeta[] = [
-  {
-    id: 1,
-    slug: 'al-fatihah',
-    nameBn: 'সূরা আল ফাতিহা',
-    nameAr: 'سُّوْرَةُ الْفَاتِحَةِ',
-    revelationPlace: 'makki',
-    ayahCount: 7,
-    keywords: ['fatiha', 'fatihah', 'fateha']
-  }
-  // TODO: add remaining suras and sync audio/text metadata
-];
+export const suraList: SuraMeta[] = suraData as SuraMeta[];
 
 export const modes: Mode[] = ['both', 'arabic', 'bangla'];
 

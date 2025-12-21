@@ -1,10 +1,11 @@
 const script = `
 (function() {
   try {
-    const stored = localStorage.getItem('theme');
+    const storedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = stored || (prefersDark ? 'dark' : 'light');
+    const theme = storedTheme || (prefersDark ? 'dark' : 'light');
     document.documentElement.dataset.theme = theme;
+
   } catch (e) {
     document.documentElement.dataset.theme = 'light';
   }

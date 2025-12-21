@@ -1,6 +1,8 @@
 import BookmarkButton from '@/components/bookmark-button';
+import ThemeToggle from '@/components/theme-toggle';
 import type { Mode, SuraMeta } from '@/lib/data/suras';
 import type { Ayah } from '@/lib/data/types';
+import { toBnDigits } from '@/lib/format';
 
 interface Props {
   sura: SuraMeta;
@@ -29,11 +31,14 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             </a>
           </p>
           <h1 className="sura-title" style={{ margin: 0 }}>
-            {sura.id}. {sura.nameBn}
+            {toBnDigits(sura.id)}. {sura.nameBn}
           </h1>
           <p className="sura-meta">
-            {sura.nameAr} · {sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} ·{' '}
-            {sura.ayahCount} আয়াত
+            {sura.nameAr ? `${sura.nameAr} · ` : ''}
+            {sura.revelationPlace
+              ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
+              : ''}
+            {toBnDigits(sura.ayahCount)} আয়াত
           </p>
         </div>
         <div className="sura-toolbar">
@@ -55,6 +60,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
           >
             শুধু বাংলা
           </a>
+          <ThemeToggle />
         </div>
       </div>
 
@@ -73,7 +79,9 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
         {ayahs.map((ayah) => {
           const anchor = `ayah-${ayah.number}`;
           const label =
-            ayah.number === '0' ? 'বিসমিল্লাহ' : `আয়াত ${ayah.number}`;
+            ayah.number === '0'
+              ? 'বিসমিল্লাহ'
+              : `আয়াত ${toBnDigits(ayah.number)}`;
           return (
             <article className="ayah-card" id={anchor} key={anchor}>
               <div className="ayah-top">
@@ -91,10 +99,14 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
               </div>
               {showArabic && <div className="arabic-text">{ayah.arabic}</div>}
               {showBangla && <div className="bangla-text">{ayah.bangla}</div>}
-              <div className="audio-block">
-                <div style={{ fontSize: 14, color: 'var(--muted)' }}>Arabic audio</div>
-                <audio controls preload="none" src={ayah.audio.ar} />
-              </div>
+              {showArabic && (
+                <div className="audio-block">
+                  <div style={{ fontSize: 14, color: 'var(--muted)' }}>
+                    Arabic audio
+                  </div>
+                  <audio controls preload="none" src={ayah.audio.ar} />
+                </div>
+              )}
               {showBangla && ayah.audio.bn ? (
                 <div className="audio-block">
                   <div style={{ fontSize: 14, color: 'var(--muted)' }}>Bangla audio</div>

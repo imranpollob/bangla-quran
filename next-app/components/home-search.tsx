@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
+import { toBnDigits } from '@/lib/format';
 import type { SuraMeta } from '@/lib/data/suras';
 
 interface Props {
@@ -56,11 +57,14 @@ export default function HomeSearch({ suras }: Props) {
         {filtered.map((sura) => (
           <div className="card" key={sura.id}>
             <h3>
-              {sura.id}. {sura.nameBn}
+              {toBnDigits(sura.id)}. {sura.nameBn}
             </h3>
             <div className="meta">
-              {sura.nameAr} · {sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} ·{' '}
-              {sura.ayahCount} আয়াত
+              {sura.nameAr ? `${sura.nameAr} · ` : ''}
+              {sura.revelationPlace
+                ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
+                : ''}
+              {toBnDigits(sura.ayahCount)} আয়াত
             </div>
             <div className="mode-links">
               <a className="mode-link" href={`/sura/${sura.id}/${sura.slug}`}>

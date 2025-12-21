@@ -46,6 +46,7 @@
 body {
   margin: 0;
   font-family: "LiAdorNoirrit", sans-serif;
+  font-size: 20px;
   background: var(--bg);
   color: var(--text);
 }
@@ -232,14 +233,14 @@ button {
 
 .arabic-text {
   direction: rtl;
-  font-size: 28px;
+  font-size: 36px;
   line-height: 1.8;
   margin: 8px 0;
   font-family: "noorehuda", sans-serif;
 }
 
 .bangla-text {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.8;
   margin: 8px 0;
 }
