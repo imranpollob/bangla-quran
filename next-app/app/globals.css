@@ -25,6 +25,9 @@
   --accent: #0ea5e9;
   --accent-strong: #0284c7;
   --shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+  --ayah-scale: 1;
+  --arabic-size: 36px;
+  --bangla-size: 22px;
 }
 
 :root[data-theme='dark'] {
@@ -233,14 +236,14 @@ button {
 
 .arabic-text {
   direction: rtl;
-  font-size: 36px;
+  font-size: calc(var(--arabic-size) * var(--ayah-scale));
   line-height: 1.8;
   margin: 8px 0;
   font-family: "noorehuda", sans-serif;
 }
 
 .bangla-text {
-  font-size: 22px;
+  font-size: calc(var(--bangla-size) * var(--ayah-scale));
   line-height: 1.8;
   margin: 8px 0;
 }

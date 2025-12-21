@@ -6,6 +6,17 @@ const script = `
     const theme = storedTheme || (prefersDark ? 'dark' : 'light');
     document.documentElement.dataset.theme = theme;
 
+    const storedAyahScale = localStorage.getItem('ayahTextScale');
+    if (storedAyahScale) {
+      const value = parseFloat(storedAyahScale);
+      if (!Number.isNaN(value)) {
+        const clamped = Math.min(1.5, Math.max(0.85, value));
+        document.documentElement.style.setProperty(
+          '--ayah-scale',
+          clamped.toFixed(2)
+        );
+      }
+    }
   } catch (e) {
     document.documentElement.dataset.theme = 'light';
   }

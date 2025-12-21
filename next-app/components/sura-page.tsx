@@ -1,3 +1,4 @@
+import AyahTextSizeControls from '@/components/ayah-text-size-controls';
 import BookmarkButton from '@/components/bookmark-button';
 import ThemeToggle from '@/components/theme-toggle';
 import type { Mode, SuraMeta } from '@/lib/data/suras';
@@ -61,19 +62,10 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             শুধু বাংলা
           </a>
           <ThemeToggle />
+          <AyahTextSizeControls />
         </div>
       </div>
 
-      <div className="info-banner">
-        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <span className="badge">SEO + PWA</span>
-          <span>
-            এই পাতা Next.js থেকে সার্ভার-রেন্ডার করা। অডিও ও ডেটা অফলাইনে ক্যাশ করা
-            হবে, আর বুকমার্ক/প্রগ্রেস লোকাল স্টোরেজে রাখা হবে (সাইন-ইন হলে Supabase
-            এ সিঙ্ক হবে)।
-          </span>
-        </div>
-      </div>
 
       <div className="ayah-list" style={{ marginTop: 24 }}>
         {ayahs.map((ayah) => {
