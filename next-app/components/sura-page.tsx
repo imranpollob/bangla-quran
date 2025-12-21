@@ -1,3 +1,4 @@
+import AyahAudioButton from '@/components/ayah-audio-button';
 import AyahTextSizeControls from '@/components/ayah-text-size-controls';
 import BookmarkButton from '@/components/bookmark-button';
 import ThemeToggle from '@/components/theme-toggle';
@@ -89,22 +90,18 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
                   </a>
                 </div>
               </div>
-              {showArabic && <div className="arabic-text">{ayah.arabic}</div>}
-              {showBangla && <div className="bangla-text">{ayah.bangla}</div>}
               {showArabic && (
-                <div className="audio-block">
-                  <div style={{ fontSize: 14, color: 'var(--muted)' }}>
-                    Arabic audio
-                  </div>
-                  <audio controls preload="none" src={ayah.audio.ar} />
+                <div className="ayah-line ayah-line-arabic">
+                  <AyahAudioButton src={ayah.audio.ar} label="Arabic audio" />
+                  <div className="arabic-text">{ayah.arabic}</div>
                 </div>
               )}
-              {showBangla && ayah.audio.bn ? (
-                <div className="audio-block">
-                  <div style={{ fontSize: 14, color: 'var(--muted)' }}>Bangla audio</div>
-                  <audio controls preload="none" src={ayah.audio.bn} />
+              {showBangla && (
+                <div className="ayah-line ayah-line-bangla">
+                  <AyahAudioButton src={ayah.audio.bn} label="Bangla audio" />
+                  <div className="bangla-text">{ayah.bangla}</div>
                 </div>
-              ) : null}
+              )}
             </article>
           );
         })}

@@ -68,6 +68,12 @@
   --home-surface-soft: rgba(255, 255, 255, 0.7);
   --home-border: rgba(15, 122, 92, 0.18);
   --home-ghost-bg: rgba(255, 255, 255, 0.6);
+  --audio-btn-bg: #f0ede4;
+  --audio-btn-border: rgba(15, 122, 92, 0.35);
+  --audio-btn-text: #0b5f49;
+  --audio-btn-play-bg: #0f7a5c;
+  --audio-btn-play-text: #f7f2e8;
+  --audio-btn-ring: rgba(15, 122, 92, 0.22);
 }
 
 :root[data-theme='dark'] {
@@ -94,6 +100,12 @@
   --home-surface-soft: rgba(18, 32, 29, 0.88);
   --home-border: rgba(66, 194, 160, 0.22);
   --home-ghost-bg: rgba(18, 32, 29, 0.7);
+  --audio-btn-bg: #0f1f1c;
+  --audio-btn-border: rgba(66, 194, 160, 0.35);
+  --audio-btn-text: #7fe3c7;
+  --audio-btn-play-bg: #42c2a0;
+  --audio-btn-play-text: #0b1b18;
+  --audio-btn-ring: rgba(66, 194, 160, 0.35);
 }
 
 * {
@@ -270,6 +282,106 @@ button {
   gap: 8px;
 }
 
+.ayah-line {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.ayah-line + .ayah-line {
+  margin-top: 10px;
+}
+
+.ayah-line-arabic {
+  flex-direction: row-reverse;
+}
+
+.ayah-line-bangla {
+  flex-direction: row;
+}
+
+.ayah-audio-button {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  border: 1px solid var(--audio-btn-border);
+  background: var(--audio-btn-bg);
+  color: var(--audio-btn-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.ayah-audio-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 47, 43, 0.18);
+}
+
+.ayah-audio-button.playing {
+  background: var(--audio-btn-play-bg);
+  color: var(--audio-btn-play-text);
+  box-shadow: 0 0 0 6px var(--audio-btn-ring);
+  animation: ayahPulse 1.6s ease-in-out infinite;
+}
+
+.ayah-audio-icon {
+  position: relative;
+  display: block;
+}
+
+.ayah-audio-button:not(.playing) .ayah-audio-icon {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid currentColor;
+  margin-left: 2px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::before,
+.ayah-audio-button.playing .ayah-audio-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::before {
+  left: 0;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::after {
+  right: 0;
+}
+
+@keyframes ayahPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 4px var(--audio-btn-ring);
+  }
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 10px var(--audio-btn-ring);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 4px var(--audio-btn-ring);
+  }
+}
+
 .bookmark-button {
   border: 1px solid var(--border);
   background: var(--bg);
@@ -282,10 +394,6 @@ button {
 .bookmark-button.active {
   border-color: var(--accent);
   color: var(--accent-strong);
-}
-
-.audio-block {
-  margin-top: 10px;
 }
 
 .arabic-text {
