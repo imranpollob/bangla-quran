@@ -434,13 +434,13 @@ button {
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: 12px;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .home-hero-card.hero-card-small:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15);
+  /* box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15); */
 }
 
 .hero-icon {
@@ -971,6 +971,12 @@ button {
 .home-sura-card {
   background: linear-gradient(160deg, var(--home-surface-strong), var(--card));
   border: 1px solid var(--home-hero-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-sura-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15);
 }
 
 .sura-card-top {
@@ -1095,22 +1101,40 @@ button {
   gap: 12px;
   margin-top: 14px;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .sura-modes {
-  display: inline-flex;
-  gap: 8px;
-  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  flex-wrap: nowrap;
 }
 
 .sura-mode-chip {
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--home-border);
-  background: var(--home-surface-soft);
+  flex: 0 0 auto;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: var(--text);
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sura-mode-sep {
+  flex: 0 0 auto;
+  width: 1ch;
+  color: var(--muted);
+  line-height: 1;
+  user-select: none;
+  text-align: center;
 }
 
 @media (max-width: 900px) {

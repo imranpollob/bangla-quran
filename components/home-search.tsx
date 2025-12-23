@@ -55,7 +55,6 @@ export default function HomeSearch({ suras }: Props) {
                   {toBnDigits(sura.id)}. {sura.nameBn}
                 </h3>
                 <div className="sura-meta">
-                  {sura.nameAr ? `${sura.nameAr} · ` : ''}
                   {sura.revelationPlace
                     ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
                     : ''}
@@ -71,12 +70,18 @@ export default function HomeSearch({ suras }: Props) {
                 >
                   আরবি + বাংলা
                 </a>
+                <span className="sura-mode-sep" aria-hidden="true">
+                  |
+                </span>
                 <a
                   className="sura-mode-chip"
                   href={`/sura/${sura.id}/${sura.slug}/arabic`}
                 >
                   আরবি
                 </a>
+                <span className="sura-mode-sep" aria-hidden="true">
+                  |
+                </span>
                 <a
                   className="sura-mode-chip"
                   href={`/sura/${sura.id}/${sura.slug}/bangla`}
