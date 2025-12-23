@@ -24,7 +24,14 @@ export default function Page() {
               <div className="home-brand-sub">Arabic + Bangla with Audio</div>
             </div>
           </div>
-          <ThemeToggle />
+          <div className="home-topbar-actions">
+            <nav className="home-nav">
+              <a className="home-nav-link" href="/saved-ayahs">
+                সংরক্ষিত আয়াত
+              </a>
+            </nav>
+            <ThemeToggle />
+          </div>
         </div>
 
         <section className="home-hero home-hero-v1">
@@ -42,7 +49,7 @@ export default function Page() {
                 <p className="hero-card-sub">{toBnDigits(114)} সূরা</p>
               </a>
 
-              <a href="#saved-ayahs" className="home-hero-card hero-card-small">
+              <a href="/saved-ayahs" className="home-hero-card hero-card-small">
                 <div className="hero-icon">🔖</div>
                 <h3 className="hero-card-title">সংরক্ষিত আয়াত</h3>
                 <p className="hero-card-sub">আপনার প্রিয় আয়াত</p>

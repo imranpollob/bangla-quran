@@ -697,6 +697,36 @@ button {
   margin-bottom: 28px;
 }
 
+.home-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-nav-link {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+  color: var(--text);
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-nav-link:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
 .home-brand {
   display: flex;
   align-items: center;
@@ -732,6 +762,46 @@ button {
   color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.saved-ayahs-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.saved-ayahs-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.saved-ayahs-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.saved-ayahs-title {
+  margin: 0;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 28px;
+}
+
+.saved-ayahs-sub {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.saved-ayah-meta {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--font-sm);
 }
 
 /* ============================================

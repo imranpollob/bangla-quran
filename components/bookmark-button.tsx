@@ -71,7 +71,7 @@ export default function BookmarkButton({ suraId, ayahNumber, mode }: Props) {
       onClick={toggle}
       aria-pressed={active}
     >
-      {active ? '🔖 Saved' : '🔖 Save'}
+      {active ? 'সংরক্ষিত' : 'সংরক্ষণ'}
     </button>
   );
 }

@@ -29,7 +29,7 @@ export default function ThemeToggle() {
       onClick={toggle}
       aria-label="Toggle theme"
     >
-      {theme === 'light' ? '🌙 Dark' : '☀️ Light'}
+      {theme === 'light' ? '🌙 রাত' : '☀️ দিন'}
     </button>
   );
 }
