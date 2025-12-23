@@ -239,13 +239,6 @@ button {
   color: var(--accent-strong);
 }
 
-.sura-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
-}
-
 .sura-title {
   margin: 0;
 }
@@ -260,6 +253,7 @@ button {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .sura-sticky-nav {
@@ -353,8 +347,20 @@ button {
   background: var(--card);
   box-shadow: 0 14px 30px rgba(15, 47, 43, 0.24);
   min-width: 260px;
-  max-width: 340px;
+  max-width: 260px;
   z-index: 60;
+  display: none;
+}
+
+.sura-menu-utilities {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.sura-menu-utilities .grid-actions {
+  flex-wrap: nowrap;
 }
 
 .ayah-list {
@@ -527,7 +533,7 @@ button {
   }
 
   .sura-toolbar .toggle {
-    flex: 1 1 140px;
+    /* flex: 1 1 140px; */
     text-align: center;
   }
 
@@ -538,6 +544,10 @@ button {
   .sura-menu-button {
     display: inline-flex;
     margin-left: auto;
+  }
+
+  .sura-menu-panel {
+    display: block;
   }
 
   .sura-title-link {
@@ -982,18 +992,6 @@ button {
   gap: 12px;
   margin-top: 14px;
   flex-wrap: wrap;
-}
-
-.sura-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  background: linear-gradient(135deg, var(--accent), var(--gold));
-  color: #0b1b18;
 }
 
 .sura-modes {

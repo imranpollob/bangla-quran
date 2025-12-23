@@ -30,6 +30,17 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ayahRefs = useRef<(HTMLElement | null)[]>([]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 720) {
+        setMenuOpen(false);
+      }
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const scrollToAyah = useCallback((index: number) => {
     const node = ayahRefs.current[index];
     if (node) {
@@ -150,7 +161,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
               {toBnDigits(sura.id)}. {sura.nameBn}
             </a>
           </div>
-          <div className="sura-toolbar sura-toolbar-desktop">
+          <div className="sura-toolbar">
             <a className={`toggle ${mode === 'both' ? 'active' : ''}`} href={basePath}>
               আরবি + বাংলা
             </a>
@@ -198,8 +209,10 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
                 >
                   বাংলা
                 </a>
-                <ThemeToggle />
-                <AyahTextSizeControls />
+                <div className="sura-menu-utilities">
+                  <ThemeToggle />
+                  <AyahTextSizeControls />
+                </div>
               </div>
             </div>
           )}
