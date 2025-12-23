@@ -238,7 +238,6 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
               </a>
             </h1>
             <p className="sura-meta">
-              {sura.nameAr ? `${sura.nameAr} · ` : ''}
               {sura.revelationPlace
                 ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
                 : ''}
