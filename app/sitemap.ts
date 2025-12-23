@@ -8,18 +8,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseEntries = [
     {
       url: `${siteUrl}/`,
-      lastModified
+      lastModified,
+      changeFrequency: 'weekly',
+      priority: 1
     }
   ];
 
   const suraEntries = suraList.flatMap((sura) => {
     const base = {
       url: `${siteUrl}/sura/${sura.id}/${sura.slug}`,
-      lastModified
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.7
     };
     const modes = ['arabic', 'bangla'].map((mode) => ({
       url: `${siteUrl}/sura/${sura.id}/${sura.slug}/${mode}`,
-      lastModified
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.6
     }));
     return [base, ...modes];
   });

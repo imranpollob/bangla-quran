@@ -2,6 +2,13 @@ import HomeSearch from '@/components/home-search';
 import ThemeToggle from '@/components/theme-toggle';
 import { toBnDigits } from '@/lib/format';
 import { suraList } from '@/lib/data/suras';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/'
+  }
+};
 
 export default function Page() {
   return (

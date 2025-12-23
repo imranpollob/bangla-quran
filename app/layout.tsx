@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description:
     'Read and listen to the Quran in Arabic with Bangla translation. Browse all 114 suras with audio, bookmarks, and offline-ready experience.',
   applicationName: 'Bangla Quran',
+  robots: {
+    index: true,
+    follow: true
+  },
   openGraph: {
     type: 'website',
     title: 'Bangla Quran | Arabic & Bangla with Audio',
@@ -16,6 +20,7 @@ export const metadata: Metadata = {
       'Read and listen to the Quran in Arabic with Bangla translation. Browse all 114 suras with audio, bookmarks, and offline-ready experience.',
     siteName: 'Bangla Quran',
     url: 'https://banglaquran.app',
+    locale: 'bn_BD',
     images: [{ url: '/quran.png', width: 1200, height: 630 }]
   },
   twitter: {

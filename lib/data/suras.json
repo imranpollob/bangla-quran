@@ -4,7 +4,7 @@
     "slug": "al-fatihah",
     "nameBn": "আল ফাতিহা",
     "revelationPlace": "makki",
-    "nameAr": "",
+    "nameAr": "الفاتحة",
     "ayahCount": 7,
     "keywords": [
       "fatiha"
@@ -14,7 +14,7 @@
     "id": 2,
     "slug": "al-baqarah",
     "nameBn": "আল বাকারা",
-    "nameAr": "",
+    "nameAr": "البقرة",
     "ayahCount": 286,
     "keywords": [
       "bakara",
@@ -26,7 +26,7 @@
     "id": 3,
     "slug": "ali-imran",
     "nameBn": "আলে ইমরান",
-    "nameAr": "",
+    "nameAr": "آل عمران",
     "ayahCount": 200,
     "keywords": [
       "imran"
@@ -37,7 +37,7 @@
     "id": 4,
     "slug": "an-nisa",
     "nameBn": "আন নিসা",
-    "nameAr": "",
+    "nameAr": "النساء",
     "ayahCount": 176,
     "keywords": [
       "nisa"
@@ -48,7 +48,7 @@
     "id": 5,
     "slug": "al-maidah",
     "nameBn": "আল মায়েদা",
-    "nameAr": "",
+    "nameAr": "المائدة",
     "ayahCount": 120,
     "keywords": [
       "mayedah",
@@ -60,7 +60,7 @@
     "id": 6,
     "slug": "al-anam",
     "nameBn": "আল আনআম",
-    "nameAr": "",
+    "nameAr": "الأنعام",
     "ayahCount": 165,
     "keywords": [
       "anam",
@@ -72,7 +72,7 @@
     "id": 7,
     "slug": "al-araf",
     "nameBn": "আল আরাফ",
-    "nameAr": "",
+    "nameAr": "الأعراف",
     "ayahCount": 206,
     "keywords": [
       "araf",
@@ -84,7 +84,7 @@
     "id": 8,
     "slug": "al-anfal",
     "nameBn": "আল আনফাল",
-    "nameAr": "",
+    "nameAr": "الأنفال",
     "ayahCount": 75,
     "keywords": [
       "anfal"
@@ -95,7 +95,7 @@
     "id": 9,
     "slug": "at-tawbah",
     "nameBn": "আত তাওবা",
-    "nameAr": "",
+    "nameAr": "التوبة",
     "ayahCount": 129,
     "keywords": [
       "taoba",
@@ -108,7 +108,7 @@
     "id": 10,
     "slug": "yunus",
     "nameBn": "ইউনুস",
-    "nameAr": "",
+    "nameAr": "يونس",
     "ayahCount": 109,
     "keywords": [
       "yunus",
@@ -120,7 +120,7 @@
     "id": 11,
     "slug": "hud",
     "nameBn": "হূদ",
-    "nameAr": "",
+    "nameAr": "هود",
     "ayahCount": 123,
     "keywords": [
       "hud",
@@ -132,7 +132,7 @@
     "id": 12,
     "slug": "yusuf",
     "nameBn": "ইউসুফ",
-    "nameAr": "",
+    "nameAr": "يوسف",
     "ayahCount": 111,
     "keywords": [
       "yusuf"
@@ -143,7 +143,7 @@
     "id": 13,
     "slug": "ar-rad",
     "nameBn": "আর্ রাদ",
-    "nameAr": "",
+    "nameAr": "الرعد",
     "ayahCount": 43,
     "keywords": [
       "rad",
@@ -155,7 +155,7 @@
     "id": 14,
     "slug": "ibrahim",
     "nameBn": "ইবরাহিম",
-    "nameAr": "",
+    "nameAr": "إبراهيم",
     "ayahCount": 52,
     "keywords": [
       "ibrahim"
@@ -166,7 +166,7 @@
     "id": 15,
     "slug": "al-hijr",
     "nameBn": "আল হিজর",
-    "nameAr": "",
+    "nameAr": "الحجر",
     "ayahCount": 99,
     "keywords": [
       "hijor",
@@ -178,7 +178,7 @@
     "id": 16,
     "slug": "an-nahl",
     "nameBn": "আন্ নাহল",
-    "nameAr": "",
+    "nameAr": "النحل",
     "ayahCount": 128,
     "keywords": [
       "nahol",
@@ -190,7 +190,7 @@
     "id": 17,
     "slug": "al-isra",
     "nameBn": "বনি ইসরাঈল",
-    "nameAr": "",
+    "nameAr": "الإسراء",
     "ayahCount": 111,
     "keywords": [
       "bani",
@@ -203,7 +203,7 @@
     "id": 18,
     "slug": "al-kahf",
     "nameBn": "আল কাহফ",
-    "nameAr": "",
+    "nameAr": "الكهف",
     "ayahCount": 110,
     "keywords": [
       "kahaf",
@@ -215,7 +215,7 @@
     "id": 19,
     "slug": "maryam",
     "nameBn": "মরিয়ম",
-    "nameAr": "",
+    "nameAr": "مريم",
     "ayahCount": 98,
     "keywords": [
       "moriyom",
@@ -230,7 +230,7 @@
     "id": 20,
     "slug": "taha",
     "nameBn": "তোয়াহা",
-    "nameAr": "",
+    "nameAr": "طه",
     "ayahCount": 135,
     "keywords": [
       "taha",
@@ -243,7 +243,7 @@
     "id": 21,
     "slug": "al-anbya",
     "nameBn": "আল আম্বিয়া",
-    "nameAr": "",
+    "nameAr": "الأنبياء",
     "ayahCount": 112,
     "keywords": [
       "ambia",
@@ -255,7 +255,7 @@
     "id": 22,
     "slug": "al-haj",
     "nameBn": "আল হজ্জ",
-    "nameAr": "",
+    "nameAr": "الحج",
     "ayahCount": 78,
     "keywords": [
       "hajj"
@@ -266,7 +266,7 @@
     "id": 23,
     "slug": "al-muminun",
     "nameBn": "আল মুমিনুন",
-    "nameAr": "",
+    "nameAr": "المؤمنون",
     "ayahCount": 118,
     "keywords": [
       "muminun",
@@ -280,7 +280,7 @@
     "id": 24,
     "slug": "an-nur",
     "nameBn": "আন্ নূর",
-    "nameAr": "",
+    "nameAr": "النور",
     "ayahCount": 64,
     "keywords": [
       "nor",
@@ -293,7 +293,7 @@
     "id": 25,
     "slug": "al-furqan",
     "nameBn": "আল ফুরকান",
-    "nameAr": "",
+    "nameAr": "الفرقان",
     "ayahCount": 77,
     "keywords": [
       "furkan",
@@ -306,7 +306,7 @@
     "id": 26,
     "slug": "ash-shuara",
     "nameBn": "আশ্ শোয়ারা",
-    "nameAr": "",
+    "nameAr": "الشعراء",
     "ayahCount": 227,
     "keywords": [
       "shura",
@@ -321,7 +321,7 @@
     "id": 27,
     "slug": "an-naml",
     "nameBn": "আন্ নামল",
-    "nameAr": "",
+    "nameAr": "النمل",
     "ayahCount": 93,
     "keywords": [
       "namol",
@@ -333,7 +333,7 @@
     "id": 28,
     "slug": "al-qasas",
     "nameBn": "আল কাসাস",
-    "nameAr": "",
+    "nameAr": "القصص",
     "ayahCount": 88,
     "keywords": [
       "kasas",
@@ -345,7 +345,7 @@
     "id": 29,
     "slug": "al-ankabut",
     "nameBn": "আল আনকাবুত",
-    "nameAr": "",
+    "nameAr": "العنكبوت",
     "ayahCount": 69,
     "keywords": [
       "ankabot",
@@ -357,7 +357,7 @@
     "id": 30,
     "slug": "ar-rum",
     "nameBn": "আর্ রূম",
-    "nameAr": "",
+    "nameAr": "الروم",
     "ayahCount": 60,
     "keywords": [
       "rum",
@@ -370,7 +370,7 @@
     "id": 31,
     "slug": "luqman",
     "nameBn": "লুকমান",
-    "nameAr": "",
+    "nameAr": "لقمان",
     "ayahCount": 34,
     "keywords": [
       "lukman",
@@ -382,7 +382,7 @@
     "id": 32,
     "slug": "as-sajdah",
     "nameBn": "আস্ সাজদা",
-    "nameAr": "",
+    "nameAr": "السجدة",
     "ayahCount": 30,
     "keywords": [
       "shajda",
@@ -396,7 +396,7 @@
     "id": 33,
     "slug": "al-ahzab",
     "nameBn": "আল আহযাব",
-    "nameAr": "",
+    "nameAr": "الأحزاب",
     "ayahCount": 73,
     "keywords": [
       "ajhab",
@@ -408,7 +408,7 @@
     "id": 34,
     "slug": "saba",
     "nameBn": "আস্ সাবা",
-    "nameAr": "",
+    "nameAr": "سبأ",
     "ayahCount": 54,
     "keywords": [
       "saba",
@@ -420,7 +420,7 @@
     "id": 35,
     "slug": "fatir",
     "nameBn": "আল ফাতির",
-    "nameAr": "",
+    "nameAr": "فاطر",
     "ayahCount": 45,
     "keywords": [
       "fatir",
@@ -432,7 +432,7 @@
     "id": 36,
     "slug": "ya-sin",
     "nameBn": "ইয়াসিন",
-    "nameAr": "",
+    "nameAr": "يس",
     "ayahCount": 83,
     "keywords": [
       "yasin",
@@ -445,7 +445,7 @@
     "id": 37,
     "slug": "as-saffat",
     "nameBn": "আস্ সফফাত",
-    "nameAr": "",
+    "nameAr": "الصافات",
     "ayahCount": 182,
     "keywords": [
       "saffat"
@@ -456,7 +456,7 @@
     "id": 38,
     "slug": "sad",
     "nameBn": "সোয়াদ",
-    "nameAr": "",
+    "nameAr": "ص",
     "ayahCount": 88,
     "keywords": [
       "soad",
@@ -469,7 +469,7 @@
     "id": 39,
     "slug": "az-zumar",
     "nameBn": "আয্ যুমার",
-    "nameAr": "",
+    "nameAr": "الزمر",
     "ayahCount": 75,
     "keywords": [
       "jumar",
@@ -483,7 +483,7 @@
     "id": 40,
     "slug": "ghafir",
     "nameBn": "আল মুমিন",
-    "nameAr": "",
+    "nameAr": "غافر",
     "ayahCount": 85,
     "keywords": [
       "momin",
@@ -496,7 +496,7 @@
     "id": 41,
     "slug": "fussilat",
     "nameBn": "হামিম আস সাজদা",
-    "nameAr": "",
+    "nameAr": "فصلت",
     "ayahCount": 54,
     "keywords": [
       "sajdah",
@@ -508,7 +508,7 @@
     "id": 42,
     "slug": "ash-shuraa",
     "nameBn": "আশ্ শূরা",
-    "nameAr": "",
+    "nameAr": "الشورى",
     "ayahCount": 53,
     "keywords": [
       "sura",
@@ -522,7 +522,7 @@
     "id": 43,
     "slug": "az-zukhruf",
     "nameBn": "আয্ যুখরুফ",
-    "nameAr": "",
+    "nameAr": "الزخرف",
     "ayahCount": 89,
     "keywords": [
       "jukhruf",
@@ -537,7 +537,7 @@
     "id": 44,
     "slug": "ad-dukhan",
     "nameBn": "আদ্ দুখান",
-    "nameAr": "",
+    "nameAr": "الدخان",
     "ayahCount": 59,
     "keywords": [
       "dukhan",
@@ -549,7 +549,7 @@
     "id": 45,
     "slug": "al-jathiyah",
     "nameBn": "আল জাসিয়া",
-    "nameAr": "",
+    "nameAr": "الجاثية",
     "ayahCount": 37,
     "keywords": [
       "jasiya",
@@ -562,7 +562,7 @@
     "id": 46,
     "slug": "al-ahqaf",
     "nameBn": "আল আহকাফ",
-    "nameAr": "",
+    "nameAr": "الأحقاف",
     "ayahCount": 35,
     "keywords": [
       "ahkaf",
@@ -574,7 +574,7 @@
     "id": 47,
     "slug": "muhammad",
     "nameBn": "মুহাম্মদ",
-    "nameAr": "",
+    "nameAr": "محمد",
     "ayahCount": 38,
     "keywords": [
       "muhammad",
@@ -586,7 +586,7 @@
     "id": 48,
     "slug": "al-fath",
     "nameBn": "আল ফাত্হ",
-    "nameAr": "",
+    "nameAr": "الفتح",
     "ayahCount": 29,
     "keywords": [
       "fatoh",
@@ -598,7 +598,7 @@
     "id": 49,
     "slug": "al-hujurat",
     "nameBn": "আল হুজুরাত",
-    "nameAr": "",
+    "nameAr": "الحجرات",
     "ayahCount": 18,
     "keywords": [
       "hujurat",
@@ -612,7 +612,7 @@
     "id": 50,
     "slug": "qaf",
     "nameBn": "কাফ",
-    "nameAr": "",
+    "nameAr": "ق",
     "ayahCount": 45,
     "keywords": [
       "kaf",
@@ -625,7 +625,7 @@
     "id": 51,
     "slug": "adh-dhariyat",
     "nameBn": "আয্ যারিয়াত",
-    "nameAr": "",
+    "nameAr": "الذاريات",
     "ayahCount": 60,
     "keywords": [
       "jariyat",
@@ -637,7 +637,7 @@
     "id": 52,
     "slug": "at-tur",
     "nameBn": "আত্ তূর",
-    "nameAr": "",
+    "nameAr": "الطور",
     "ayahCount": 49,
     "keywords": [
       "tor",
@@ -649,7 +649,7 @@
     "id": 53,
     "slug": "an-najm",
     "nameBn": "আন্ নাজম",
-    "nameAr": "",
+    "nameAr": "النجم",
     "ayahCount": 62,
     "keywords": [
       "najom",
@@ -664,7 +664,7 @@
     "id": 54,
     "slug": "al-qamar",
     "nameBn": "আল কামার",
-    "nameAr": "",
+    "nameAr": "القمر",
     "ayahCount": 55,
     "keywords": [
       "kamar",
@@ -676,7 +676,7 @@
     "id": 55,
     "slug": "ar-rahman",
     "nameBn": "আর রহমান",
-    "nameAr": "",
+    "nameAr": "الرحمن",
     "ayahCount": 78,
     "keywords": [
       "rahman"
@@ -687,7 +687,7 @@
     "id": 56,
     "slug": "al-waqiah",
     "nameBn": "আল ওয়াকিয়া",
-    "nameAr": "",
+    "nameAr": "الواقعة",
     "ayahCount": 96,
     "keywords": [
       "wakia",
@@ -700,7 +700,7 @@
     "id": 57,
     "slug": "al-hadid",
     "nameBn": "আল হাদিদ",
-    "nameAr": "",
+    "nameAr": "الحديد",
     "ayahCount": 29,
     "keywords": [
       "hadid"
@@ -711,7 +711,7 @@
     "id": 58,
     "slug": "al-mujadila",
     "nameBn": "আল মুজাদালা",
-    "nameAr": "",
+    "nameAr": "المجادلة",
     "ayahCount": 22,
     "keywords": [
       "mujadala",
@@ -726,7 +726,7 @@
     "id": 59,
     "slug": "al-hashr",
     "nameBn": "আল হাশর",
-    "nameAr": "",
+    "nameAr": "الحشر",
     "ayahCount": 24,
     "keywords": [
       "hasor",
@@ -738,7 +738,7 @@
     "id": 60,
     "slug": "al-mumtahanah",
     "nameBn": "আল মুমতাহানা",
-    "nameAr": "",
+    "nameAr": "الممتحنة",
     "ayahCount": 13,
     "keywords": [
       "mumtahana",
@@ -751,7 +751,7 @@
     "id": 61,
     "slug": "as-saf",
     "nameBn": "আস্ সফ",
-    "nameAr": "",
+    "nameAr": "الصف",
     "ayahCount": 14,
     "keywords": [
       "sof",
@@ -763,7 +763,7 @@
     "id": 62,
     "slug": "al-jumuah",
     "nameBn": "আল জুমুয়া",
-    "nameAr": "",
+    "nameAr": "الجمعة",
     "ayahCount": 11,
     "keywords": [
       "jumuya",
@@ -779,7 +779,7 @@
     "id": 63,
     "slug": "al-munafiqun",
     "nameBn": "আল মুনাফিকুন",
-    "nameAr": "",
+    "nameAr": "المنافقون",
     "ayahCount": 11,
     "keywords": [
       "munafiqun",
@@ -791,7 +791,7 @@
     "id": 64,
     "slug": "at-taghabun",
     "nameBn": "আত্ তাগাবুন",
-    "nameAr": "",
+    "nameAr": "التغابن",
     "ayahCount": 18,
     "keywords": [
       "tagabun",
@@ -804,7 +804,7 @@
     "id": 65,
     "slug": "at-talaq",
     "nameBn": "আত্ তালাক",
-    "nameAr": "",
+    "nameAr": "الطلاق",
     "ayahCount": 12,
     "keywords": [
       "talak",
@@ -816,7 +816,7 @@
     "id": 66,
     "slug": "at-tahrim",
     "nameBn": "আত্ তাহরিম",
-    "nameAr": "",
+    "nameAr": "التحريم",
     "ayahCount": 12,
     "keywords": [
       "tahrim",
@@ -828,7 +828,7 @@
     "id": 67,
     "slug": "al-mulk",
     "nameBn": "আল মুলক",
-    "nameAr": "",
+    "nameAr": "الملك",
     "ayahCount": 30,
     "keywords": [
       "mulk",
@@ -840,7 +840,7 @@
     "id": 68,
     "slug": "al-qalam",
     "nameBn": "আল কলম",
-    "nameAr": "",
+    "nameAr": "القلم",
     "ayahCount": 52,
     "keywords": [
       "kolom",
@@ -853,7 +853,7 @@
     "id": 69,
     "slug": "al-haqqah",
     "nameBn": "আল হাককাহ",
-    "nameAr": "",
+    "nameAr": "الحاقة",
     "ayahCount": 52,
     "keywords": [
       "hakkah",
@@ -866,7 +866,7 @@
     "id": 70,
     "slug": "al-maarij",
     "nameBn": "আল মাআরিজ",
-    "nameAr": "",
+    "nameAr": "المعارج",
     "ayahCount": 44,
     "keywords": [
       "mayarij",
@@ -879,7 +879,7 @@
     "id": 71,
     "slug": "nuh",
     "nameBn": "নূহ",
-    "nameAr": "",
+    "nameAr": "نوح",
     "ayahCount": 28,
     "keywords": [
       "nuh",
@@ -891,7 +891,7 @@
     "id": 72,
     "slug": "al-jinn",
     "nameBn": "আল জিন",
-    "nameAr": "",
+    "nameAr": "الجن",
     "ayahCount": 28,
     "keywords": [
       "jin",
@@ -904,7 +904,7 @@
     "id": 73,
     "slug": "al-muzzammil",
     "nameBn": "আল মুযযাম্মিল",
-    "nameAr": "",
+    "nameAr": "المزمل",
     "ayahCount": 20,
     "keywords": [
       "mujammil",
@@ -920,7 +920,7 @@
     "id": 74,
     "slug": "al-muddaththir",
     "nameBn": "আল মুদ্দাসসির",
-    "nameAr": "",
+    "nameAr": "المدثر",
     "ayahCount": 56,
     "keywords": [
       "mudassir",
@@ -933,7 +933,7 @@
     "id": 75,
     "slug": "al-qiyamah",
     "nameBn": "আল কিয়ামা",
-    "nameAr": "",
+    "nameAr": "القيامة",
     "ayahCount": 40,
     "keywords": [
       "kiyama",
@@ -946,7 +946,7 @@
     "id": 76,
     "slug": "al-insan",
     "nameBn": "আল ইনসান",
-    "nameAr": "",
+    "nameAr": "الإنسان",
     "ayahCount": 31,
     "keywords": [
       "insan",
@@ -958,7 +958,7 @@
     "id": 77,
     "slug": "al-mursalat",
     "nameBn": "আল মুরসালাত",
-    "nameAr": "",
+    "nameAr": "المرسلات",
     "ayahCount": 50,
     "keywords": [
       "mursalat",
@@ -970,7 +970,7 @@
     "id": 78,
     "slug": "an-naba",
     "nameBn": "আন্ নাবা",
-    "nameAr": "",
+    "nameAr": "النبأ",
     "ayahCount": 40,
     "keywords": [
       "naba"
@@ -981,7 +981,7 @@
     "id": 79,
     "slug": "an-naziat",
     "nameBn": "আন্ নাযিয়াত",
-    "nameAr": "",
+    "nameAr": "النازعات",
     "ayahCount": 46,
     "keywords": [
       "najiyat",
@@ -995,7 +995,7 @@
     "id": 80,
     "slug": "abasa",
     "nameBn": "আবাসা",
-    "nameAr": "",
+    "nameAr": "عبس",
     "ayahCount": 42,
     "keywords": [
       "abasa"
@@ -1006,7 +1006,7 @@
     "id": 81,
     "slug": "at-takwir",
     "nameBn": "আত্ তাকভীর",
-    "nameAr": "",
+    "nameAr": "التكوير",
     "ayahCount": 29,
     "keywords": [
       "takvir",
@@ -1019,7 +1019,7 @@
     "id": 82,
     "slug": "al-infitar",
     "nameBn": "আল ইনফিতার",
-    "nameAr": "",
+    "nameAr": "الانفطار",
     "ayahCount": 19,
     "keywords": [
       "infitar",
@@ -1031,7 +1031,7 @@
     "id": 83,
     "slug": "al-mutaffifin",
     "nameBn": "আল মুতাফ্ফিফীন",
-    "nameAr": "",
+    "nameAr": "المطففين",
     "ayahCount": 36,
     "keywords": [
       "mutaffifin",
@@ -1043,7 +1043,7 @@
     "id": 84,
     "slug": "al-inshiqaq",
     "nameBn": "আল ইনশিকাক",
-    "nameAr": "",
+    "nameAr": "الانشقاق",
     "ayahCount": 25,
     "keywords": [
       "inshikak",
@@ -1057,7 +1057,7 @@
     "id": 85,
     "slug": "al-buruj",
     "nameBn": "আল বুরূজ",
-    "nameAr": "",
+    "nameAr": "البروج",
     "ayahCount": 22,
     "keywords": [
       "boroj",
@@ -1071,7 +1071,7 @@
     "id": 86,
     "slug": "at-tariq",
     "nameBn": "আত তারিক",
-    "nameAr": "",
+    "nameAr": "الطارق",
     "ayahCount": 17,
     "keywords": [
       "tarik",
@@ -1083,7 +1083,7 @@
     "id": 87,
     "slug": "al-ala",
     "nameBn": "আল আলা",
-    "nameAr": "",
+    "nameAr": "الأعلى",
     "ayahCount": 19,
     "keywords": [
       "ala",
@@ -1095,7 +1095,7 @@
     "id": 88,
     "slug": "al-ghashiyah",
     "nameBn": "আল গাশিয়া",
-    "nameAr": "",
+    "nameAr": "الغاشية",
     "ayahCount": 26,
     "keywords": [
       "gashiya",
@@ -1108,7 +1108,7 @@
     "id": 89,
     "slug": "al-fajr",
     "nameBn": "আল ফাজর",
-    "nameAr": "",
+    "nameAr": "الفجر",
     "ayahCount": 30,
     "keywords": [
       "fajr",
@@ -1123,7 +1123,7 @@
     "id": 90,
     "slug": "al-balad",
     "nameBn": "আল বালাদ",
-    "nameAr": "",
+    "nameAr": "البلد",
     "ayahCount": 20,
     "keywords": [
       "balad"
@@ -1134,7 +1134,7 @@
     "id": 91,
     "slug": "ash-shams",
     "nameBn": "আশ্ শামস",
-    "nameAr": "",
+    "nameAr": "الشمس",
     "ayahCount": 15,
     "keywords": [
       "shams",
@@ -1146,7 +1146,7 @@
     "id": 92,
     "slug": "al-layl",
     "nameBn": "আল লাইল",
-    "nameAr": "",
+    "nameAr": "الليل",
     "ayahCount": 21,
     "keywords": [
       "lail",
@@ -1158,7 +1158,7 @@
     "id": 93,
     "slug": "ad-duhaa",
     "nameBn": "আদ্ দোহা",
-    "nameAr": "",
+    "nameAr": "الضحى",
     "ayahCount": 11,
     "keywords": [
       "doha"
@@ -1169,7 +1169,7 @@
     "id": 94,
     "slug": "ash-sharh",
     "nameBn": "আল ইনশিরাহ",
-    "nameAr": "",
+    "nameAr": "الشرح",
     "ayahCount": 8,
     "keywords": [
       "inshirah"
@@ -1180,7 +1180,7 @@
     "id": 95,
     "slug": "at-tin",
     "nameBn": "আত্ তীন",
-    "nameAr": "",
+    "nameAr": "التين",
     "ayahCount": 8,
     "keywords": [
       "ten",
@@ -1193,7 +1193,7 @@
     "id": 96,
     "slug": "al-alaq",
     "nameBn": "আল আলাক",
-    "nameAr": "",
+    "nameAr": "العلق",
     "ayahCount": 19,
     "keywords": [
       "alak",
@@ -1205,7 +1205,7 @@
     "id": 97,
     "slug": "al-qadr",
     "nameBn": "আল কাদর",
-    "nameAr": "",
+    "nameAr": "القدر",
     "ayahCount": 5,
     "keywords": [
       "kadar",
@@ -1217,7 +1217,7 @@
     "id": 98,
     "slug": "al-bayyinah",
     "nameBn": "আল বাইয়্যেনা",
-    "nameAr": "",
+    "nameAr": "البينة",
     "ayahCount": 8,
     "keywords": [
       "baiyenah",
@@ -1229,7 +1229,7 @@
     "id": 99,
     "slug": "az-zalzalah",
     "nameBn": "যিলযাল",
-    "nameAr": "",
+    "nameAr": "الزلزلة",
     "ayahCount": 8,
     "keywords": [
       "zilzal",
@@ -1241,7 +1241,7 @@
     "id": 100,
     "slug": "al-adiyat",
     "nameBn": "আল আদিয়াত",
-    "nameAr": "",
+    "nameAr": "العاديات",
     "ayahCount": 11,
     "keywords": [
       "adiyat"
@@ -1252,7 +1252,7 @@
     "id": 101,
     "slug": "al-qariah",
     "nameBn": "আল কারিয়া",
-    "nameAr": "",
+    "nameAr": "القارعة",
     "ayahCount": 11,
     "keywords": [
       "qariah",
@@ -1265,7 +1265,7 @@
     "id": 102,
     "slug": "at-takathur",
     "nameBn": "আত্ তাকাসুর",
-    "nameAr": "",
+    "nameAr": "التكاثر",
     "ayahCount": 8,
     "keywords": [
       "takasur"
@@ -1276,7 +1276,7 @@
     "id": 103,
     "slug": "al-asr",
     "nameBn": "আল আসর",
-    "nameAr": "",
+    "nameAr": "العصر",
     "ayahCount": 3,
     "keywords": [
       "asor"
@@ -1287,7 +1287,7 @@
     "id": 104,
     "slug": "al-humazah",
     "nameBn": "আল হুমাযা",
-    "nameAr": "",
+    "nameAr": "الهمزة",
     "ayahCount": 9,
     "keywords": [
       "humazah",
@@ -1299,7 +1299,7 @@
     "id": 105,
     "slug": "al-fil",
     "nameBn": "আল ফীল",
-    "nameAr": "",
+    "nameAr": "الفيل",
     "ayahCount": 5,
     "keywords": [
       "fil"
@@ -1310,7 +1310,7 @@
     "id": 106,
     "slug": "quraysh",
     "nameBn": "আল কুরাইশ",
-    "nameAr": "",
+    "nameAr": "قريش",
     "ayahCount": 4,
     "keywords": [
       "quraish"
@@ -1321,7 +1321,7 @@
     "id": 107,
     "slug": "al-maun",
     "nameBn": "আল মাউন",
-    "nameAr": "",
+    "nameAr": "الماعون",
     "ayahCount": 7,
     "keywords": [
       "maun"
@@ -1332,7 +1332,7 @@
     "id": 108,
     "slug": "al-kawthar",
     "nameBn": "আল কাওসার",
-    "nameAr": "",
+    "nameAr": "الكوثر",
     "ayahCount": 3,
     "keywords": [
       "kausar",
@@ -1344,7 +1344,7 @@
     "id": 109,
     "slug": "al-kafirun",
     "nameBn": "আল কাফিরূন",
-    "nameAr": "",
+    "nameAr": "الكافرون",
     "ayahCount": 6,
     "keywords": [
       "kafirun"
@@ -1355,7 +1355,7 @@
     "id": 110,
     "slug": "an-nasr",
     "nameBn": "আন্ নসর",
-    "nameAr": "",
+    "nameAr": "النصر",
     "ayahCount": 3,
     "keywords": [
       "nasor",
@@ -1367,7 +1367,7 @@
     "id": 111,
     "slug": "al-masad",
     "nameBn": "আল লাহাব",
-    "nameAr": "",
+    "nameAr": "المسد",
     "ayahCount": 5,
     "keywords": [
       "lahab"
@@ -1378,7 +1378,7 @@
     "id": 112,
     "slug": "al-ikhlas",
     "nameBn": "আল ইখলাস",
-    "nameAr": "",
+    "nameAr": "الإخلاص",
     "ayahCount": 4,
     "keywords": [
       "ikhlas"
@@ -1389,7 +1389,7 @@
     "id": 113,
     "slug": "al-falaq",
     "nameBn": "আল ফালাক",
-    "nameAr": "",
+    "nameAr": "الفلق",
     "ayahCount": 5,
     "keywords": [
       "falak",
@@ -1401,7 +1401,7 @@
     "id": 114,
     "slug": "an-nas",
     "nameBn": "আন্ নাস",
-    "nameAr": "",
+    "nameAr": "الناس",
     "ayahCount": 6,
     "keywords": [
       "nas"

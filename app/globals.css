@@ -197,7 +197,7 @@ button {
   border: 1px solid var(--border);
   background: var(--card);
   border-radius: 20px;
-  padding: 18px;
+  padding: 14px;
   box-shadow: var(--shadow);
 }
 
@@ -1110,7 +1110,7 @@ button {
   background: var(--home-surface-soft);
   color: var(--text);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media (max-width: 900px) {
