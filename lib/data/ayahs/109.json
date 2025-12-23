@@ -1,0 +1,65 @@
+[
+  {
+    "number": "0",
+    "arabic": "بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ",
+    "bangla": "দয়াময়, পরম দয়ালু আল্লাহ্‌র নামে,",
+    "audio": {
+      "ar": "/audio/arabic/000000.mp3",
+      "bn": "/audio/bt/1-0.mp3"
+    }
+  },
+  {
+    "number": "1",
+    "arabic": "قُلۡ يٰۤاَيُّهَا الۡكٰفِرُوۡنَۙ‏﴿﻿۱﻿﴾",
+    "bangla": "১০৯-১ : বল, ‘হে কাফিররা!",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109001.mp3",
+      "bn": "/audio/bt/109-1.mp3"
+    }
+  },
+  {
+    "number": "2",
+    "arabic": "لَاۤ اَعۡبُدُ مَا تَعۡبُدُوۡنَۙ‏﴿﻿۲﻿﴾",
+    "bangla": "১০৯-২ : ‘আমি তাহার ‘ইবাদত করি না যাহার ‘ইবাদত তোমরা কর",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109002.mp3",
+      "bn": "/audio/bt/109-2.mp3"
+    }
+  },
+  {
+    "number": "3",
+    "arabic": "وَلَاۤ اَنۡـتُمۡ عٰبِدُوۡنَ مَاۤ اَعۡبُدُ‌ ۚ‏﴿﻿۳﻿﴾",
+    "bangla": "১০৯-৩ : এবং তোমরাও তাঁহার ‘ইবাদতকারী নও যাঁহার ‘ইবাদত আমি করি,",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109003.mp3",
+      "bn": "/audio/bt/109-3.mp3"
+    }
+  },
+  {
+    "number": "4",
+    "arabic": "وَلَاۤ اَنَا عَابِدٌ مَّا عَبَدۡتُّمۡۙ‏﴿﻿۴﻿﴾",
+    "bangla": "১০৯-৪ : ‘এবং আমি ‘ইবাদতকারী নই তাহার যাহার ‘ইবাদত তোমরা করিয়া আসিতেছ।",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109004.mp3",
+      "bn": "/audio/bt/109-4.mp3"
+    }
+  },
+  {
+    "number": "5",
+    "arabic": "وَ لَاۤ اَنۡـتُمۡ عٰبِدُوۡنَ مَاۤ اَعۡبُدُ ؕ‏﴿﻿۵﻿﴾",
+    "bangla": "১০৯-৫ : ‘এবং তোমরাও তাঁহার ‘ইবাদতকারী নও যাঁহার ‘ইবাদত আমি করি।",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109005.mp3",
+      "bn": "/audio/bt/109-5.mp3"
+    }
+  },
+  {
+    "number": "6",
+    "arabic": "لَـكُمۡ دِيۡنُكُمۡ وَلِىَ دِيۡنِ‏﴿﻿۶﻿﴾",
+    "bangla": "১০৯-৬ : ‘তোমাদের দীন তোমাদের, আমার দীন আমার।’",
+    "audio": {
+      "ar": "https://everyayah.com/data/Alafasy_64kbps/109006.mp3",
+      "bn": "/audio/bt/109-6.mp3"
+    }
+  }
+]

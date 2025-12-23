@@ -1,0 +1,1242 @@
+@font-face {
+  font-family: "LiAdorNoirrit";
+  src: url("/font/LiAdorNoirrit/LiAdorNoirrit.woff2") format("woff2"),
+    url("/font/LiAdorNoirrit/LiAdorNoirrit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "noorehuda";
+  src: url("/font/noorehuda.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Siyam Rupali";
+  src: url("/font/siyam-rupali/Siyamrupali.woff2") format("woff2"),
+    url("/font/siyam-rupali/Siyamrupali.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("/font/source-sans-pro/source-sans-pro-regular.woff") format("woff"),
+    url("/font/source-sans-pro/source-sans-pro-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "surah-name-v4-icon";
+  src: url("/font/surah-name-v4.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --bg: #f7f2e8;
+  --card: #ffffff;
+  --text: #0f2f2b;
+  --muted: #526a64;
+  --border: #dfd6c8;
+  --accent: #0f7a5c;
+  --accent-strong: #0b5f49;
+  --gold: #c59b3b;
+  --shadow: 0 16px 40px rgba(15, 47, 43, 0.12);
+  --ayah-scale: 1;
+  --font-base: clamp(17px, 1.25vw, 20px);
+  --font-sm: clamp(14px, 1vw, 16px);
+  --font-md: clamp(16px, 1.15vw, 18px);
+  --font-lg: clamp(18px, 1.35vw, 22px);
+  --font-xl: clamp(22px, 2vw, 28px);
+  --arabic-size: clamp(28px, 5vw, 36px);
+  --bangla-size: clamp(18px, 3.2vw, 22px);
+  --home-hero-bg: linear-gradient(130deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(247, 242, 232, 0.85));
+  --home-hero-border: rgba(197, 155, 59, 0.28);
+  --home-pattern: rgba(15, 122, 92, 0.08);
+  --home-pattern-strong: rgba(197, 155, 59, 0.16);
+  --home-surface: rgba(255, 255, 255, 0.85);
+  --home-surface-strong: rgba(255, 255, 255, 0.92);
+  --home-surface-soft: rgba(255, 255, 255, 0.7);
+  --home-border: rgba(15, 122, 92, 0.18);
+  --home-ghost-bg: rgba(255, 255, 255, 0.6);
+  --audio-btn-bg: #f0ede4;
+  --audio-btn-border: rgba(15, 122, 92, 0.35);
+  --audio-btn-text: #0b5f49;
+  --audio-btn-play-bg: #0f7a5c;
+  --audio-btn-play-text: #f7f2e8;
+  --audio-btn-ring: rgba(15, 122, 92, 0.22);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b1b18;
+  --card: #12201d;
+  --text: #e7f2ed;
+  --muted: #9bb2ab;
+  --border: #1f332d;
+  --accent: #42c2a0;
+  --accent-strong: #1f9b7c;
+  --gold: #e0c372;
+  --shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
+  --home-hero-bg: linear-gradient(130deg,
+      rgba(18, 32, 29, 0.95),
+      rgba(11, 27, 24, 0.85));
+  --home-hero-border: rgba(224, 195, 114, 0.25);
+  --home-pattern: rgba(66, 194, 160, 0.16);
+  --home-pattern-strong: rgba(224, 195, 114, 0.2);
+  --home-surface: rgba(13, 28, 25, 0.92);
+  --home-surface-strong: rgba(17, 35, 31, 0.95);
+  --home-surface-soft: rgba(18, 32, 29, 0.88);
+  --home-border: rgba(66, 194, 160, 0.22);
+  --home-ghost-bg: rgba(18, 32, 29, 0.7);
+  --audio-btn-bg: #0f1f1c;
+  --audio-btn-border: rgba(66, 194, 160, 0.35);
+  --audio-btn-text: #7fe3c7;
+  --audio-btn-play-bg: #42c2a0;
+  --audio-btn-play-text: #0b1b18;
+  --audio-btn-ring: rgba(66, 194, 160, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "LiAdorNoirrit", sans-serif;
+  font-size: var(--font-base);
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,
+.sura-title {
+  font-size: var(--font-xl);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--font-lg);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: var(--font-md);
+  line-height: 1.35;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+button {
+  font: inherit;
+}
+
+.page-shell {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 10px 14px;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+
+.search-box {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 16px;
+}
+
+.sura-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card .meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.mode-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mode-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--font-sm);
+}
+
+.mode-link:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.sura-title {
+  margin: 0;
+}
+
+.sura-meta {
+  color: var(--muted);
+  margin: 6px 0 0;
+  font-size: var(--font-sm);
+}
+
+.sura-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sura-sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(247, 242, 232, 0.96), rgba(247, 242, 232, 0.9));
+  backdrop-filter: blur(12px);
+}
+
+:root[data-theme='dark'] .sura-sticky-nav {
+  background: linear-gradient(180deg, rgba(11, 27, 24, 0.95), rgba(11, 27, 24, 0.9));
+}
+
+.sura-nav-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.toggle {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  cursor: pointer;
+  font-size: var(--font-sm);
+}
+
+.toggle.active {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.sura-toolbar .toggle {
+  white-space: nowrap;
+}
+
+.sura-menu-button {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.sura-menu-button span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+.sura-nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  position: relative;
+}
+
+.sura-toolbar-mobile {
+  display: none;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.sura-menu-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 14px 30px rgba(15, 47, 43, 0.24);
+  min-width: 260px;
+  max-width: 260px;
+  z-index: 60;
+  display: none;
+}
+
+.sura-menu-utilities {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.sura-menu-utilities .grid-actions {
+  flex-wrap: nowrap;
+}
+
+.ayah-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ayah-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  scroll-margin-top: 120px;
+}
+
+.ayah-card-playing {
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(15, 47, 43, 0.18);
+}
+
+.ayah-card-playing .ayah-number {
+  color: var(--accent-strong);
+}
+
+.ayah-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.ayah-number {
+  font-weight: 700;
+  color: var(--accent-strong);
+  font-size: var(--font-sm);
+}
+
+/* ============================================
+   Hero Section Styles
+   ============================================ */
+
+/* Hero container - centered content layout */
+.home-hero-center {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-hero-center .home-subtitle {
+  margin-bottom: 3rem;
+}
+
+/* Hero actions row - horizontal quick links */
+.hero-actions-row {
+  display: flex;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 0 0.5rem;
+}
+
+/* Small hero card variant for quick actions */
+.home-hero-card.hero-card-small {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  min-width: 220px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  /* box-shadow: var(--shadow); */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-hero-card.hero-card-small:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15); */
+}
+
+.hero-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.hero-card-sub {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 520px) {
+  .home-hero-card.hero-card-small {
+    min-width: 160px;
+    padding: 0.75rem;
+  }
+}
+
+.ayah-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ayah-line {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.ayah-line+.ayah-line {
+  margin-top: 10px;
+}
+
+.ayah-line-arabic {
+  flex-direction: row-reverse;
+}
+
+.ayah-line-bangla {
+  flex-direction: row;
+}
+
+.ayah-audio-button {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
+  border-radius: 50%;
+  border: 1px solid var(--audio-btn-border);
+  background: var(--audio-btn-bg);
+  color: var(--audio-btn-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.ayah-audio-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(15, 47, 43, 0.18);
+}
+
+.ayah-audio-button.playing {
+  background: var(--audio-btn-play-bg);
+  color: var(--audio-btn-play-text);
+  box-shadow: 0 0 0 6px var(--audio-btn-ring);
+  animation: ayahPulse 1.6s ease-in-out infinite;
+}
+
+.ayah-audio-icon {
+  position: relative;
+  display: block;
+}
+
+.ayah-audio-button:not(.playing) .ayah-audio-icon {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid currentColor;
+  margin-left: 2px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::before,
+.ayah-audio-button.playing .ayah-audio-icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::before {
+  left: 0;
+}
+
+.ayah-audio-button.playing .ayah-audio-icon::after {
+  right: 0;
+}
+
+@keyframes ayahPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 4px var(--audio-btn-ring);
+  }
+
+  50% {
+    transform: scale(1.06);
+    box-shadow: 0 0 0 10px var(--audio-btn-ring);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 4px var(--audio-btn-ring);
+  }
+}
+
+.bookmark-button {
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.bookmark-button.active {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+@media (max-width: 720px) {
+  .sura-nav-bar {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .sura-toolbar {
+    display: none;
+  }
+
+  .sura-toolbar .toggle {
+    /* flex: 1 1 140px; */
+    text-align: center;
+  }
+
+  .sura-toolbar-mobile {
+    display: flex;
+  }
+
+  .sura-menu-button {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .sura-menu-panel {
+    display: block;
+  }
+
+  .sura-title-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+  }
+
+  .sura-nav-title {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .mode-link {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
+.arabic-text {
+  direction: rtl;
+  font-size: calc(var(--arabic-size) * var(--ayah-scale));
+  line-height: 1.8;
+  margin: 8px 0;
+  font-family: "noorehuda", sans-serif;
+}
+
+.bangla-text {
+  font-size: calc(var(--bangla-size) * var(--ayah-scale));
+  line-height: 1.8;
+  margin: 8px 0;
+}
+
+.info-banner {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed var(--border);
+  background: var(--bg);
+  color: var(--muted);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(14, 165, 233, 0.12);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+.grid-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.home-shell {
+  position: relative;
+  z-index: 1;
+}
+
+.home-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.home-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.home-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-nav-link {
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+  color: var(--text);
+  font-size: 13px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-nav-link:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.home-emblem {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 26px rgba(15, 47, 43, 0.2);
+}
+
+.home-emblem img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.2));
+}
+
+.home-brand-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 26px;
+  margin: 0;
+}
+
+.home-brand-sub {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.saved-ayahs-page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.saved-ayahs-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.saved-ayahs-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.saved-ayahs-title {
+  margin: 0;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 28px;
+}
+
+.saved-ayahs-sub {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.saved-ayah-meta {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: var(--font-sm);
+}
+
+/* ============================================
+   Home Hero Base Styles
+   ============================================ */
+
+.home-hero {
+  gap: 28px;
+  padding: 32px;
+  border-radius: 28px;
+  background: var(--home-hero-bg);
+  border: 1px solid var(--home-hero-border);
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero::after {
+  content: "";
+  position: absolute;
+  right: -80px;
+  top: -120px;
+  width: 260px;
+  height: 260px;
+  border-radius: 40%;
+  background: radial-gradient(circle,
+      rgba(197, 155, 59, 0.22),
+      transparent 70%);
+}
+
+/* Hero typography */
+.home-kicker {
+  color: var(--accent-strong);
+  font-size: 26px;
+}
+
+.home-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 42px;
+  margin: 16px 0 12px;
+}
+
+.home-subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 20px;
+}
+
+/* Hero actions */
+.home-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.ghost-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.primary-button {
+  background: linear-gradient(135deg, var(--accent), var(--gold));
+  color: #0b1b18;
+  box-shadow: 0 10px 20px rgba(15, 47, 43, 0.2);
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 47, 43, 0.25);
+}
+
+.ghost-button {
+  border-color: var(--border);
+  color: var(--text);
+  background: var(--home-ghost-bg);
+}
+
+.ghost-button:hover {
+  border-color: var(--accent);
+  background: var(--home-surface-soft);
+}
+
+/* Hero stats */
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.stat-card {
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+}
+
+.stat-number {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Hero cards */
+.home-hero-card {
+  background: var(--home-surface);
+  border-radius: 24px 24px 36px 36px;
+  padding: 24px;
+  border: 1px solid var(--home-border);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.home-hero-card h3 {
+  margin: 0 0 10px;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+}
+
+/* Hero list */
+.home-hero-list {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.home-hero-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--home-border);
+  color: var(--text);
+  background: var(--home-surface-soft);
+  transition: all 0.2s;
+}
+
+.home-hero-list a:hover {
+  background: var(--home-surface);
+  border-color: var(--accent);
+}
+
+.home-sura-section {
+  margin-top: 38px;
+}
+
+.home-section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.home-section-title {
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+
+.home-section-subtitle {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.home-section-badge {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(15, 122, 92, 0.1);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
+/* Search Section Styles */
+.home-sura-section {
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.home-search-wrap {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.home-search-input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  font-size: 1rem;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+[data-theme="dark"] .home-search-input {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.home-search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.home-search-input::placeholder {
+  color: var(--muted);
+}
+
+.home-search-hint {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.home-sura-card {
+  background: linear-gradient(160deg, var(--home-surface-strong), var(--card));
+  border: 1px solid var(--home-hero-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-sura-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15);
+}
+
+.sura-card-top {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+}
+
+.sura-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.sura-card-link:hover .sura-caligraphy {
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+
+.sura-caligraphy {
+  position: relative;
+  width: 100%;
+  height: 96px;
+  border-radius: 26px;
+  border: 1px solid var(--home-border);
+  background: radial-gradient(circle at top left,
+      rgba(197, 155, 59, 0.2),
+      transparent 55%),
+    var(--home-surface-soft);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.sura-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-family: "surah-name-v4-icon", "Siyam Rupali", sans-serif;
+  line-height: 1;
+}
+
+.sura-icon-base {
+  font-size: 72px;
+  color: var(--gold);
+  opacity: 0.25;
+}
+
+.sura-icon-number {
+  font-size: 40px;
+  color: var(--accent-strong);
+}
+
+.sura-caligraphy-large {
+  height: 160px;
+  margin-bottom: 16px;
+}
+
+.sura-hero {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.sura-hero .sura-caligraphy-large {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 18px 22px;
+  height: auto;
+}
+
+.sura-hero .sura-caligraphy-large .sura-icon {
+  position: static;
+  inset: auto;
+  width: auto;
+  height: auto;
+}
+
+.sura-hero .sura-caligraphy-large .sura-icon-base,
+.sura-hero .sura-caligraphy-large .sura-icon-number {
+  font-size: 68px;
+  color: var(--accent);
+  opacity: 1;
+}
+
+.sura-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sura-title-link:hover {
+  color: var(--accent-strong);
+}
+
+.sura-info {
+  text-align: center;
+}
+
+.sura-name {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+}
+
+.sura-meta {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.sura-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.sura-modes {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  flex-wrap: nowrap;
+}
+
+.sura-mode-chip {
+  flex: 0 0 auto;
+  padding: 6px 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sura-mode-sep {
+  flex: 0 0 auto;
+  width: 1ch;
+  color: var(--muted);
+  line-height: 1;
+  user-select: none;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero::after {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-title {
+    font-size: 34px;
+  }
+
+  .home-hero {
+    padding: 24px;
+  }
+
+  .home-section-head {
+    align-items: flex-start;
+  }
+
+  .sura-toolbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}

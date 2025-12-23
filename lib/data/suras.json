@@ -1,0 +1,1411 @@
+[
+  {
+    "id": 1,
+    "slug": "al-fatihah",
+    "nameBn": "আল ফাতিহা",
+    "revelationPlace": "makki",
+    "nameAr": "الفاتحة",
+    "ayahCount": 7,
+    "keywords": [
+      "fatiha"
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "al-baqarah",
+    "nameBn": "আল বাকারা",
+    "nameAr": "البقرة",
+    "ayahCount": 286,
+    "keywords": [
+      "bakara",
+      "baqara"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 3,
+    "slug": "ali-imran",
+    "nameBn": "আলে ইমরান",
+    "nameAr": "آل عمران",
+    "ayahCount": 200,
+    "keywords": [
+      "imran"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 4,
+    "slug": "an-nisa",
+    "nameBn": "আন নিসা",
+    "nameAr": "النساء",
+    "ayahCount": 176,
+    "keywords": [
+      "nisa"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 5,
+    "slug": "al-maidah",
+    "nameBn": "আল মায়েদা",
+    "nameAr": "المائدة",
+    "ayahCount": 120,
+    "keywords": [
+      "mayedah",
+      "maidah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 6,
+    "slug": "al-anam",
+    "nameBn": "আল আনআম",
+    "nameAr": "الأنعام",
+    "ayahCount": 165,
+    "keywords": [
+      "anam",
+      "anaam"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 7,
+    "slug": "al-araf",
+    "nameBn": "আল আরাফ",
+    "nameAr": "الأعراف",
+    "ayahCount": 206,
+    "keywords": [
+      "araf",
+      "araaf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 8,
+    "slug": "al-anfal",
+    "nameBn": "আল আনফাল",
+    "nameAr": "الأنفال",
+    "ayahCount": 75,
+    "keywords": [
+      "anfal"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 9,
+    "slug": "at-tawbah",
+    "nameBn": "আত তাওবা",
+    "nameAr": "التوبة",
+    "ayahCount": 129,
+    "keywords": [
+      "taoba",
+      "taubah",
+      "tawbah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 10,
+    "slug": "yunus",
+    "nameBn": "ইউনুস",
+    "nameAr": "يونس",
+    "ayahCount": 109,
+    "keywords": [
+      "yunus",
+      "unus"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 11,
+    "slug": "hud",
+    "nameBn": "হূদ",
+    "nameAr": "هود",
+    "ayahCount": 123,
+    "keywords": [
+      "hud",
+      "hod"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 12,
+    "slug": "yusuf",
+    "nameBn": "ইউসুফ",
+    "nameAr": "يوسف",
+    "ayahCount": 111,
+    "keywords": [
+      "yusuf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 13,
+    "slug": "ar-rad",
+    "nameBn": "আর্ রাদ",
+    "nameAr": "الرعد",
+    "ayahCount": 43,
+    "keywords": [
+      "rad",
+      "raad"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 14,
+    "slug": "ibrahim",
+    "nameBn": "ইবরাহিম",
+    "nameAr": "إبراهيم",
+    "ayahCount": 52,
+    "keywords": [
+      "ibrahim"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 15,
+    "slug": "al-hijr",
+    "nameBn": "আল হিজর",
+    "nameAr": "الحجر",
+    "ayahCount": 99,
+    "keywords": [
+      "hijor",
+      "hijr"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 16,
+    "slug": "an-nahl",
+    "nameBn": "আন্ নাহল",
+    "nameAr": "النحل",
+    "ayahCount": 128,
+    "keywords": [
+      "nahol",
+      "nahl"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 17,
+    "slug": "al-isra",
+    "nameBn": "বনি ইসরাঈল",
+    "nameAr": "الإسراء",
+    "ayahCount": 111,
+    "keywords": [
+      "bani",
+      "israel",
+      "bani israel"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 18,
+    "slug": "al-kahf",
+    "nameBn": "আল কাহফ",
+    "nameAr": "الكهف",
+    "ayahCount": 110,
+    "keywords": [
+      "kahaf",
+      "kahf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 19,
+    "slug": "maryam",
+    "nameBn": "মরিয়ম",
+    "nameAr": "مريم",
+    "ayahCount": 98,
+    "keywords": [
+      "moriyom",
+      "moriyam",
+      "mariyom",
+      "mariyam",
+      "maryam"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 20,
+    "slug": "taha",
+    "nameBn": "তোয়াহা",
+    "nameAr": "طه",
+    "ayahCount": 135,
+    "keywords": [
+      "taha",
+      "towaha",
+      "toyaha"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 21,
+    "slug": "al-anbya",
+    "nameBn": "আল আম্বিয়া",
+    "nameAr": "الأنبياء",
+    "ayahCount": 112,
+    "keywords": [
+      "ambia",
+      "ambiya"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 22,
+    "slug": "al-haj",
+    "nameBn": "আল হজ্জ",
+    "nameAr": "الحج",
+    "ayahCount": 78,
+    "keywords": [
+      "hajj"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 23,
+    "slug": "al-muminun",
+    "nameBn": "আল মুমিনুন",
+    "nameAr": "المؤمنون",
+    "ayahCount": 118,
+    "keywords": [
+      "muminun",
+      "muminon",
+      "mominon",
+      "mominun"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 24,
+    "slug": "an-nur",
+    "nameBn": "আন্ নূর",
+    "nameAr": "النور",
+    "ayahCount": 64,
+    "keywords": [
+      "nor",
+      "noor",
+      "nur"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 25,
+    "slug": "al-furqan",
+    "nameBn": "আল ফুরকান",
+    "nameAr": "الفرقان",
+    "ayahCount": 77,
+    "keywords": [
+      "furkan",
+      "forkan",
+      "furqan"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 26,
+    "slug": "ash-shuara",
+    "nameBn": "আশ্ শোয়ারা",
+    "nameAr": "الشعراء",
+    "ayahCount": 227,
+    "keywords": [
+      "shura",
+      "suara",
+      "soara",
+      "shuara",
+      "shoara"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 27,
+    "slug": "an-naml",
+    "nameBn": "আন্ নামল",
+    "nameAr": "النمل",
+    "ayahCount": 93,
+    "keywords": [
+      "namol",
+      "naml"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 28,
+    "slug": "al-qasas",
+    "nameBn": "আল কাসাস",
+    "nameAr": "القصص",
+    "ayahCount": 88,
+    "keywords": [
+      "kasas",
+      "qasas"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 29,
+    "slug": "al-ankabut",
+    "nameBn": "আল আনকাবুত",
+    "nameAr": "العنكبوت",
+    "ayahCount": 69,
+    "keywords": [
+      "ankabot",
+      "ankabut"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 30,
+    "slug": "ar-rum",
+    "nameBn": "আর্ রূম",
+    "nameAr": "الروم",
+    "ayahCount": 60,
+    "keywords": [
+      "rum",
+      "rom",
+      "room"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 31,
+    "slug": "luqman",
+    "nameBn": "লুকমান",
+    "nameAr": "لقمان",
+    "ayahCount": 34,
+    "keywords": [
+      "lukman",
+      "lokman"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 32,
+    "slug": "as-sajdah",
+    "nameBn": "আস্ সাজদা",
+    "nameAr": "السجدة",
+    "ayahCount": 30,
+    "keywords": [
+      "shajda",
+      "shazda",
+      "sajda",
+      "sazda"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 33,
+    "slug": "al-ahzab",
+    "nameBn": "আল আহযাব",
+    "nameAr": "الأحزاب",
+    "ayahCount": 73,
+    "keywords": [
+      "ajhab",
+      "azhab"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 34,
+    "slug": "saba",
+    "nameBn": "আস্ সাবা",
+    "nameAr": "سبأ",
+    "ayahCount": 54,
+    "keywords": [
+      "saba",
+      "saaba"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 35,
+    "slug": "fatir",
+    "nameBn": "আল ফাতির",
+    "nameAr": "فاطر",
+    "ayahCount": 45,
+    "keywords": [
+      "fatir",
+      "fater"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 36,
+    "slug": "ya-sin",
+    "nameBn": "ইয়াসিন",
+    "nameAr": "يس",
+    "ayahCount": 83,
+    "keywords": [
+      "yasin",
+      "yaasin",
+      "yasen"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 37,
+    "slug": "as-saffat",
+    "nameBn": "আস্ সফফাত",
+    "nameAr": "الصافات",
+    "ayahCount": 182,
+    "keywords": [
+      "saffat"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 38,
+    "slug": "sad",
+    "nameBn": "সোয়াদ",
+    "nameAr": "ص",
+    "ayahCount": 88,
+    "keywords": [
+      "soad",
+      "saad",
+      "sad"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 39,
+    "slug": "az-zumar",
+    "nameBn": "আয্ যুমার",
+    "nameAr": "الزمر",
+    "ayahCount": 75,
+    "keywords": [
+      "jumar",
+      "zumar",
+      "jomar",
+      "zomar"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 40,
+    "slug": "ghafir",
+    "nameBn": "আল মুমিন",
+    "nameAr": "غافر",
+    "ayahCount": 85,
+    "keywords": [
+      "momin",
+      "mumin",
+      "muminoon"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 41,
+    "slug": "fussilat",
+    "nameBn": "হামিম আস সাজদা",
+    "nameAr": "فصلت",
+    "ayahCount": 54,
+    "keywords": [
+      "sajdah",
+      "sazdah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 42,
+    "slug": "ash-shuraa",
+    "nameBn": "আশ্ শূরা",
+    "nameAr": "الشورى",
+    "ayahCount": 53,
+    "keywords": [
+      "sura",
+      "shura",
+      "sora",
+      "shora"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 43,
+    "slug": "az-zukhruf",
+    "nameBn": "আয্ যুখরুফ",
+    "nameAr": "الزخرف",
+    "ayahCount": 89,
+    "keywords": [
+      "jukhruf",
+      "jokhruf",
+      "jukhrof",
+      "jokhrof",
+      "zukhruf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 44,
+    "slug": "ad-dukhan",
+    "nameBn": "আদ্ দুখান",
+    "nameAr": "الدخان",
+    "ayahCount": 59,
+    "keywords": [
+      "dukhan",
+      "dokhan"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 45,
+    "slug": "al-jathiyah",
+    "nameBn": "আল জাসিয়া",
+    "nameAr": "الجاثية",
+    "ayahCount": 37,
+    "keywords": [
+      "jasiya",
+      "zasiya",
+      "jasia"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 46,
+    "slug": "al-ahqaf",
+    "nameBn": "আল আহকাফ",
+    "nameAr": "الأحقاف",
+    "ayahCount": 35,
+    "keywords": [
+      "ahkaf",
+      "ahqaf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 47,
+    "slug": "muhammad",
+    "nameBn": "মুহাম্মদ",
+    "nameAr": "محمد",
+    "ayahCount": 38,
+    "keywords": [
+      "muhammad",
+      "mohammad"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 48,
+    "slug": "al-fath",
+    "nameBn": "আল ফাত্হ",
+    "nameAr": "الفتح",
+    "ayahCount": 29,
+    "keywords": [
+      "fatoh",
+      "fatah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 49,
+    "slug": "al-hujurat",
+    "nameBn": "আল হুজুরাত",
+    "nameAr": "الحجرات",
+    "ayahCount": 18,
+    "keywords": [
+      "hujurat",
+      "hujorat",
+      "hojorat",
+      "hojurat"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 50,
+    "slug": "qaf",
+    "nameBn": "কাফ",
+    "nameAr": "ق",
+    "ayahCount": 45,
+    "keywords": [
+      "kaf",
+      "kaaf",
+      "kahf"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 51,
+    "slug": "adh-dhariyat",
+    "nameBn": "আয্ যারিয়াত",
+    "nameAr": "الذاريات",
+    "ayahCount": 60,
+    "keywords": [
+      "jariyat",
+      "zariyat"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 52,
+    "slug": "at-tur",
+    "nameBn": "আত্ তূর",
+    "nameAr": "الطور",
+    "ayahCount": 49,
+    "keywords": [
+      "tor",
+      "tur"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 53,
+    "slug": "an-najm",
+    "nameBn": "আন্ নাজম",
+    "nameAr": "النجم",
+    "ayahCount": 62,
+    "keywords": [
+      "najom",
+      "nazom",
+      "najam",
+      "nazam",
+      "najm"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 54,
+    "slug": "al-qamar",
+    "nameBn": "আল কামার",
+    "nameAr": "القمر",
+    "ayahCount": 55,
+    "keywords": [
+      "kamar",
+      "qamar"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 55,
+    "slug": "ar-rahman",
+    "nameBn": "আর রহমান",
+    "nameAr": "الرحمن",
+    "ayahCount": 78,
+    "keywords": [
+      "rahman"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 56,
+    "slug": "al-waqiah",
+    "nameBn": "আল ওয়াকিয়া",
+    "nameAr": "الواقعة",
+    "ayahCount": 96,
+    "keywords": [
+      "wakia",
+      "waqia",
+      "waqiah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 57,
+    "slug": "al-hadid",
+    "nameBn": "আল হাদিদ",
+    "nameAr": "الحديد",
+    "ayahCount": 29,
+    "keywords": [
+      "hadid"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 58,
+    "slug": "al-mujadila",
+    "nameBn": "আল মুজাদালা",
+    "nameAr": "المجادلة",
+    "ayahCount": 22,
+    "keywords": [
+      "mujadala",
+      "mojadala",
+      "muzadala",
+      "mozadala",
+      "mujadilah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 59,
+    "slug": "al-hashr",
+    "nameBn": "আল হাশর",
+    "nameAr": "الحشر",
+    "ayahCount": 24,
+    "keywords": [
+      "hasor",
+      "hashr"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 60,
+    "slug": "al-mumtahanah",
+    "nameBn": "আল মুমতাহানা",
+    "nameAr": "الممتحنة",
+    "ayahCount": 13,
+    "keywords": [
+      "mumtahana",
+      "momtahana",
+      "mumtahina"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 61,
+    "slug": "as-saf",
+    "nameBn": "আস্ সফ",
+    "nameAr": "الصف",
+    "ayahCount": 14,
+    "keywords": [
+      "sof",
+      "saff"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 62,
+    "slug": "al-jumuah",
+    "nameBn": "আল জুমুয়া",
+    "nameAr": "الجمعة",
+    "ayahCount": 11,
+    "keywords": [
+      "jumuya",
+      "jomoya",
+      "jumoya",
+      "jomuya",
+      "jumuwa",
+      "jumuah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 63,
+    "slug": "al-munafiqun",
+    "nameBn": "আল মুনাফিকুন",
+    "nameAr": "المنافقون",
+    "ayahCount": 11,
+    "keywords": [
+      "munafiqun",
+      "monafiqon"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 64,
+    "slug": "at-taghabun",
+    "nameBn": "আত্ তাগাবুন",
+    "nameAr": "التغابن",
+    "ayahCount": 18,
+    "keywords": [
+      "tagabun",
+      "tagabon",
+      "taghabun"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 65,
+    "slug": "at-talaq",
+    "nameBn": "আত্ তালাক",
+    "nameAr": "الطلاق",
+    "ayahCount": 12,
+    "keywords": [
+      "talak",
+      "talaq"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 66,
+    "slug": "at-tahrim",
+    "nameBn": "আত্ তাহরিম",
+    "nameAr": "التحريم",
+    "ayahCount": 12,
+    "keywords": [
+      "tahrim",
+      "tahrem"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 67,
+    "slug": "al-mulk",
+    "nameBn": "আল মুলক",
+    "nameAr": "الملك",
+    "ayahCount": 30,
+    "keywords": [
+      "mulk",
+      "molk"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 68,
+    "slug": "al-qalam",
+    "nameBn": "আল কলম",
+    "nameAr": "القلم",
+    "ayahCount": 52,
+    "keywords": [
+      "kolom",
+      "kalam",
+      "qalam"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 69,
+    "slug": "al-haqqah",
+    "nameBn": "আল হাককাহ",
+    "nameAr": "الحاقة",
+    "ayahCount": 52,
+    "keywords": [
+      "hakkah",
+      "hokkah",
+      "haqqah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 70,
+    "slug": "al-maarij",
+    "nameBn": "আল মাআরিজ",
+    "nameAr": "المعارج",
+    "ayahCount": 44,
+    "keywords": [
+      "mayarij",
+      "marij",
+      "maarij"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 71,
+    "slug": "nuh",
+    "nameBn": "নূহ",
+    "nameAr": "نوح",
+    "ayahCount": 28,
+    "keywords": [
+      "nuh",
+      "noh"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 72,
+    "slug": "al-jinn",
+    "nameBn": "আল জিন",
+    "nameAr": "الجن",
+    "ayahCount": 28,
+    "keywords": [
+      "jin",
+      "jen",
+      "gin"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 73,
+    "slug": "al-muzzammil",
+    "nameBn": "আল মুযযাম্মিল",
+    "nameAr": "المزمل",
+    "ayahCount": 20,
+    "keywords": [
+      "mujammil",
+      "mojammil",
+      "muzammil",
+      "mozammil",
+      "muzzammil",
+      "mozzammil"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 74,
+    "slug": "al-muddaththir",
+    "nameBn": "আল মুদ্দাসসির",
+    "nameAr": "المدثر",
+    "ayahCount": 56,
+    "keywords": [
+      "mudassir",
+      "muddassir",
+      "moddassir"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 75,
+    "slug": "al-qiyamah",
+    "nameBn": "আল কিয়ামা",
+    "nameAr": "القيامة",
+    "ayahCount": 40,
+    "keywords": [
+      "kiyama",
+      "qiwama",
+      "qiyamah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 76,
+    "slug": "al-insan",
+    "nameBn": "আল ইনসান",
+    "nameAr": "الإنسان",
+    "ayahCount": 31,
+    "keywords": [
+      "insan",
+      "ensan"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 77,
+    "slug": "al-mursalat",
+    "nameBn": "আল মুরসালাত",
+    "nameAr": "المرسلات",
+    "ayahCount": 50,
+    "keywords": [
+      "mursalat",
+      "morsalat"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 78,
+    "slug": "an-naba",
+    "nameBn": "আন্ নাবা",
+    "nameAr": "النبأ",
+    "ayahCount": 40,
+    "keywords": [
+      "naba"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 79,
+    "slug": "an-naziat",
+    "nameBn": "আন্ নাযিয়াত",
+    "nameAr": "النازعات",
+    "ayahCount": 46,
+    "keywords": [
+      "najiyat",
+      "naziyat",
+      "naziat",
+      "najiat"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 80,
+    "slug": "abasa",
+    "nameBn": "আবাসা",
+    "nameAr": "عبس",
+    "ayahCount": 42,
+    "keywords": [
+      "abasa"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 81,
+    "slug": "at-takwir",
+    "nameBn": "আত্ তাকভীর",
+    "nameAr": "التكوير",
+    "ayahCount": 29,
+    "keywords": [
+      "takvir",
+      "taqvir",
+      "takwir"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 82,
+    "slug": "al-infitar",
+    "nameBn": "আল ইনফিতার",
+    "nameAr": "الانفطار",
+    "ayahCount": 19,
+    "keywords": [
+      "infitar",
+      "enfitar"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 83,
+    "slug": "al-mutaffifin",
+    "nameBn": "আল মুতাফ্ফিফীন",
+    "nameAr": "المطففين",
+    "ayahCount": 36,
+    "keywords": [
+      "mutaffifin",
+      "motaffifin"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 84,
+    "slug": "al-inshiqaq",
+    "nameBn": "আল ইনশিকাক",
+    "nameAr": "الانشقاق",
+    "ayahCount": 25,
+    "keywords": [
+      "inshikak",
+      "insikak",
+      "insiqak",
+      "inshiqak"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 85,
+    "slug": "al-buruj",
+    "nameBn": "আল বুরূজ",
+    "nameAr": "البروج",
+    "ayahCount": 22,
+    "keywords": [
+      "boroj",
+      "buruj",
+      "buruz",
+      "boroz"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 86,
+    "slug": "at-tariq",
+    "nameBn": "আত তারিক",
+    "nameAr": "الطارق",
+    "ayahCount": 17,
+    "keywords": [
+      "tarik",
+      "tariq"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 87,
+    "slug": "al-ala",
+    "nameBn": "আল আলা",
+    "nameAr": "الأعلى",
+    "ayahCount": 19,
+    "keywords": [
+      "ala",
+      "aala"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 88,
+    "slug": "al-ghashiyah",
+    "nameBn": "আল গাশিয়া",
+    "nameAr": "الغاشية",
+    "ayahCount": 26,
+    "keywords": [
+      "gashiya",
+      "goshiya",
+      "ghashiyah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 89,
+    "slug": "al-fajr",
+    "nameBn": "আল ফাজর",
+    "nameAr": "الفجر",
+    "ayahCount": 30,
+    "keywords": [
+      "fajr",
+      "fazor",
+      "fozor",
+      "fajor",
+      "fojor"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 90,
+    "slug": "al-balad",
+    "nameBn": "আল বালাদ",
+    "nameAr": "البلد",
+    "ayahCount": 20,
+    "keywords": [
+      "balad"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 91,
+    "slug": "ash-shams",
+    "nameBn": "আশ্ শামস",
+    "nameAr": "الشمس",
+    "ayahCount": 15,
+    "keywords": [
+      "shams",
+      "sams"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 92,
+    "slug": "al-layl",
+    "nameBn": "আল লাইল",
+    "nameAr": "الليل",
+    "ayahCount": 21,
+    "keywords": [
+      "lail",
+      "lael"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 93,
+    "slug": "ad-duhaa",
+    "nameBn": "আদ্ দোহা",
+    "nameAr": "الضحى",
+    "ayahCount": 11,
+    "keywords": [
+      "doha"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 94,
+    "slug": "ash-sharh",
+    "nameBn": "আল ইনশিরাহ",
+    "nameAr": "الشرح",
+    "ayahCount": 8,
+    "keywords": [
+      "inshirah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 95,
+    "slug": "at-tin",
+    "nameBn": "আত্ তীন",
+    "nameAr": "التين",
+    "ayahCount": 8,
+    "keywords": [
+      "ten",
+      "tin",
+      "teen"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 96,
+    "slug": "al-alaq",
+    "nameBn": "আল আলাক",
+    "nameAr": "العلق",
+    "ayahCount": 19,
+    "keywords": [
+      "alak",
+      "alaq"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 97,
+    "slug": "al-qadr",
+    "nameBn": "আল কাদর",
+    "nameAr": "القدر",
+    "ayahCount": 5,
+    "keywords": [
+      "kadar",
+      "kador"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 98,
+    "slug": "al-bayyinah",
+    "nameBn": "আল বাইয়্যেনা",
+    "nameAr": "البينة",
+    "ayahCount": 8,
+    "keywords": [
+      "baiyenah",
+      "baienah"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 99,
+    "slug": "az-zalzalah",
+    "nameBn": "যিলযাল",
+    "nameAr": "الزلزلة",
+    "ayahCount": 8,
+    "keywords": [
+      "zilzal",
+      "jiljal"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 100,
+    "slug": "al-adiyat",
+    "nameBn": "আল আদিয়াত",
+    "nameAr": "العاديات",
+    "ayahCount": 11,
+    "keywords": [
+      "adiyat"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 101,
+    "slug": "al-qariah",
+    "nameBn": "আল কারিয়া",
+    "nameAr": "القارعة",
+    "ayahCount": 11,
+    "keywords": [
+      "qariah",
+      "kariyah",
+      "qariyah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 102,
+    "slug": "at-takathur",
+    "nameBn": "আত্ তাকাসুর",
+    "nameAr": "التكاثر",
+    "ayahCount": 8,
+    "keywords": [
+      "takasur"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 103,
+    "slug": "al-asr",
+    "nameBn": "আল আসর",
+    "nameAr": "العصر",
+    "ayahCount": 3,
+    "keywords": [
+      "asor"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 104,
+    "slug": "al-humazah",
+    "nameBn": "আল হুমাযা",
+    "nameAr": "الهمزة",
+    "ayahCount": 9,
+    "keywords": [
+      "humazah",
+      "humajah"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 105,
+    "slug": "al-fil",
+    "nameBn": "আল ফীল",
+    "nameAr": "الفيل",
+    "ayahCount": 5,
+    "keywords": [
+      "fil"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 106,
+    "slug": "quraysh",
+    "nameBn": "আল কুরাইশ",
+    "nameAr": "قريش",
+    "ayahCount": 4,
+    "keywords": [
+      "quraish"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 107,
+    "slug": "al-maun",
+    "nameBn": "আল মাউন",
+    "nameAr": "الماعون",
+    "ayahCount": 7,
+    "keywords": [
+      "maun"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 108,
+    "slug": "al-kawthar",
+    "nameBn": "আল কাওসার",
+    "nameAr": "الكوثر",
+    "ayahCount": 3,
+    "keywords": [
+      "kausar",
+      "kaosar"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 109,
+    "slug": "al-kafirun",
+    "nameBn": "আল কাফিরূন",
+    "nameAr": "الكافرون",
+    "ayahCount": 6,
+    "keywords": [
+      "kafirun"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 110,
+    "slug": "an-nasr",
+    "nameBn": "আন্ নসর",
+    "nameAr": "النصر",
+    "ayahCount": 3,
+    "keywords": [
+      "nasor",
+      "nasr"
+    ],
+    "revelationPlace": "madani"
+  },
+  {
+    "id": 111,
+    "slug": "al-masad",
+    "nameBn": "আল লাহাব",
+    "nameAr": "المسد",
+    "ayahCount": 5,
+    "keywords": [
+      "lahab"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 112,
+    "slug": "al-ikhlas",
+    "nameBn": "আল ইখলাস",
+    "nameAr": "الإخلاص",
+    "ayahCount": 4,
+    "keywords": [
+      "ikhlas"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 113,
+    "slug": "al-falaq",
+    "nameBn": "আল ফালাক",
+    "nameAr": "الفلق",
+    "ayahCount": 5,
+    "keywords": [
+      "falak",
+      "falaq"
+    ],
+    "revelationPlace": "makki"
+  },
+  {
+    "id": 114,
+    "slug": "an-nas",
+    "nameBn": "আন্ নাস",
+    "nameAr": "الناس",
+    "ayahCount": 6,
+    "keywords": [
+      "nas"
+    ],
+    "revelationPlace": "makki"
+  }
+]
