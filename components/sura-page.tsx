@@ -22,6 +22,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
   const showArabic = mode !== 'bangla';
   const showBangla = mode !== 'arabic';
   const basePath = `/sura/${sura.id}/${slug}`;
+  const [menuOpen, setMenuOpen] = useState(false);
   const [currentTrack, setCurrentTrack] = useState<{ index: number; lang: AudioLang } | null>(
     null
   );
@@ -149,7 +150,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
               {toBnDigits(sura.id)}. {sura.nameBn}
             </a>
           </div>
-          <div className="sura-toolbar">
+          <div className="sura-toolbar sura-toolbar-desktop">
             <a className={`toggle ${mode === 'both' ? 'active' : ''}`} href={basePath}>
               আরবি + বাংলা
             </a>
@@ -168,6 +169,40 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             <ThemeToggle />
             <AyahTextSizeControls />
           </div>
+          <button
+            type="button"
+            className="sura-menu-button"
+            aria-label="Toggle menu"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+          {menuOpen && (
+            <div className="sura-menu-panel">
+              <div className="sura-toolbar sura-toolbar-mobile">
+                <a className={`toggle ${mode === 'both' ? 'active' : ''}`} href={basePath}>
+                  আরবি + বাংলা
+                </a>
+                <a
+                  className={`toggle ${mode === 'arabic' ? 'active' : ''}`}
+                  href={`${basePath}/arabic`}
+                >
+                  আরবি
+                </a>
+                <a
+                  className={`toggle ${mode === 'bangla' ? 'active' : ''}`}
+                  href={`${basePath}/bangla`}
+                >
+                  বাংলা
+                </a>
+                <ThemeToggle />
+                <AyahTextSizeControls />
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
