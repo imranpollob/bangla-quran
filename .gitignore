@@ -9,3 +9,13 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.next
+.vercel
+out
+.turbo
+coverage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist
