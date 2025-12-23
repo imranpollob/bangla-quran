@@ -60,11 +60,9 @@
   --font-xl: clamp(22px, 2vw, 28px);
   --arabic-size: clamp(28px, 5vw, 36px);
   --bangla-size: clamp(18px, 3.2vw, 22px);
-  --home-hero-bg: linear-gradient(
-      130deg,
+  --home-hero-bg: linear-gradient(130deg,
       rgba(255, 255, 255, 0.92),
-      rgba(247, 242, 232, 0.85)
-    );
+      rgba(247, 242, 232, 0.85));
   --home-hero-border: rgba(197, 155, 59, 0.28);
   --home-pattern: rgba(15, 122, 92, 0.08);
   --home-pattern-strong: rgba(197, 155, 59, 0.16);
@@ -92,11 +90,9 @@
   --accent-strong: #1f9b7c;
   --gold: #e0c372;
   --shadow: 0 18px 44px rgba(0, 0, 0, 0.5);
-  --home-hero-bg: linear-gradient(
-      130deg,
+  --home-hero-bg: linear-gradient(130deg,
       rgba(18, 32, 29, 0.95),
-      rgba(11, 27, 24, 0.85)
-    );
+      rgba(11, 27, 24, 0.85));
   --home-hero-border: rgba(224, 195, 114, 0.25);
   --home-pattern: rgba(66, 194, 160, 0.16);
   --home-pattern-strong: rgba(224, 195, 114, 0.2);
@@ -400,6 +396,77 @@ button {
   font-size: var(--font-sm);
 }
 
+/* ============================================
+   Hero Section Styles
+   ============================================ */
+
+/* Hero container - centered content layout */
+.home-hero-center {
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home-hero-center .home-subtitle {
+  margin-bottom: 3rem;
+}
+
+/* Hero actions row - horizontal quick links */
+.hero-actions-row {
+  display: flex;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: stretch;
+  justify-content: center;
+  overflow-x: auto;
+  padding: 0 0.5rem;
+}
+
+/* Small hero card variant for quick actions */
+.home-hero-card.hero-card-small {
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 1rem;
+  min-width: 220px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-hero-card.hero-card-small:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15, 47, 43, 0.15);
+}
+
+.hero-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-card-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.5rem;
+}
+
+.hero-card-sub {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 520px) {
+  .home-hero-card.hero-card-small {
+    min-width: 160px;
+    padding: 0.75rem;
+  }
+}
+
 .ayah-actions {
   display: flex;
   gap: 8px;
@@ -411,7 +478,7 @@ button {
   align-items: center;
 }
 
-.ayah-line + .ayah-line {
+.ayah-line+.ayah-line {
   margin-top: 10px;
 }
 
@@ -495,10 +562,12 @@ button {
     transform: scale(1);
     box-shadow: 0 0 0 4px var(--audio-btn-ring);
   }
+
   50% {
     transform: scale(1.06);
     box-shadow: 0 0 0 10px var(--audio-btn-ring);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 0 4px var(--audio-btn-ring);
@@ -665,9 +734,11 @@ button {
   text-transform: uppercase;
 }
 
+/* ============================================
+   Home Hero Base Styles
+   ============================================ */
+
 .home-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 28px;
   padding: 32px;
   border-radius: 28px;
@@ -686,23 +757,15 @@ button {
   width: 260px;
   height: 260px;
   border-radius: 40%;
-  background: radial-gradient(
-    circle,
-    rgba(197, 155, 59, 0.22),
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(197, 155, 59, 0.22),
+      transparent 70%);
 }
 
+/* Hero typography */
 .home-kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(197, 155, 59, 0.14);
   color: var(--accent-strong);
-  font-size: 14px;
-  letter-spacing: 0.04em;
+  font-size: 26px;
 }
 
 .home-title {
@@ -715,9 +778,9 @@ button {
   margin: 0;
   color: var(--muted);
   font-size: 20px;
-  max-width: 520px;
 }
 
+/* Hero actions */
 .home-actions {
   display: flex;
   gap: 12px;
@@ -735,6 +798,7 @@ button {
   border: 1px solid transparent;
   text-decoration: none;
   font-weight: 600;
+  transition: all 0.2s;
 }
 
 .primary-button {
@@ -743,12 +807,23 @@ button {
   box-shadow: 0 10px 20px rgba(15, 47, 43, 0.2);
 }
 
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(15, 47, 43, 0.25);
+}
+
 .ghost-button {
   border-color: var(--border);
   color: var(--text);
   background: var(--home-ghost-bg);
 }
 
+.ghost-button:hover {
+  border-color: var(--accent);
+  background: var(--home-surface-soft);
+}
+
+/* Hero stats */
 .home-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -775,6 +850,7 @@ button {
   color: var(--muted);
 }
 
+/* Hero cards */
 .home-hero-card {
   background: var(--home-surface);
   border-radius: 24px 24px 36px 36px;
@@ -788,6 +864,7 @@ button {
   font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
 }
 
+/* Hero list */
 .home-hero-list {
   list-style: none;
   padding: 0;
@@ -805,6 +882,12 @@ button {
   border: 1px solid var(--home-border);
   color: var(--text);
   background: var(--home-surface-soft);
+  transition: all 0.2s;
+}
+
+.home-hero-list a:hover {
+  background: var(--home-surface);
+  border-color: var(--accent);
 }
 
 .home-sura-section {
@@ -894,11 +977,9 @@ button {
   height: 96px;
   border-radius: 26px;
   border: 1px solid var(--home-border);
-  background: radial-gradient(
-      circle at top left,
+  background: radial-gradient(circle at top left,
       rgba(197, 155, 59, 0.2),
-      transparent 55%
-    ),
+      transparent 55%),
     var(--home-surface-soft);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
   overflow: hidden;

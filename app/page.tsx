@@ -20,63 +20,33 @@ export default function Page() {
           <ThemeToggle />
         </div>
 
-        <section className="home-hero">
-          <div>
+        <section className="home-hero home-hero-v1">
+          <div className="home-hero-center">
             <div className="home-kicker">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ</div>
-            <h2 className="home-title">আলোর পথে কোরআনের সাথে থাকুন</h2>
+            <h2 className="home-title">আসসালামু আলাইকুম</h2>
             <p className="home-subtitle">
-              আরবি তিলাওয়াত, বাংলা অনুবাদ ও সহজ নেভিগেশন—একই স্থানে। অফলাইন,
-              বুকমার্ক ও দ্রুত সার্চ দিয়ে প্রতিদিনের পড়া সহজ করুন।
+              আপনার তিলাওয়াত যাত্রায় স্বাগতম
             </p>
-            <div className="home-actions">
-              <a className="primary-button" href="#sura-list">
-                সূরা তালিকা দেখুন
-              </a>
-              <a className="ghost-button" href="/sura/1/al-fatihah">
-                সূরা ফাতিহা
-              </a>
-            </div>
-            <div className="home-stats">
-              <div className="stat-card">
-                <span className="stat-number">{toBnDigits(114)}</span>
-                <span className="stat-label">সম্পূর্ণ সূরা সংগ্রহ</span>
-              </div>
-              <div className="stat-card">
-                <span className="stat-number">{toBnDigits(3)}</span>
-                <span className="stat-label">দেখার মোড</span>
-              </div>
-              <div className="stat-card">
-                <span className="stat-number">অডিও</span>
-                <span className="stat-label">শুদ্ধ তিলাওয়াত</span>
-              </div>
-            </div>
-          </div>
 
-          <div className="home-hero-card">
-            <h3>দ্রুত শুরু করুন</h3>
-            <p style={{ margin: '0 0 12px', color: 'var(--muted)' }}>
-              প্রিয় সূরা থেকে শুরু করুন অথবা সূরা তালিকা থেকে বেছে নিন।
-            </p>
-            <ul className="home-hero-list">
-              <li>
-                <a href="/sura/36/ya-sin">
-                  সূরা ইয়াসিন
-                  <span>→</span>
-                </a>
-              </li>
-              <li>
-                <a href="/sura/55/ar-rahman">
-                  সূরা আর-রহমান
-                  <span>→</span>
-                </a>
-              </li>
-              <li>
-                <a href="/sura/67/al-mulk">
-                  সূরা আল-মুলক
-                  <span>→</span>
-                </a>
-              </li>
-            </ul>
+            <div className="hero-actions-row">
+              <a href="#sura-list" className="home-hero-card hero-card-small">
+                <div className="hero-icon">📚</div>
+                <h3 className="hero-card-title">সূরা তালিকা</h3>
+                <p className="hero-card-sub">{toBnDigits(114)} সূরা</p>
+              </a>
+
+              <a href="#saved-ayahs" className="home-hero-card hero-card-small">
+                <div className="hero-icon">🔖</div>
+                <h3 className="hero-card-title">সংরক্ষিত আয়াত</h3>
+                <p className="hero-card-sub">আপনার প্রিয় আয়াত</p>
+              </a>
+
+              <a href="#learning" className="home-hero-card hero-card-small">
+                <div className="hero-icon">📖</div>
+                <h3 className="hero-card-title">শিক্ষা কার্যক্রম</h3>
+                <p className="hero-card-sub">শেখার কার্যক্রম</p>
+              </a>
+            </div>
           </div>
         </section>
 
