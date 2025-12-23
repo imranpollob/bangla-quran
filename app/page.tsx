@@ -10,7 +10,7 @@ export default function Page() {
         <div className="home-topbar">
           <div className="home-brand">
             <div className="home-emblem">
-              <img src="/quran.png" alt="কোরআন" />
+              <img src="/favicon.ico" alt="কোরআন" />
             </div>
             <div>
               <h1 className="home-brand-title">বাংলা কোরআন</h1>

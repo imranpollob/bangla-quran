@@ -25,26 +25,16 @@ export default function HomeSearch({ suras }: Props) {
 
   return (
     <section id="sura-list" className="home-sura-section">
-      <div className="home-section-head">
-        <div>
-          <h2 className="home-section-title">সব সূরা এক জায়গায়</h2>
-          <p className="home-section-subtitle">
-            নাম বা ইংরেজি উচ্চারণ লিখে সূরা খুঁজুন।
-          </p>
-        </div>
-        <div className="home-section-badge">
-          ফলাফল {toBnDigits(filtered.length)}
-        </div>
-      </div>
+
       <div className="home-search-wrap">
         <input
           className="home-search-input"
-          placeholder="যেমনঃ ইয়াসিন / yasin"
+          placeholder="সূরা খুঁজুন - যেমনঃ ইয়াসিন / yasin"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
         <div className="home-search-hint">
-          দ্রুত নেভিগেশনের জন্য আরবি+বাংলা, আরবি অথবা বাংলা মোডে পড়ুন।
+          {toBnDigits(filtered.length)} টি সূরা পাওয়া গেছে
         </div>
       </div>
       <div className="sura-grid home-grid">
