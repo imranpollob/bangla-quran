@@ -5,26 +5,26 @@ const siteUrl = 'https://banglaquran.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();
-  const baseEntries = [
+  const baseEntries: MetadataRoute.Sitemap = [
     {
       url: `${siteUrl}/`,
       lastModified,
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 1
     }
   ];
 
-  const suraEntries = suraList.flatMap((sura) => {
+  const suraEntries: MetadataRoute.Sitemap = suraList.flatMap((sura) => {
     const base = {
       url: `${siteUrl}/sura/${sura.id}/${sura.slug}`,
       lastModified,
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.7
     };
     const modes = ['arabic', 'bangla'].map((mode) => ({
       url: `${siteUrl}/sura/${sura.id}/${sura.slug}/${mode}`,
       lastModified,
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.6
     }));
     return [base, ...modes];
