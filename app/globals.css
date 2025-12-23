@@ -675,10 +675,14 @@ button {
   width: 100%;
   padding: 14px 16px;
   border-radius: 14px;
-  border: 1px solid rgba(15, 122, 92, 0.2);
-  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-strong);
   font-size: 18px;
   color: var(--text);
+}
+
+.home-search-input::placeholder {
+  color: var(--muted);
 }
 
 .home-search-hint {
