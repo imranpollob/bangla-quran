@@ -50,14 +50,17 @@ export default function HomeSearch({ suras }: Props) {
       <div className="sura-grid home-grid">
         {filtered.map((sura) => (
           <div className="card home-sura-card" key={sura.id}>
-            <div className="sura-card-top">
-              <div className="sura-caligraphy">
+            <a
+              className="sura-card-link"
+              href={`/sura/${sura.id}/${sura.slug}`}
+            >
+              <div className="sura-caligraphy" aria-hidden="true">
                 <div className="sura-icon sura-icon-base">{`surah-icon`}</div>
                 <div className="sura-icon sura-icon-number">
                   {`surah${String(sura.id).padStart(3, '0')}`}
                 </div>
               </div>
-              <div className='sura-info'>
+              <div className="sura-info">
                 <h3 className="sura-name">
                   {toBnDigits(sura.id)}. {sura.nameBn}
                 </h3>
@@ -69,7 +72,7 @@ export default function HomeSearch({ suras }: Props) {
                   {toBnDigits(sura.ayahCount)} আয়াত
                 </div>
               </div>
-            </div>
+            </a>
             <div className="sura-actions">
               <div className="sura-modes">
                 <a
