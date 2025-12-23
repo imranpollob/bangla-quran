@@ -294,6 +294,16 @@ button {
   padding: 14px 16px;
   background: var(--card);
   box-shadow: var(--shadow);
+  scroll-margin-top: 120px;
+}
+
+.ayah-card-playing {
+  border-color: var(--accent);
+  box-shadow: 0 12px 28px rgba(15, 47, 43, 0.18);
+}
+
+.ayah-card-playing .ayah-number {
+  color: var(--accent-strong);
 }
 
 .ayah-top {
