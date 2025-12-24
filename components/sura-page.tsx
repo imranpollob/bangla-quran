@@ -29,6 +29,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ayahRefs = useRef<(HTMLElement | null)[]>([]);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,6 +41,20 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: PointerEvent) => {
+      if (!menuOpen) return;
+      const target = event.target as Node | null;
+      if (menuRef.current && target && menuRef.current.contains(target)) {
+        return;
+      }
+      setMenuOpen(false);
+    };
+
+    document.addEventListener('pointerdown', handleOutsideClick);
+    return () => document.removeEventListener('pointerdown', handleOutsideClick);
+  }, [menuOpen]);
 
   const scrollToAyah = useCallback((index: number) => {
     const node = ayahRefs.current[index];
@@ -152,7 +167,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
   return (
     <>
       <div className="sura-sticky-nav">
-        <div className="page-shell sura-nav-bar">
+        <div className="page-shell sura-nav-bar" ref={menuRef}>
           <a href="/" className="mode-link" style={{ padding: '6px 10px' }}>
             ← সব সূরা
           </a>

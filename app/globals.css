@@ -313,6 +313,20 @@ button {
   height: 2px;
   background: var(--text);
   border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sura-menu-button[aria-expanded='true'] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.sura-menu-button[aria-expanded='true'] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.sura-menu-button[aria-expanded='true'] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .sura-nav-bar {
@@ -766,6 +780,20 @@ button {
   height: 2px;
   border-radius: 999px;
   background: var(--text);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.site-nav-toggle[aria-expanded='true'] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.site-nav-toggle[aria-expanded='true'] span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.site-nav-toggle[aria-expanded='true'] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .home-topbar-actions {
