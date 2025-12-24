@@ -289,6 +289,36 @@ button {
   color: var(--accent-strong);
 }
 
+.go-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: var(--font-sm);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 70;
+}
+
+.go-top.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.go-top:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
 .sura-toolbar .toggle {
   white-space: nowrap;
 }
@@ -1387,6 +1417,12 @@ button {
   .home-emblem img {
     width: 28px;
     height: 28px;
+  }
+
+  .go-top {
+    right: 14px;
+    bottom: 14px;
+    padding: 8px 12px;
   }
 
   .saved-ayahs-title {

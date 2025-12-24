@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
 import ThemeScript from '@/components/theme-script';
+import GoToTop from '@/components/go-to-top';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://banglaquran.app'),
@@ -43,7 +44,10 @@ export default function RootLayout({
         <ThemeScript />
         <link rel="manifest" href="/manifest.webmanifest" />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <GoToTop />
+      </body>
     </html>
   );
 }
