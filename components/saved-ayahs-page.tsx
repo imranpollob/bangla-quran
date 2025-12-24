@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import ThemeToggle from '@/components/theme-toggle';
+import SiteHeader from '@/components/site-header';
 import { getSuraById } from '@/lib/data/suras';
 import { loadAyahsForSura } from '@/lib/data/loader';
 import { toBnDigits } from '@/lib/format';
@@ -130,24 +130,20 @@ export default function SavedAyahsPage() {
   return (
     <div className="saved-ayahs-page">
       <div className="page-shell">
-        <div className="saved-ayahs-topbar">
-          <a href="/" className="mode-link">
-            ← সব সূরা
-          </a>
+        <SiteHeader />
+        <div className="saved-ayahs-header">
           <h1 className="saved-ayahs-title">সংরক্ষিত আয়াত</h1>
-          <div className="saved-ayahs-actions">
-            {canClear && (
+          {canClear && (
+            <div className="saved-ayahs-actions">
               <button type="button" className="toggle" onClick={clearAll}>
                 🧹 সব মুছে ফেলুন
               </button>
-            )}
-            <ThemeToggle />
-          </div>
+            </div>
+          )}
         </div>
         <p className="saved-ayahs-sub">
-          {total === 0
-            ? 'আপনার সংরক্ষিত আয়াতগুলো এখানে দেখানো হবে।'
-            : `${toBnDigits(total)} টি আয়াত সংরক্ষিত আছে`}
+          {total > 0
+            ? `${toBnDigits(total)} টি আয়াত সংরক্ষিত আছে`: ''}
         </p>
 
         {loading && <div className="info-banner">সংরক্ষিত আয়াত লোড হচ্ছে...</div>}

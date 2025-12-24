@@ -1,5 +1,5 @@
 import HomeSearch from '@/components/home-search';
-import ThemeToggle from '@/components/theme-toggle';
+import SiteHeader from '@/components/site-header';
 import { toBnDigits } from '@/lib/format';
 import { suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
@@ -14,25 +14,7 @@ export default function Page() {
   return (
     <div className="home">
       <div className="page-shell home-shell">
-        <div className="home-topbar">
-          <div className="home-brand">
-            <div className="home-emblem">
-              <img src="/favicon.ico" alt="কোরআন" />
-            </div>
-            <div>
-              <h1 className="home-brand-title">বাংলা কোরআন</h1>
-              <div className="home-brand-sub">Arabic + Bangla with Audio</div>
-            </div>
-          </div>
-          <div className="home-topbar-actions">
-            <nav className="home-nav">
-              <a className="home-nav-link" href="/saved-ayahs">
-                সংরক্ষিত আয়াত
-              </a>
-            </nav>
-            <ThemeToggle />
-          </div>
-        </div>
+        <SiteHeader />
 
         <section className="home-hero home-hero-v1">
           <div className="home-hero-center">
