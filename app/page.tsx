@@ -36,12 +36,6 @@ export default function Page() {
                 <h3 className="hero-card-title">সংরক্ষিত আয়াত</h3>
                 <p className="hero-card-sub">আপনার প্রিয় আয়াত</p>
               </a>
-
-              <a href="#learning" className="home-hero-card hero-card-small">
-                <div className="hero-icon">📖</div>
-                <h3 className="hero-card-title">শিক্ষা কার্যক্রম</h3>
-                <p className="hero-card-sub">শেখার কার্যক্রম</p>
-              </a>
             </div>
           </div>
         </section>

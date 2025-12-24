@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ThemeToggle from '@/components/theme-toggle';
 
 const navItems = [
@@ -10,9 +10,24 @@ const navItems = [
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const headerRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: PointerEvent) => {
+      if (!menuOpen) return;
+      const target = event.target as Node | null;
+      if (headerRef.current && target && headerRef.current.contains(target)) {
+        return;
+      }
+      setMenuOpen(false);
+    };
+
+    document.addEventListener('pointerdown', handleOutsideClick);
+    return () => document.removeEventListener('pointerdown', handleOutsideClick);
+  }, [menuOpen]);
 
   return (
-    <header className="site-header">
+    <header className="site-header" ref={headerRef}>
       <a className="site-brand" href="/">
         <span className="home-emblem" aria-hidden="true">
           <img src="/favicon.ico" alt="" />
