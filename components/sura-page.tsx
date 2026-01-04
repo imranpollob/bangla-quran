@@ -71,7 +71,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
 
       audio.src = src;
       audio.currentTime = 0;
-      audio.play().catch(() => {});
+      audio.play().catch(() => { });
       setCurrentTrack({ index, lang });
       scrollToAyah(index);
     },
@@ -89,7 +89,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
           if (audio.ended) {
             audio.currentTime = 0;
           }
-          audio.play().catch(() => {});
+          audio.play().catch(() => { });
         } else {
           audio.pause();
         }
@@ -175,6 +175,12 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             <a href={basePath} className="sura-title-link">
               {toBnDigits(sura.id)}. {sura.nameBn}
             </a>
+            <p className="sura-meta" style={{ margin: 0 }}>
+              {sura.revelationPlace
+                ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
+                : ''}
+              {toBnDigits(sura.ayahCount)} আয়াত
+            </p>
           </div>
           <div className="sura-toolbar">
             <a className={`toggle ${mode === 'both' ? 'active' : ''}`} href={basePath}>
@@ -246,19 +252,6 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
             </div>
             <div className="sura-icon sura-icon-base">{`surah-icon`}</div>
           </a>
-          <div>
-            <h1 className="sura-title" style={{ margin: 0 }}>
-              <a href={basePath} className="sura-title-link">
-                {toBnDigits(sura.id)}. {sura.nameBn}
-              </a>
-            </h1>
-            <p className="sura-meta">
-              {sura.revelationPlace
-                ? `${sura.revelationPlace === 'makki' ? 'মাক্কী' : 'মাদানী'} · `
-                : ''}
-              {toBnDigits(sura.ayahCount)} আয়াত
-            </p>
-          </div>
         </div>
 
 
