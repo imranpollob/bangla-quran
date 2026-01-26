@@ -1,5 +1,5 @@
 import SuraPage from '@/components/sura-page';
-import { loadAyahsForSura } from '@/lib/data/loader';
+import { loadAyahsForSura, loadTafsirForSura } from '@/lib/data/loader';
 import { getSuraById, suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -96,6 +96,7 @@ export default async function Page({
   if (!sura) return notFound();
 
   const ayahs = await loadAyahsForSura(sura.id);
+  const tafsirs = await loadTafsirForSura(sura.id);
 
-  return <SuraPage sura={sura} ayahs={ayahs} mode="both" slug={params.slug} />;
+  return <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode="both" slug={params.slug} />;
 }

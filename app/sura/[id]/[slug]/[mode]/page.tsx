@@ -1,5 +1,5 @@
 import SuraPage from '@/components/sura-page';
-import { loadAyahsForSura } from '@/lib/data/loader';
+import { loadAyahsForSura, loadTafsirForSura } from '@/lib/data/loader';
 import { getSuraById, normalizeMode, suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
@@ -83,9 +83,8 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${sura.id}. ${sura.nameBn} | ${
-    mode === 'arabic' ? 'আরবি' : 'বাংলা'
-  }`;
+  const title = `${sura.id}. ${sura.nameBn} | ${mode === 'arabic' ? 'আরবি' : 'বাংলা'
+    }`;
   const description = buildDescription(sura, mode === 'arabic' ? 'arabic' : 'bangla');
   const keywords = buildKeywords(sura, mode === 'arabic' ? 'arabic' : 'bangla');
   return buildMetadata(params.id, params.slug, mode, title, description, keywords);
@@ -111,6 +110,7 @@ export default async function Page({
   if (!sura || mode === 'both') return notFound();
 
   const ayahs = await loadAyahsForSura(sura.id);
+  const tafsirs = await loadTafsirForSura(sura.id);
 
-  return <SuraPage sura={sura} ayahs={ayahs} mode={mode} slug={params.slug} />;
+  return <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode={mode} slug={params.slug} />;
 }

@@ -9,3 +9,16 @@ export async function loadAyahsForSura(id: number): Promise<Ayah[]> {
   );
   return data;
 }
+
+export async function loadTafsirForSura(id: number): Promise<Record<number, string>> {
+  const padded = padSuraId(id);
+  try {
+    const data: Record<number, string> = await import(`./tafsirs/${padded}.json`).then(
+      (mod) => mod.default || mod
+    );
+    return data;
+  } catch (error) {
+    console.warn(`Tafsir not found for sura ${id}`);
+    return {};
+  }
+}

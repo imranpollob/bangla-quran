@@ -4,6 +4,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import AyahAudioButton from '@/components/ayah-audio-button';
 import AyahTextSizeControls from '@/components/ayah-text-size-controls';
 import BookmarkButton from '@/components/bookmark-button';
+import TafsirButton from '@/components/tafsir-button';
+import TafsirModal from '@/components/tafsir-modal';
 import ThemeToggle from '@/components/theme-toggle';
 import type { Mode, SuraMeta } from '@/lib/data/suras';
 import type { Ayah } from '@/lib/data/types';
@@ -12,13 +14,14 @@ import { toBnDigits } from '@/lib/format';
 interface Props {
   sura: SuraMeta;
   ayahs: Ayah[];
+  tafsirs: Record<number, string>;
   mode: Mode;
   slug: string;
 }
 
 type AudioLang = 'ar' | 'bn';
 
-export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
+export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
   const showArabic = mode !== 'bangla';
   const showBangla = mode !== 'arabic';
   const basePath = `/sura/${sura.id}/${slug}`;
@@ -27,6 +30,9 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
     null
   );
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
+  const [tafsirModal, setTafsirModal] = useState<{ ayahNumber: string; text: string } | null>(
+    null
+  );
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ayahRefs = useRef<(HTMLElement | null)[]>([]);
   const menuRef = useRef<HTMLDivElement | null>(null);
@@ -263,8 +269,7 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
                 ? 'বিসমিল্লাহ'
                 : `আয়াত ${toBnDigits(ayah.number)}`;
             const isPlayingAyah = currentTrack?.index === index && isAudioPlaying;
-            const hasBanglaAudio = Boolean(ayah.audio.bn);
-
+            const hasBanglaAudio = Boolean(ayah.audio.bn); const ayahNum = parseInt(ayah.number, 10);
             return (
               <article
                 className={`ayah-card ${isPlayingAyah ? 'ayah-card-playing' : ''}`}
@@ -275,16 +280,24 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
                 }}
               >
                 <div className="ayah-top">
-                  <div className="ayah-number">{label}</div>
+                  <div className="ayah-number">
+                    <a href={`#${anchor}`} aria-label="Permalink">
+                      {label}
+                    </a>
+                  </div>
                   <div className="ayah-actions">
+                    {tafsirs[ayahNum] && (
+                      <TafsirButton
+                        onClick={() =>
+                          setTafsirModal({ ayahNumber: ayah.number, text: tafsirs[ayahNum] })
+                        }
+                      />
+                    )}
                     <BookmarkButton
                       suraId={sura.id}
                       ayahNumber={ayah.number}
                       mode={mode}
                     />
-                    <a className="toggle" href={`#${anchor}`} aria-label="Permalink">
-                      #
-                    </a>
                   </div>
                 </div>
                 {showArabic && (
@@ -317,6 +330,13 @@ export default function SuraPage({ sura, ayahs, mode, slug }: Props) {
         </div>
       </div>
       <audio ref={audioRef} preload="none" />
+      <TafsirModal
+        isOpen={tafsirModal !== null}
+        onClose={() => setTafsirModal(null)}
+        suraName={sura.nameBn}
+        ayahNumber={tafsirModal?.ayahNumber || ''}
+        tafsirText={tafsirModal?.text || ''}
+      />
     </>
   );
 }

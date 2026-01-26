@@ -1452,3 +1452,104 @@ button {
     flex-wrap: wrap;
   }
 }
+
+/* Tafsir Modal Styles */
+.tafsir-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+.tafsir-modal {
+  background: var(--card);
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 10000;
+  opacity: 1;
+}
+
+.tafsir-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--accent);
+}
+
+.tafsir-modal-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--heading);
+}
+
+.tafsir-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 4px 8px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+
+.tafsir-modal-close:hover {
+  color: var(--heading);
+}
+
+.tafsir-modal-content {
+  padding: 24px;
+  overflow-y: auto;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.tafsir-modal-content p {
+  margin-bottom: 1em;
+}
+
+.tafsir-modal-content b,
+.tafsir-modal-content strong {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.tafsir-button {
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .tafsir-modal-overlay {
+    padding: 10px;
+  }
+
+  .tafsir-modal {
+    max-height: 95vh;
+  }
+
+  .tafsir-modal-header {
+    padding: 16px 20px;
+  }
+
+  .tafsir-modal-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .tafsir-modal-content {
+    padding: 20px;
+  }
+}
