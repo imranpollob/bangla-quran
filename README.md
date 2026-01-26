@@ -1,23 +1,52 @@
-# Bangla Quran (Next.js preview)
+# 📖 Bangla Quran
 
-SEO/PWA-friendly rebuild of the Bangla Quran site using Next.js (App Router) with room for Supabase auth/sync.
+Web application for reading the Quran with Bangla translation and tafsir.
 
-## Quick start
+## ✨ Features
+
+- Complete Quran: 114 surahs with Arabic text and Bangla translation
+- Tafsir from Abu Bakr Zakaria
+- Arabic and Bangla audio recitation
+- Multiple reading modes (Arabic + Bangla, Arabic only, Bangla only)
+- Dark/Light theme with preference persistence
+- Bookmarks for saving ayahs
+- Search functionality
+- Responsive design
+- PWA support
+
+## Technology Stack
+
+- Next.js 14 (App Router, SSG)
+- TypeScript 5.3
+- React 18
+- Custom CSS with CSS Variables
+- Fonts: LiAdorNoirrit (Bangla), Noorehuda (Arabic), Source Sans Pro (Latin)
+
+## Getting Started
+
+**Prerequisites:** Node.js 18.x or higher
+
 ```bash
+# Clone and install
+git clone https://github.com/imranpollob/bangla-quran.git
+cd bangla-quran
 npm install
+
+# Development
 npm run dev
+
+# Production
+npm run build
+npm start
 ```
 
-## What’s here
-- App Router structure: `/` search page, `/sura/[id]/[slug]` (both), `/sura/[id]/[slug]/arabic`, `/bangla`.
-- PWA essentials: manifest, sitemap, robots.txt; service worker to be added next.
-- Theme toggle (light/dark) with persisted preference.
-- Local bookmarks per ayah (saved in `localStorage`).
-- Sample data for Surah Al-Fatihah in `lib/data/ayahs/001.json` and metadata in `lib/data/suras.ts`.
-- Audio served from `public/audio` (symlinked to `../audio`).
+## Available Scripts
 
-## To do next
-- Add remaining sura metadata/ayah JSON (script recommended to convert existing HTML).
-- Wire Supabase auth + syncing layer for bookmarks/progress/streaks.
-- Add service worker caching strategy for HTML/data/audio.
-- Style refinements and accessibility pass on the reader UI.
+- `npm run dev` - Development server
+- `npm run build` - Production build
+- `npm start` - Production server
+- `npm run lint` - Run ESLint
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
