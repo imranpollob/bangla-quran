@@ -10,6 +10,7 @@ import ThemeToggle from '@/components/theme-toggle';
 import type { Mode, SuraMeta } from '@/lib/data/suras';
 import type { Ayah } from '@/lib/data/types';
 import { toBnDigits } from '@/lib/format';
+import { saveLastRead } from '@/lib/last-read';
 
 interface Props {
   sura: SuraMeta;
@@ -20,6 +21,12 @@ interface Props {
 }
 
 type AudioLang = 'ar' | 'bn';
+
+function getAyahNumberFromAnchorId(anchorId: string) {
+  const prefix = 'ayah-';
+  if (!anchorId.startsWith(prefix)) return null;
+  return anchorId.slice(prefix.length) || null;
+}
 
 export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
   const showArabic = mode !== 'bangla';
@@ -36,6 +43,7 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ayahRefs = useRef<(HTMLElement | null)[]>([]);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const lastSavedAyahRef = useRef<string | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -169,6 +177,67 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
       audio.removeEventListener('ended', handleEnded);
     };
   }, [currentTrack, getNextTrack, startPlayback]);
+
+  useEffect(() => {
+    const saveCurrentAyah = (ayahNumber: string) => {
+      if (!ayahNumber || ayahNumber === lastSavedAyahRef.current) return;
+      lastSavedAyahRef.current = ayahNumber;
+      saveLastRead({
+        suraId: sura.id,
+        suraSlug: slug,
+        suraNameBn: sura.nameBn,
+        ayahNumber,
+        mode
+      });
+    };
+
+    const saveFromHash = () => {
+      const ayahNumber = getAyahNumberFromAnchorId(window.location.hash.replace('#', ''));
+      if (ayahNumber) {
+        saveCurrentAyah(ayahNumber);
+      }
+    };
+
+    saveFromHash();
+
+    if (!window.location.hash && ayahs.length > 0) {
+      saveCurrentAyah(ayahs[0].number);
+    }
+
+    window.addEventListener('hashchange', saveFromHash);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let best: { ayahNumber: string; ratio: number } | null = null;
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const target = entry.target as HTMLElement;
+          const ayahNumber = getAyahNumberFromAnchorId(target.id);
+          if (!ayahNumber) continue;
+          if (!best || entry.intersectionRatio > best.ratio) {
+            best = { ayahNumber, ratio: entry.intersectionRatio };
+          }
+        }
+        if (best) {
+          saveCurrentAyah(best.ayahNumber);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '-45% 0px -45% 0px',
+        threshold: [0, 0.25, 0.5, 0.75, 1]
+      }
+    );
+
+    for (const node of ayahRefs.current) {
+      if (node) observer.observe(node);
+    }
+
+    return () => {
+      window.removeEventListener('hashchange', saveFromHash);
+      observer.disconnect();
+    };
+  }, [ayahs, mode, slug, sura.id, sura.nameBn]);
 
   return (
     <>

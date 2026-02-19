@@ -1,5 +1,6 @@
 import HomeSearch from '@/components/home-search';
 import SiteHeader from '@/components/site-header';
+import ContinueReadingCard from '@/components/continue-reading-card';
 import { toBnDigits } from '@/lib/format';
 import { suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
@@ -25,6 +26,7 @@ export default function Page() {
             </p>
 
             <div className="hero-actions-row">
+              <ContinueReadingCard />
               <a href="#sura-list" className="home-hero-card hero-card-small">
                 <div className="hero-icon">📚</div>
                 <h3 className="hero-card-title">সূরা তালিকা</h3>
