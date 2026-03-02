@@ -10,6 +10,7 @@ Web application for reading the Quran with Bangla translation and tafsir.
 - Multiple reading modes (Arabic + Bangla, Arabic only, Bangla only)
 - Dark/Light theme with preference persistence
 - Bookmarks for saving ayahs
+- Last read tracker to resume reading
 - Search functionality
 - Responsive design
 - PWA support
