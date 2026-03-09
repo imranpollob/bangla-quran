@@ -4,9 +4,10 @@ import { getSuraById, normalizeMode, suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { SuraMeta } from '@/lib/data/suras';
+import { buildSuraUrl, serializeJsonLd, siteName, siteUrl } from '@/lib/seo';
+import { toBnDigits } from '@/lib/format';
 
-const siteUrl = 'https://banglaquran.app';
-const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: 'Bangla Quran' };
+const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: siteName };
 const modePaths = ['arabic', 'bangla'];
 
 function formatRevelationPlace(revelationPlace?: SuraMeta['revelationPlace']) {
@@ -18,7 +19,7 @@ function buildDescription(sura: SuraMeta, mode: 'arabic' | 'bangla') {
   const revelation = formatRevelationPlace(sura.revelationPlace);
   const revelationText = revelation ? ` (${revelation})` : '';
   const nameAr = sura.nameAr ? ` (${sura.nameAr})` : '';
-  const modeText = mode === 'arabic' ? 'আরবি পাঠ' : 'বাংলা অনুবাদ';
+  const modeText = mode === 'arabic' ? 'আরবি' : 'বাংলা অনুবাদ';
   return `সূরা ${sura.nameBn}${nameAr}${revelationText}। ${sura.ayahCount} আয়াত। ${modeText} পড়ুন ও শুনুন।`;
 }
 
@@ -44,20 +45,25 @@ function buildMetadata(
   description?: string,
   keywords?: string[]
 ): Metadata {
-  const url = `${siteUrl}/sura/${id}/${slug}/${mode}`;
+  const url = buildSuraUrl(id, slug, mode);
+  const canonicalUrl = buildSuraUrl(id, slug);
   return {
     title,
     description,
     keywords,
     alternates: {
-      canonical: url
+      canonical: canonicalUrl
+    },
+    robots: {
+      index: false,
+      follow: true
     },
     openGraph: {
       type: 'article',
       title,
       description,
       url,
-      siteName: 'Bangla Quran',
+      siteName,
       images: [ogImage]
     },
     twitter: {
@@ -111,6 +117,60 @@ export default async function Page({
 
   const ayahs = await loadAyahsForSura(sura.id);
   const tafsirs = await loadTafsirForSura(sura.id);
+  const url = buildSuraUrl(params.id, params.slug, mode);
+  const description = buildDescription(sura, mode);
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: `${toBnDigits(sura.id)}. ${sura.nameBn} - ${mode === 'arabic' ? 'আরবি' : 'বাংলা অনুবাদ'
+        }`,
+      url,
+      inLanguage: 'bn-BD',
+      description,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: siteName,
+        url: siteUrl
+      },
+      breadcrumb: {
+        '@id': `${url}#breadcrumb`
+      }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'বাংলা কোরআন',
+          item: siteUrl
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: `সূরা ${sura.nameBn}`,
+          item: buildSuraUrl(params.id, params.slug)
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: mode === 'arabic' ? 'আরবি' : 'বাংলা অনুবাদ',
+          item: url
+        }
+      ]
+    }
+  ];
 
-  return <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode={mode} slug={params.slug} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
+      />
+      <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode={mode} slug={params.slug} />
+    </>
+  );
 }

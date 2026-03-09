@@ -4,9 +4,10 @@ import { getSuraById, suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { SuraMeta } from '@/lib/data/suras';
+import { toBnDigits } from '@/lib/format';
+import { buildSuraUrl, serializeJsonLd, siteName, siteUrl } from '@/lib/seo';
 
-const siteUrl = 'https://banglaquran.app';
-const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: 'Bangla Quran' };
+const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: siteName };
 
 function formatRevelationPlace(revelationPlace?: SuraMeta['revelationPlace']) {
   if (!revelationPlace) return '';
@@ -17,7 +18,7 @@ function buildDescription(sura: SuraMeta) {
   const revelation = formatRevelationPlace(sura.revelationPlace);
   const revelationText = revelation ? ` (${revelation})` : '';
   const nameAr = sura.nameAr ? ` (${sura.nameAr})` : '';
-  return `সূরা ${sura.nameBn}${nameAr}${revelationText}। ${sura.ayahCount} আয়াত। আরবি পাঠ ও বাংলা অনুবাদসহ পড়ুন ও শুনুন।`;
+  return `সূরা ${sura.nameBn}${nameAr}${revelationText}। ${sura.ayahCount} আয়াত। আরবি ও বাংলা অনুবাদসহ পড়ুন ও শুনুন।`;
 }
 
 function buildKeywords(sura: SuraMeta) {
@@ -39,7 +40,7 @@ function buildMetadata(
   description?: string,
   keywords?: string[]
 ): Metadata {
-  const url = `${siteUrl}/sura/${id}/${slug}`;
+  const url = buildSuraUrl(id, slug);
   return {
     title,
     description,
@@ -50,7 +51,7 @@ function buildMetadata(
       title,
       description,
       url,
-      siteName: 'Bangla Quran',
+      siteName,
       images: [ogImage]
     },
     twitter: {
@@ -97,6 +98,53 @@ export default async function Page({
 
   const ayahs = await loadAyahsForSura(sura.id);
   const tafsirs = await loadTafsirForSura(sura.id);
+  const url = buildSuraUrl(params.id, params.slug);
+  const description = buildDescription(sura);
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: `${toBnDigits(sura.id)}. ${sura.nameBn}`,
+      url,
+      inLanguage: 'bn-BD',
+      description,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: siteName,
+        url: siteUrl
+      },
+      breadcrumb: {
+        '@id': `${url}#breadcrumb`
+      }
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumb`,
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'বাংলা কোরআন',
+          item: siteUrl
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: `সূরা ${sura.nameBn}`,
+          item: url
+        }
+      ]
+    }
+  ];
 
-  return <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode="both" slug={params.slug} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
+      />
+      <SuraPage sura={sura} ayahs={ayahs} tafsirs={tafsirs} mode="both" slug={params.slug} />
+    </>
+  );
 }

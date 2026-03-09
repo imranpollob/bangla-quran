@@ -4,25 +4,68 @@ import ContinueReadingCard from '@/components/continue-reading-card';
 import { toBnDigits } from '@/lib/format';
 import { suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
+import { serializeJsonLd, siteDescription, siteName, siteTitle, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
+  title: siteTitle,
+  description: siteDescription,
+  keywords: [
+    'বাংলা কোরআন',
+    'কোরআন বাংলা',
+    'কোরআন বাংলা অনুবাদ',
+    'কোরআন তাফসির',
+    'কোরআন অডিও',
+    'Bangla Quran'
+  ],
   alternates: {
     canonical: '/'
   }
 };
 
 export default function Page() {
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: siteName,
+      url: siteUrl,
+      inLanguage: 'bn-BD',
+      description: siteDescription
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: siteTitle,
+      url: siteUrl,
+      inLanguage: 'bn-BD',
+      description: siteDescription,
+      isPartOf: {
+        '@type': 'WebSite',
+        name: siteName,
+        url: siteUrl
+      }
+    }
+  ];
+
   return (
-    <div className="home">
+    <main className="home">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }}
+      />
       <div className="page-shell home-shell">
         <SiteHeader />
 
         <section className="home-hero home-hero-v1">
           <div className="home-hero-center">
             <div className="home-kicker">بِسْمِ اللَّهِ الرَّحْمٰنِ الرَّحِيمِ</div>
-            <h2 className="home-title">আসসালামু আলাইকুম</h2>
+            <p className="home-greeting">আসসালামু আলাইকুম</p>
+            <h1 className="home-title">বাংলা কোরআন</h1>
             <p className="home-subtitle">
-              আপনার তিলাওয়াত যাত্রায় স্বাগতম
+              আরবি, বাংলা অনুবাদ, তাফসির ও অডিও তিলাওয়াতসহ ১১৪টি সূরা পড়ুন ও শুনুন।
+            </p>
+            <p className="home-lead">
+              বাংলাভাষী পাঠকদের জন্য সহজ কোরআন পাঠ
             </p>
 
             <div className="hero-actions-row">
@@ -44,6 +87,6 @@ export default function Page() {
 
         <HomeSearch suras={suraList} />
       </div>
-    </div>
+    </main>
   );
 }

@@ -25,11 +25,18 @@ export default function HomeSearch({ suras }: Props) {
 
   return (
     <section id="sura-list" className="home-sura-section">
-
+      <div className="home-section-copy">
+        <h2 className="home-section-title">সব সূরার তালিকা</h2>
+      </div>
       <div className="home-search-wrap">
+        <label className="home-search-label" htmlFor="sura-search">
+          সূরা খুঁজুন
+        </label>
         <input
+          id="sura-search"
           className="home-search-input"
           placeholder="সূরা খুঁজুন - যেমনঃ ইয়াসিন / yasin"
+          aria-label="সূরা খুঁজুন"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />

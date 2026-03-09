@@ -3,32 +3,38 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import ThemeScript from '@/components/theme-script';
 import GoToTop from '@/components/go-to-top';
+import { siteDescription, siteName, siteTitle, siteUrl } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://banglaquran.app'),
-  title: 'Bangla Quran | Arabic & Bangla with Audio',
-  description:
-    'Read and listen to the Quran in Arabic with Bangla translation. Browse all 114 suras with audio, bookmarks, and offline-ready experience.',
-  applicationName: 'Bangla Quran',
+  metadataBase: new URL(siteUrl),
+  title: siteTitle,
+  description: siteDescription,
+  applicationName: siteName,
+  keywords: [
+    'বাংলা কোরআন',
+    'কোরআন বাংলা অনুবাদ',
+    'কোরআন তাফসির',
+    'কোরআন অডিও',
+    'Bangla Quran',
+    'Quran Bangla translation'
+  ],
   robots: {
     index: true,
     follow: true
   },
   openGraph: {
     type: 'website',
-    title: 'Bangla Quran | Arabic & Bangla with Audio',
-    description:
-      'Read and listen to the Quran in Arabic with Bangla translation. Browse all 114 suras with audio, bookmarks, and offline-ready experience.',
-    siteName: 'Bangla Quran',
-    url: 'https://banglaquran.app',
+    title: siteTitle,
+    description: siteDescription,
+    siteName,
+    url: siteUrl,
     locale: 'bn_BD',
     images: [{ url: '/quran.png', width: 1200, height: 630 }]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bangla Quran | Arabic & Bangla with Audio',
-    description:
-      'Read and listen to the Quran in Arabic with Bangla translation. Browse all 114 suras with audio, bookmarks, and offline-ready experience.',
+    title: siteTitle,
+    description: siteDescription,
     images: ['/quran.png']
   }
 };

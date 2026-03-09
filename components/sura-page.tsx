@@ -28,10 +28,23 @@ function getAyahNumberFromAnchorId(anchorId: string) {
   return anchorId.slice(prefix.length) || null;
 }
 
+function getModeLabel(mode: Mode) {
+  if (mode === 'arabic') return 'আরবি';
+  if (mode === 'bangla') return 'বাংলা অনুবাদ';
+  return 'আরবি, বাংলা অনুবাদ';
+}
+
+function getRevelationLabel(revelationPlace?: SuraMeta['revelationPlace']) {
+  if (!revelationPlace) return '';
+  return revelationPlace === 'makki' ? 'মাক্কী সূরা' : 'মাদানী সূরা';
+}
+
 export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
   const showArabic = mode !== 'bangla';
   const showBangla = mode !== 'arabic';
   const basePath = `/sura/${sura.id}/${slug}`;
+  const modeLabel = getModeLabel(mode);
+  const revelationLabel = getRevelationLabel(sura.revelationPlace);
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentTrack, setCurrentTrack] = useState<{ index: number; lang: AudioLang } | null>(
     null
@@ -315,89 +328,97 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
         </div>
       </div>
 
-      <div className="page-shell">
-        <div className="sura-hero">
-          <a
-            className="sura-caligraphy sura-caligraphy-large"
-            href={basePath}
-            aria-label={`সুরা ${sura.nameBn}`}
-          >
-            <div className="sura-icon sura-icon-number">
-              {`surah${String(sura.id).padStart(3, '0')}`}
-            </div>
-            <div className="sura-icon sura-icon-base">{`surah-icon`}</div>
-          </a>
+      <main className="page-shell">
+        <div className="sura-hero sura-hero-content">
+          <div className="sura-heading-block">
+            <p className="sura-kicker">
+              <span className="sr-only">আরবি নাম </span>
+              {sura.nameAr}
+              {revelationLabel ? ` · ${revelationLabel}` : ''}
+              {' · '}
+              {toBnDigits(sura.ayahCount)} আয়াত
+            </p>
+            <h1 className="sura-heading">
+              {toBnDigits(sura.id)}. {sura.nameBn}
+            </h1>
+            <p className="sura-lead">
+              {modeLabel}, তাফসির ও অডিও তিলাওয়াতসহ সূরা {sura.nameBn} পড়ুন ও শুনুন
+            </p>
+          </div>
         </div>
 
+        <section aria-labelledby="ayah-list-title">
+          <h2 id="ayah-list-title" className="sr-only">
+            সূরা {sura.nameBn} এর আয়াতসমূহ
+          </h2>
+          <div className="ayah-list" style={{ marginTop: 24 }}>
+            {ayahs.map((ayah, index) => {
+              const anchor = `ayah-${ayah.number}`;
+              const label = ayah.number === '0' ? 'বিসমিল্লাহ' : `আয়াত ${toBnDigits(ayah.number)}`;
+              const isPlayingAyah = currentTrack?.index === index && isAudioPlaying;
+              const hasBanglaAudio = Boolean(ayah.audio.bn);
+              const ayahNum = parseInt(ayah.number, 10);
 
-        <div className="ayah-list" style={{ marginTop: 24 }}>
-          {ayahs.map((ayah, index) => {
-            const anchor = `ayah-${ayah.number}`;
-            const label =
-              ayah.number === '0'
-                ? 'বিসমিল্লাহ'
-                : `আয়াত ${toBnDigits(ayah.number)}`;
-            const isPlayingAyah = currentTrack?.index === index && isAudioPlaying;
-            const hasBanglaAudio = Boolean(ayah.audio.bn); const ayahNum = parseInt(ayah.number, 10);
-            return (
-              <article
-                className={`ayah-card ${isPlayingAyah ? 'ayah-card-playing' : ''}`}
-                id={anchor}
-                key={anchor}
-                ref={(node) => {
-                  ayahRefs.current[index] = node;
-                }}
-              >
-                <div className="ayah-top">
-                  <div className="ayah-number">
-                    <a href={`#${anchor}`} aria-label="Permalink">
-                      {label}
-                    </a>
-                  </div>
-                  <div className="ayah-actions">
-                    {tafsirs[ayahNum] && (
-                      <TafsirButton
-                        onClick={() =>
-                          setTafsirModal({ ayahNumber: ayah.number, text: tafsirs[ayahNum] })
-                        }
+              return (
+                <article
+                  className={`ayah-card ${isPlayingAyah ? 'ayah-card-playing' : ''}`}
+                  id={anchor}
+                  key={anchor}
+                  ref={(node) => {
+                    ayahRefs.current[index] = node;
+                  }}
+                >
+                  <div className="ayah-top">
+                    <div className="ayah-number">
+                      <a href={`#${anchor}`} aria-label="Permalink">
+                        {label}
+                      </a>
+                    </div>
+                    <div className="ayah-actions">
+                      {tafsirs[ayahNum] && (
+                        <TafsirButton
+                          onClick={() =>
+                            setTafsirModal({ ayahNumber: ayah.number, text: tafsirs[ayahNum] })
+                          }
+                        />
+                      )}
+                      <BookmarkButton
+                        suraId={sura.id}
+                        ayahNumber={ayah.number}
+                        mode={mode}
                       />
-                    )}
-                    <BookmarkButton
-                      suraId={sura.id}
-                      ayahNumber={ayah.number}
-                      mode={mode}
-                    />
+                    </div>
                   </div>
-                </div>
-                {showArabic && (
-                  <div className="ayah-line ayah-line-arabic">
-                    <AyahAudioButton
-                      label="Arabic audio"
-                      isActive={currentTrack?.index === index && currentTrack?.lang === 'ar'}
-                      isPlaying={isAudioPlaying}
-                      onToggle={() => togglePlay(index, 'ar')}
-                    />
-                    <div className="arabic-text">{ayah.arabic}</div>
-                  </div>
-                )}
-                {showBangla && (
-                  <div className="ayah-line ayah-line-bangla">
-                    {hasBanglaAudio && (
+                  {showArabic && (
+                    <div className="ayah-line ayah-line-arabic">
                       <AyahAudioButton
-                        label="Bangla audio"
-                        isActive={currentTrack?.index === index && currentTrack?.lang === 'bn'}
+                        label="Arabic audio"
+                        isActive={currentTrack?.index === index && currentTrack?.lang === 'ar'}
                         isPlaying={isAudioPlaying}
-                        onToggle={() => togglePlay(index, 'bn')}
+                        onToggle={() => togglePlay(index, 'ar')}
                       />
-                    )}
-                    <div className="bangla-text">{ayah.bangla}</div>
-                  </div>
-                )}
-              </article>
-            );
-          })}
-        </div>
-      </div>
+                      <div className="arabic-text">{ayah.arabic}</div>
+                    </div>
+                  )}
+                  {showBangla && (
+                    <div className="ayah-line ayah-line-bangla">
+                      {hasBanglaAudio && (
+                        <AyahAudioButton
+                          label="Bangla audio"
+                          isActive={currentTrack?.index === index && currentTrack?.lang === 'bn'}
+                          isPlaying={isAudioPlaying}
+                          onToggle={() => togglePlay(index, 'bn')}
+                        />
+                      )}
+                      <div className="bangla-text">{ayah.bangla}</div>
+                    </div>
+                  )}
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      </main>
       <audio ref={audioRef} preload="none" />
       <TafsirModal
         isOpen={tafsirModal !== null}

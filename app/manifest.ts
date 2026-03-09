@@ -10,7 +10,7 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: '#0b1220',
     theme_color: '#0ea5e9',
     description:
-      'Read and listen to the Quran in Arabic with Bangla translation. Offline-ready with bookmarks and progress tracking.',
+      'বাংলা ভাষাভাষীদের জন্য আরবি কোরআন, বাংলা অনুবাদ, তাফসির ও অডিও তিলাওয়াতসহ অফলাইন-রেডি অভিজ্ঞতা।',
     icons: [
       {
         src: '/quran.png',
