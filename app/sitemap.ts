@@ -10,24 +10,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly' as const,
       priority: 1,
       lastModified: now
-    },
-    {
-      url: `${siteUrl}/bangla-quran-reading`,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-      lastModified: now
-    },
-    {
-      url: `${siteUrl}/audio-quran-bangla`,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-      lastModified: now
-    },
-    {
-      url: `${siteUrl}/tafsir-by-surah`,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-      lastModified: now
     }
   ];
 

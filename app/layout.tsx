@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import ThemeScript from '@/components/theme-script';
 import GoToTop from '@/components/go-to-top';
+import SiteFooter from '@/components/site-footer';
 import {
   defaultOgImage,
   languageAlternates,
@@ -68,6 +69,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <SiteFooter />
         <GoToTop />
       </body>
     </html>

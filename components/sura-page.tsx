@@ -427,15 +427,6 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
             সূরা সম্পর্কিত গাইড
           </h2>
           <div className="related-links-grid">
-            <a className="related-link-card" href="/bangla-quran-reading">
-              পূর্ণ বাংলা কোরআন পড়ার গাইড
-            </a>
-            <a className="related-link-card" href="/audio-quran-bangla">
-              অডিও তিলাওয়াতসহ কোরআন শোনা
-            </a>
-            <a className="related-link-card" href="/tafsir-by-surah">
-              সূরা অনুযায়ী তাফসির তালিকা
-            </a>
             {previousSura && (
               <a className="related-link-card" href={`/sura/${previousSura.id}/${previousSura.slug}`}>
                 আগের সূরা: {toBnDigits(previousSura.id)}. {previousSura.nameBn}

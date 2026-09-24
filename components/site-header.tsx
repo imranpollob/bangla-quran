@@ -1,13 +1,27 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
 import ThemeToggle from '@/components/theme-toggle';
 
-const navItems = [
-  { href: '/', label: 'হোম' },
-  { href: '/bangla-quran-reading', label: 'কোরআন পড়ার গাইড' },
-  { href: '/audio-quran-bangla', label: 'অডিও কোরআন' },
-  { href: '/tafsir-by-surah', label: 'তাফসির সূচি' },
+const HomeIcon = () => (
+  <svg
+    width="18"
+    height="18"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <path d="M3 10.5 12 3l9 7.5" />
+    <path d="M5 9.5V21h5v-6h4v6h5V9.5" />
+  </svg>
+);
+
+const navItems: { href: string; label: ReactNode; ariaLabel?: string }[] = [
+  { href: '/', label: <HomeIcon />, ariaLabel: 'হোম' },
   { href: '/saved-ayahs', label: 'সংরক্ষিত আয়াত' }
 ];
 
@@ -51,6 +65,8 @@ export default function SiteHeader() {
               key={item.href}
               className="site-nav-link"
               href={item.href}
+              aria-label={item.ariaLabel}
+              title={item.ariaLabel}
               onClick={() => setMenuOpen(false)}
             >
               {item.label}

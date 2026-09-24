@@ -139,32 +139,6 @@ export default function Page() {
           </div>
         </section>
 
-        <section className="home-seo-links" aria-labelledby="guided-reading-title">
-          <div className="home-section-copy">
-            <h2 id="guided-reading-title" className="home-section-title">
-              কোরআন পড়া, শোনা ও তাফসির গাইড
-            </h2>
-            <p className="home-section-text">
-              বাংলা কোরআন পাঠের গুরুত্বপূর্ণ পথগুলো এক জায়গায় — পূর্ণ কোরআন, অডিও তিলাওয়াত ও
-              সূরা ভিত্তিক তাফসির।
-            </p>
-          </div>
-          <div className="home-link-grid">
-            <a className="home-link-card" href="/bangla-quran-reading">
-              <h3>বাংলা কোরআন পড়ুন</h3>
-              <p>আরবি ও বাংলা অনুবাদসহ ধারাবাহিকভাবে ১১৪টি সূরা পড়ুন।</p>
-            </a>
-            <a className="home-link-card" href="/audio-quran-bangla">
-              <h3>অডিও কোরআন তিলাওয়াত</h3>
-              <p>আরবি ও বাংলা তিলাওয়াত শুনে শুনে আয়াত অনুসরণ করুন।</p>
-            </a>
-            <a className="home-link-card" href="/tafsir-by-surah">
-              <h3>সূরা অনুযায়ী তাফসির</h3>
-              <p>প্রতিটি সূরার আয়াতভিত্তিক তাফসির সহজে ব্রাউজ করুন।</p>
-            </a>
-          </div>
-        </section>
-
         <HomeSearch suras={suraList} />
       </div>
     </main>
