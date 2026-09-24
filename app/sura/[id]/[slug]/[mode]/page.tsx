@@ -4,10 +4,17 @@ import { getSuraById, normalizeMode, suraList } from '@/lib/data/suras';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { SuraMeta } from '@/lib/data/suras';
-import { buildSuraUrl, serializeJsonLd, siteName, siteUrl } from '@/lib/seo';
+import {
+  buildSuraUrl,
+  defaultOgImage,
+  serializeJsonLd,
+  siteLocale,
+  siteName,
+  siteUrl
+} from '@/lib/seo';
 import { toBnDigits } from '@/lib/format';
 
-const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: siteName };
+const ogImage = defaultOgImage;
 const modePaths = ['arabic', 'bangla'];
 
 function formatRevelationPlace(revelationPlace?: SuraMeta['revelationPlace']) {
@@ -31,6 +38,7 @@ function buildKeywords(sura: SuraMeta, mode: 'arabic' | 'bangla') {
     'কোরআন',
     `সূরা ${sura.nameBn}`,
     `${modeLabel} সূরা`,
+    mode === 'arabic' ? `${sura.slug} arabic recitation` : `${sura.slug} bangla meaning`,
     sura.slug,
     sura.nameAr || undefined,
     ...sura.keywords
@@ -52,7 +60,12 @@ function buildMetadata(
     description,
     keywords,
     alternates: {
-      canonical: canonicalUrl
+      canonical: canonicalUrl,
+      languages: {
+        'bn-BD': canonicalUrl,
+        bn: canonicalUrl,
+        'x-default': canonicalUrl
+      }
     },
     robots: {
       index: false,
@@ -89,7 +102,8 @@ export async function generateMetadata({
     };
   }
 
-  const title = `${sura.id}. ${sura.nameBn} | ${mode === 'arabic' ? 'আরবি' : 'বাংলা'
+  const title = `${toBnDigits(sura.id)}. সূরা ${sura.nameBn}${sura.nameAr ? ` (${sura.nameAr})` : ''
+    } | ${mode === 'arabic' ? 'আরবি তিলাওয়াত' : 'বাংলা অনুবাদ'
     }`;
   const description = buildDescription(sura, mode === 'arabic' ? 'arabic' : 'bangla');
   const keywords = buildKeywords(sura, mode === 'arabic' ? 'arabic' : 'bangla');
@@ -126,7 +140,7 @@ export default async function Page({
       name: `${toBnDigits(sura.id)}. ${sura.nameBn} - ${mode === 'arabic' ? 'আরবি' : 'বাংলা অনুবাদ'
         }`,
       url,
-      inLanguage: 'bn-BD',
+      inLanguage: siteLocale,
       description,
       isPartOf: {
         '@type': 'WebSite',

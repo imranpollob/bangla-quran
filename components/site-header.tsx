@@ -5,6 +5,9 @@ import ThemeToggle from '@/components/theme-toggle';
 
 const navItems = [
   { href: '/', label: 'হোম' },
+  { href: '/bangla-quran-reading', label: 'কোরআন পড়ার গাইড' },
+  { href: '/audio-quran-bangla', label: 'অডিও কোরআন' },
+  { href: '/tafsir-by-surah', label: 'তাফসির সূচি' },
   { href: '/saved-ayahs', label: 'সংরক্ষিত আয়াত' }
 ];
 

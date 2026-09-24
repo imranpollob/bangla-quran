@@ -1,21 +1,41 @@
 import type { MetadataRoute } from 'next';
 import { suraList } from '@/lib/data/suras';
-
-const siteUrl = 'https://banglaquran.app';
+import { siteUrl } from '@/lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
   const baseEntries: MetadataRoute.Sitemap = [
     {
       url: `${siteUrl}/`,
       changeFrequency: 'weekly' as const,
-      priority: 1
+      priority: 1,
+      lastModified: now
+    },
+    {
+      url: `${siteUrl}/bangla-quran-reading`,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      lastModified: now
+    },
+    {
+      url: `${siteUrl}/audio-quran-bangla`,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      lastModified: now
+    },
+    {
+      url: `${siteUrl}/tafsir-by-surah`,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+      lastModified: now
     }
   ];
 
   const suraEntries: MetadataRoute.Sitemap = suraList.map((sura) => ({
     url: `${siteUrl}/sura/${sura.id}/${sura.slug}`,
     changeFrequency: 'monthly' as const,
-    priority: 0.7
+    priority: 0.8,
+    lastModified: now
   }));
 
   return [...baseEntries, ...suraEntries];

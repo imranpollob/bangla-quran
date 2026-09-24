@@ -7,7 +7,7 @@ import BookmarkButton from '@/components/bookmark-button';
 import TafsirButton from '@/components/tafsir-button';
 import TafsirModal from '@/components/tafsir-modal';
 import ThemeToggle from '@/components/theme-toggle';
-import type { Mode, SuraMeta } from '@/lib/data/suras';
+import { suraList, type Mode, type SuraMeta } from '@/lib/data/suras';
 import type { Ayah } from '@/lib/data/types';
 import { toBnDigits } from '@/lib/format';
 import { saveLastRead } from '@/lib/last-read';
@@ -45,6 +45,9 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
   const basePath = `/sura/${sura.id}/${slug}`;
   const modeLabel = getModeLabel(mode);
   const revelationLabel = getRevelationLabel(sura.revelationPlace);
+  const suraIndex = suraList.findIndex((item) => item.id === sura.id);
+  const previousSura = suraIndex > 0 ? suraList[suraIndex - 1] : null;
+  const nextSura = suraIndex >= 0 && suraIndex < suraList.length - 1 ? suraList[suraIndex + 1] : null;
   const [menuOpen, setMenuOpen] = useState(false);
   const [currentTrack, setCurrentTrack] = useState<{ index: number; lang: AudioLang } | null>(
     null
@@ -416,6 +419,33 @@ export default function SuraPage({ sura, ayahs, tafsirs, mode, slug }: Props) {
                 </article>
               );
             })}
+          </div>
+        </section>
+
+        <section className="related-links" aria-labelledby="related-guides-title">
+          <h2 id="related-guides-title" className="related-links-title">
+            সূরা সম্পর্কিত গাইড
+          </h2>
+          <div className="related-links-grid">
+            <a className="related-link-card" href="/bangla-quran-reading">
+              পূর্ণ বাংলা কোরআন পড়ার গাইড
+            </a>
+            <a className="related-link-card" href="/audio-quran-bangla">
+              অডিও তিলাওয়াতসহ কোরআন শোনা
+            </a>
+            <a className="related-link-card" href="/tafsir-by-surah">
+              সূরা অনুযায়ী তাফসির তালিকা
+            </a>
+            {previousSura && (
+              <a className="related-link-card" href={`/sura/${previousSura.id}/${previousSura.slug}`}>
+                আগের সূরা: {toBnDigits(previousSura.id)}. {previousSura.nameBn}
+              </a>
+            )}
+            {nextSura && (
+              <a className="related-link-card" href={`/sura/${nextSura.id}/${nextSura.slug}`}>
+                পরের সূরা: {toBnDigits(nextSura.id)}. {nextSura.nameBn}
+              </a>
+            )}
           </div>
         </section>
       </main>

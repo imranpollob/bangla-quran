@@ -1,13 +1,13 @@
 import type { MetadataRoute } from 'next';
-
-const siteUrl = 'https://banglaquran.app';
+import { siteUrl } from '@/lib/seo';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: '*',
-        allow: '/'
+        allow: '/',
+        disallow: ['/saved-ayahs']
       }
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
