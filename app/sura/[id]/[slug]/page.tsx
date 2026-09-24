@@ -5,9 +5,16 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { SuraMeta } from '@/lib/data/suras';
 import { toBnDigits } from '@/lib/format';
-import { buildSuraUrl, serializeJsonLd, siteName, siteUrl } from '@/lib/seo';
+import {
+  buildSuraUrl,
+  defaultOgImage,
+  serializeJsonLd,
+  siteLocale,
+  siteName,
+  siteUrl
+} from '@/lib/seo';
 
-const ogImage = { url: '/quran.png', width: 1200, height: 630, alt: siteName };
+const ogImage = defaultOgImage;
 
 function formatRevelationPlace(revelationPlace?: SuraMeta['revelationPlace']) {
   if (!revelationPlace) return '';
@@ -18,15 +25,21 @@ function buildDescription(sura: SuraMeta) {
   const revelation = formatRevelationPlace(sura.revelationPlace);
   const revelationText = revelation ? ` (${revelation})` : '';
   const nameAr = sura.nameAr ? ` (${sura.nameAr})` : '';
-  return `সূরা ${sura.nameBn}${nameAr}${revelationText}। ${sura.ayahCount} আয়াত। আরবি ও বাংলা অনুবাদসহ পড়ুন ও শুনুন।`;
+  return `সূরা ${sura.nameBn}${nameAr}${revelationText}। মোট ${toBnDigits(
+    sura.ayahCount
+  )} আয়াত। আরবি তেলাওয়াত, বাংলা অনুবাদ ও তাফসিরসহ পড়ুন ও শুনুন।`;
 }
 
 function buildKeywords(sura: SuraMeta) {
+  const normalizedName = sura.nameBn.replace(/[^\p{L}\p{N}\s]/gu, '').trim();
   return [
     'Bangla Quran',
     'বাংলা কোরআন',
     'কোরআন',
     `সূরা ${sura.nameBn}`,
+    `${sura.nameBn} বাংলা অর্থ`,
+    `${normalizedName} tafsir`,
+    `${sura.slug} bangla`,
     sura.slug,
     sura.nameAr || undefined,
     ...sura.keywords
@@ -45,7 +58,14 @@ function buildMetadata(
     title,
     description,
     keywords,
-    alternates: { canonical: url },
+    alternates: {
+      canonical: url,
+      languages: {
+        'bn-BD': url,
+        bn: url,
+        'x-default': url
+      }
+    },
     openGraph: {
       type: 'article',
       title,
@@ -75,7 +95,8 @@ export async function generateMetadata({
       robots: { index: false, follow: false }
     };
   }
-  const title = `${sura.id}. ${sura.nameBn} | আরবি ও বাংলা অনুবাদ`;
+  const title = `${toBnDigits(sura.id)}. সূরা ${sura.nameBn}${sura.nameAr ? ` (${sura.nameAr})` : ''
+    } | বাংলা অনুবাদ, তাফসির ও অডিও`;
   const description = buildDescription(sura);
   const keywords = buildKeywords(sura);
   return buildMetadata(params.id, params.slug, title, description, keywords);
@@ -106,13 +127,23 @@ export default async function Page({
       '@type': 'WebPage',
       name: `${toBnDigits(sura.id)}. ${sura.nameBn}`,
       url,
-      inLanguage: 'bn-BD',
+      inLanguage: siteLocale,
       description,
       isPartOf: {
         '@type': 'WebSite',
         name: siteName,
         url: siteUrl
       },
+      about: [
+        {
+          '@type': 'Thing',
+          name: `Surah ${sura.slug}`
+        },
+        {
+          '@type': 'Thing',
+          name: 'Quran tafsir and translation in Bangla'
+        }
+      ],
       breadcrumb: {
         '@id': `${url}#breadcrumb`
       }
@@ -135,6 +166,18 @@ export default async function Page({
           item: url
         }
       ]
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      name: `সূরা ${sura.nameBn}`,
+      inLanguage: ['ar', siteLocale],
+      isPartOf: {
+        '@type': 'Book',
+        name: 'Al-Quran'
+      },
+      learningResourceType: 'Religious text with translation and tafsir',
+      url
     }
   ];
 

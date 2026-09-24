@@ -1103,6 +1103,47 @@ button {
   margin-top: 38px;
 }
 
+.home-seo-links {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.home-link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.home-link-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--home-border);
+  background: var(--home-surface-soft);
+  border-radius: 14px;
+  padding: 14px;
+  text-align: left;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.home-link-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.home-link-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.home-link-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
 .home-section-head {
   display: flex;
   align-items: flex-end;
@@ -1272,6 +1313,37 @@ button {
   align-items: center;
   margin-bottom: 16px;
   text-align: center;
+}
+
+.related-links {
+  margin-top: 28px;
+}
+
+.related-links-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-family: "Siyam Rupali", "LiAdorNoirrit", sans-serif;
+}
+
+.related-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.related-link-card {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  border: 1px solid var(--home-border);
+  border-radius: 12px;
+  background: var(--home-surface-soft);
+  padding: 12px;
+}
+
+.related-link-card:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
 }
 
 .sura-hero-content {

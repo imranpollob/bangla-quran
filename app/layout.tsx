@@ -3,7 +3,15 @@ import type { ReactNode } from 'react';
 import './globals.css';
 import ThemeScript from '@/components/theme-script';
 import GoToTop from '@/components/go-to-top';
-import { siteDescription, siteName, siteTitle, siteUrl } from '@/lib/seo';
+import {
+  defaultOgImage,
+  languageAlternates,
+  siteDescription,
+  siteLocale,
+  siteName,
+  siteTitle,
+  siteUrl
+} from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -22,20 +30,28 @@ export const metadata: Metadata = {
     index: true,
     follow: true
   },
+  alternates: {
+    canonical: '/',
+    languages: languageAlternates
+  },
   openGraph: {
     type: 'website',
     title: siteTitle,
     description: siteDescription,
     siteName,
     url: siteUrl,
-    locale: 'bn_BD',
-    images: [{ url: '/quran.png', width: 1200, height: 630 }]
+    locale: siteLocale.replace('-', '_'),
+    images: [defaultOgImage]
   },
   twitter: {
     card: 'summary_large_image',
     title: siteTitle,
     description: siteDescription,
-    images: ['/quran.png']
+    images: [{ url: '/quran.png', alt: defaultOgImage.alt }]
+  },
+  icons: {
+    icon: [{ url: '/favicon.ico' }],
+    apple: [{ url: '/quran.png' }]
   }
 };
 
