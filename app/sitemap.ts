@@ -9,8 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${siteUrl}/`,
       changeFrequency: 'weekly' as const,
       priority: 1,
-      lastModified: now,
-      images: [`${siteUrl}/quran.png`]
+      lastModified: now
     },
     {
       url: `${siteUrl}/bangla-quran-reading`,
@@ -36,8 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}/sura/${sura.id}/${sura.slug}`,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
-    lastModified: now,
-    images: [`${siteUrl}/quran.png`]
+    lastModified: now
   }));
 
   return [...baseEntries, ...suraEntries];
